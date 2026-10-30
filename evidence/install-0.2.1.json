@@ -1,0 +1,14 @@
+{
+  "version": "0.2.1",
+  "timestamp": "2026-10-29T20:48:11.7023461-05:00",
+  "installed": "<WORKSPACE>\\outputs\\SpiritAshResummon\\dist",
+  "backup": "<WORKSPACE>\\outputs\\SpiritAshResummon\\evidence\\installed-0.2.0-before-0.2.1-20261029-204811",
+  "priorDllSHA256": "E45080C6DCADB37AC1F350D05CB7E192CAEE88240C2F6DAC1B5E165D20A19578",
+  "newDllSHA256": "45647CCE5759690CE52DB125AD4E4DB405EA41C9FCD5670F98CF6A0C2D866931",
+  "configurationPreserved": true,
+  "logPreserved": true,
+  "installedFilesVerified": 10,
+  "gameLaunched": false,
+  "automatedTestsExecuted": false,
+  "gameplayTestsExecuted": false
+}

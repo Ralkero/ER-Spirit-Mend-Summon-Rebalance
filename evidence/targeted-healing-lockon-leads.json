@@ -1,0 +1,44 @@
+{
+  "exe_sha256": "f9118fea2cfd8fa3901e8060bfadb1552cb2471771ded8a5b662c4e298ffb328",
+  "reference_repo": "SchuhBaum/FreeLockOnCamera",
+  "commit": "cc3317740b266c12484d22ed7f44bd137603b977",
+  "analysis": "Offline byte patterns only; candidate names inferred from reference source, not proof of friendly eligibility or current-target handle. No patches applied.",
+  "patterns": {
+    "camera_range": {
+      "bytes": "c7 83 30 29 00 00 00 00 70 41",
+      "matches": [
+        {
+          "rva": "0x7165bb",
+          "function": null
+        }
+      ]
+    },
+    "candidate_scoring": {
+      "bytes": "f3 0f 10 43 64 f3 0f 10 4b 60",
+      "matches": [
+        {
+          "rva": "0x71841e",
+          "function": null
+        }
+      ]
+    },
+    "target_switch": {
+      "bytes": "48 89 5c 24 20 55 56 41 57 48 8d 6c 24 90",
+      "matches": [
+        {
+          "rva": "0x719a60",
+          "function": null
+        }
+      ]
+    },
+    "candidate_post_acquire": {
+      "bytes": "a8 20 74 10 80 be",
+      "matches": [
+        {
+          "rva": "0x718491",
+          "function": null
+        }
+      ]
+    }
+  }
+}

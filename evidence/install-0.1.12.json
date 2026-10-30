@@ -1,0 +1,12 @@
+{
+  "version": "0.1.12",
+  "installed_at": "2026-10-29T19:24:01.4378696-05:00",
+  "backup": "<WORKSPACE>\\outputs\\SpiritAshResummon\\evidence\\before-0.1.12-20261029-192401",
+  "prior_dll_sha256": "2E31FA09FC9C96472652BB74E0591B8DFBA505A52134FEA4D52068396D0E8316",
+  "dll_sha256": "F96C97C246C16A8F8240CCFCD613D404C1B4DF3C8DAFD436E97B574E8CAC63E6",
+  "configuration_preserved": true,
+  "configuration_sha256": "04BBAE8B459A9746E0EBEEF83FF3886890E1BC6B430B88CD7A11558DF7D307BD",
+  "tests_run": false,
+  "game_launched": false,
+  "runtime_status": "Unverified: awaiting user permanent-death resummon test"
+}

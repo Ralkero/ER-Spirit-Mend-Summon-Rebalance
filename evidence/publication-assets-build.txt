@@ -1,0 +1,11 @@
+  Determining projects to restore...
+  Restored <WORKSPACE>\outputs\ER-Spirit-Mend-Summon-Rebalance-github\tools\SpiritMendAssets\SpiritMendAssets.csproj (in 668 ms).
+  1 of 2 projects are up-to-date for restore.
+  SoulsFormats -> <WORKSPACE>\work\SoulsFormatsNEXT\SoulsFormats\bin\Release\net9.0\SoulsFormats.dll
+  SpiritMendAssets -> <WORKSPACE>\outputs\ER-Spirit-Mend-Summon-Rebalance-github\tools\SpiritMendAssets\bin\Release\net9.0\SpiritMendAssets.dll
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:04.88

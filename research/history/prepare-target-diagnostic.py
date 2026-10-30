@@ -1,0 +1,8 @@
+from pathlib import Path
+root=Path('outputs/SpiritAshResummon')
+p=root/'src/config.rs';s=p.read_text(encoding='utf-8-sig').replace('    pub debug: bool,','    pub debug: bool,\n    pub target_diagnostics: bool,').replace('            debug: false,','            debug: false,\n            target_diagnostics: false,').replace('                ("debug", "enablelogging") => c.debug = boolean()?,','                ("debug", "enablelogging") => c.debug = boolean()?,\n                ("debug", "enabletargetdiagnostics") => c.target_diagnostics = boolean()?,');p.write_text(s,encoding='utf-8')
+p=root/'src/runtime.rs';s=p.read_text(encoding='utf-8-sig').replace('    if config().hud {\n        match unsafe { crate::hud::install() }','    initialize_target_diagnostic();\n    if config().hud {\n        match unsafe { crate::hud::install() }',1).replace('    refresh_hud();','    refresh_hud();\n    sample_target_diagnostic();',1);s+='\ninclude!("targeting_diagnostic.rs");\n';p.write_text(s,encoding='utf-8')
+p=root/'src/timing.rs';s=p.read_text(encoding='utf-8-sig').replace('pub static TASK: Metric','pub static TARGET_SAMPLE: Metric = Metric::new("target_sample");\npub static TASK: Metric',1).replace('        &HUD_SAMPLE,','        &HUD_SAMPLE,\n        &TARGET_SAMPLE,',1);p.write_text(s,encoding='utf-8')
+for name in ['Cargo.toml','Cargo.lock']:
+ p=root/name;s=p.read_text(encoding='utf-8-sig').replace('name = "spirit-ash-resummon"\nversion = "0.4.0"','name = "spirit-ash-resummon"\nversion = "0.4.1"');p.write_text(s,encoding='utf-8')
+p=root/'config/SpiritAshResummon.ini';s=p.read_text(encoding='utf-8-sig').replace('EnableLogging = false','EnableLogging = false\nEnableTargetDiagnostics = false');p.write_text(s,encoding='utf-8')

@@ -1,0 +1,123 @@
+{
+  "version": "0.5.0",
+  "timestamp": "2026-10-30T00:18:30.5905327-05:00",
+  "installed": "<WORKSPACE>\\outputs\\SpiritAshResummon\\dist",
+  "backup": "<WORKSPACE>\\outputs\\SpiritAshResummon\\evidence\\installed-0.4.2-before-0.5.0-20261030-001829",
+  "newDllSHA256": "7e242fa3077450362c84858d2f4021654a82293d4ad00f79948c1a8110f0d9aa",
+  "priorDllSHA256": "c04ff547e9e4a8c8245610a86ab5075c68d9151e3fcc1f229b7c637be1af21fc",
+  "installedFilesVerified": 21,
+  "backupFilesVerified": 17,
+  "logPreserved": true,
+  "gameRegulationUnchanged": true,
+  "gameLaunched": false,
+  "automatedTestsExecuted": false,
+  "gameplayTestsExecuted": false,
+  "configurationChange": "EnableSpiritMend=true; prior settings retained; usual launcher/profile includes dist/mod",
+  "files": [
+    {
+      "path": "config_spiritash_test.toml",
+      "sha256": "838EA2A76537994D797E5236541D3634BC9D770D9EAE86B7C5EE42150FB35DDF",
+      "bytes": 482
+    },
+    {
+      "path": "dist\\CHANGELOG.md",
+      "sha256": "E374A2AA0F6060C195DB8820C5B71A8ACCF19EC49E4DFDDB9D1F28D55ADDB815",
+      "bytes": 26197
+    },
+    {
+      "path": "dist\\IMPLEMENTATION.md",
+      "sha256": "A32FD27E984A1ED1E73B670A9F779B16D37FDCAAAB5F4D8D5352A02019795108",
+      "bytes": 46366
+    },
+    {
+      "path": "dist\\LICENSE-APACHE",
+      "sha256": "19DFC44CF86B3B3C419E22EB331C287D208E1B17D5BA407BEC99DCB292DAC5D4",
+      "bytes": 11541
+    },
+    {
+      "path": "dist\\LICENSE-MIT",
+      "sha256": "3690A286D00707B013A29B518F3361D17E97EAB01E3BB7D2D30DEB5C8BBA0216",
+      "bytes": 1088
+    },
+    {
+      "path": "dist\\patch-manifest.json",
+      "sha256": "DE335B883957423187177A4FF7A50C7853EA6E1CD32F0283E72EAB2C2DD0FB15",
+      "bytes": 3166
+    },
+    {
+      "path": "dist\\README.md",
+      "sha256": "6578577E09E28637C9B151BF26445468241A3AE843849567AFB0A40E1DA53A7F",
+      "bytes": 14030
+    },
+    {
+      "path": "dist\\SPIRIT-MEND.md",
+      "sha256": "AEEF3F561D41758099BC4E383235C99CB4E208EAEDF0EF0F90D7260B15C7A715",
+      "bytes": 8663
+    },
+    {
+      "path": "dist\\SpiritAshResummon.dll",
+      "sha256": "7E242FA3077450362C84858D2F4021654A82293D4AD00F79948C1A8110F0D9AA",
+      "bytes": 523264
+    },
+    {
+      "path": "dist\\SpiritAshResummon.ini",
+      "sha256": "BEC933DAC636BE4CF7935DB570530675D2C0F54AB6BFCC9BD0FB7A81560A84C1",
+      "bytes": 429
+    },
+    {
+      "path": "dist\\SpiritAshResummon.pdb",
+      "sha256": "2526D457B6497D327BBF94931BBF0AAF4CF6D2EEC4397D10EA935F5FCA891194",
+      "bytes": 10252288
+    },
+    {
+      "path": "dist\\START-HERE.txt",
+      "sha256": "F6C2EAC956C964B0554C140ECA331FD339AFA80338CA448B6528175DC44CBF6D",
+      "bytes": 3719
+    },
+    {
+      "path": "dist\\THIRD-PARTY-NOTICES.txt",
+      "sha256": "BDFE6B3B0611C40846641F0BA60853788E7439D19AD2BACC332CB8A9AFF27496",
+      "bytes": 59940
+    },
+    {
+      "path": "dist\\UPSTREAM.md",
+      "sha256": "A2E49DE2D9C4FA8E3F15A25C5AFE7381A32D910E536B0DC7FE20759E7D800305",
+      "bytes": 4051
+    },
+    {
+      "path": "dist\\VALIDATION.md",
+      "sha256": "7BBF6B79E865174AB2DD9F0DA2B6A64BA5FE9D254AA179F4CE3DFAC1C6923EC4",
+      "bytes": 108204
+    },
+    {
+      "path": "dist\\mod\\regulation.bin",
+      "sha256": "C485CA70A09B162C8EE11D302A85DC3BD96D333D9BF5A72BCCC95BE5ACBE9380",
+      "bytes": 1927248
+    },
+    {
+      "path": "dist\\mod\\msg\\engus\\item_dlc01.msgbnd.dcx",
+      "sha256": "A591079F8C7D4DC1456A7BB7E852CAC18B5FC33AB453C3BF12793D8F175A2D77",
+      "bytes": 321344
+    },
+    {
+      "path": "dist\\mod\\msg\\engus\\item_dlc02.msgbnd.dcx",
+      "sha256": "9334382EF5C725842755032B9EF645FB8901C0C8322DC3EDE60B095C2EC25AE1",
+      "bytes": 321408
+    },
+    {
+      "path": "dist\\mod\\msg\\engus\\item.msgbnd.dcx",
+      "sha256": "DC2E8ED565FF97CAC6F3CD835DC3E902C1D47872C9B5387F9F1B4051C6139373",
+      "bytes": 241920
+    },
+    {
+      "path": "tools\\Launch-SpiritMend.ps1",
+      "sha256": "C072A21473CF07415719695955984CDA271D06F0B538F01D385EFF6184F74976",
+      "bytes": 90
+    },
+    {
+      "path": "tools\\Launch-Test.ps1",
+      "sha256": "0067D531689671E05527721A11001BDF85D203E2B5753F476A6B08E5D2B9BFB4",
+      "bytes": 1510
+    }
+  ]
+}

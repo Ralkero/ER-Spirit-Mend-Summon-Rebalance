@@ -1,0 +1,53 @@
+{
+  "method": "Read-only PE/Capstone static inspection; no tests or game launch",
+  "exe_sha256": "f9118fea2cfd8fa3901e8060bfadb1552cb2471771ded8a5b662c4e298ffb328",
+  "anchors": {
+    "0x3c05c0": "40 53 48 83 ec 20 0f b6 41 14 48 8b d9 3c 01 75 0c 4c 8d 44 24 30 e8 a5 09 00 00 eb 09 3c 02 75 0f e8 4a 0a 00 00 84 c0 75 06 48 83 c4 20 5b c3 48 8b cb e8 78 08 00 00 b0 01 48 83 c4 20 5b c3",
+    "0x3c0600": "40 53 48 83 ec 20 0f b6 41 14 48 8b d9 3c 01 75 07 e8 6a 09 00 00 eb 09 3c 02 75 0f e8 0f 0a 00 00 84 c0 75 06 48 83 c4 20 5b c3 48 8b cb e8 3d 08 00 00 b0 01 48 83 c4 20 5b c3",
+    "0x3c0ff0": "e8 cb 00 00 00",
+    "0x449ffa": "e8 f1 e9 ff ff",
+    "0x448c35": "49 8b 9e d8 01 00 00",
+    "0x39e908": "48 81 c1 b0 04 00 00",
+    "0x38e915": "48 8b 53 20 48 8d 4c 24 40 e8 9d 67 00 00 90 48 8b d0 48",
+    "0x38e9b8": "49 8d 8f 40 01 00 00 48 8d 55 c7 e8 e8 53 00 00",
+    "0x395212": "c6 03 02 48 89 43 08"
+  },
+  "sites": [
+    {
+      "site": "0x3c05d6",
+      "callee": "0x3c0f80",
+      "expected": "0x3c0f80",
+      "bytes": "e8 a5 09 00 00"
+    },
+    {
+      "site": "0x3c0611",
+      "callee": "0x3c0f80",
+      "expected": "0x3c0f80",
+      "bytes": "e8 6a 09 00 00"
+    },
+    {
+      "site": "0x3c0ff0",
+      "callee": "0x3c10c0",
+      "expected": "0x3c10c0",
+      "bytes": "e8 cb 00 00 00"
+    },
+    {
+      "site": "0x449ffa",
+      "callee": "0x4489f0",
+      "expected": "0x4489f0",
+      "bytes": "e8 f1 e9 ff ff"
+    },
+    {
+      "site": "0x4493d3",
+      "callee": "0x3e8e70",
+      "expected": "0x3e8e70",
+      "bytes": "e8 98 fa f9 ff"
+    },
+    {
+      "site": "0x4494b8",
+      "callee": "0x3e8e70",
+      "expected": "0x3e8e70",
+      "bytes": "e8 b3 f9 f9 ff"
+    }
+  ]
+}

@@ -1,0 +1,396 @@
+{
+  "file": "E:/Elden Ring Unpacked Files/menu/01_000_fe.gfx",
+  "placements": [
+    {
+      "depth": 1,
+      "character": 310,
+      "matrix": {
+        "scale": [
+          1,
+          1
+        ],
+        "xy": [
+          196.95,
+          756.0
+        ],
+        "rotation": null
+      },
+      "name": "RemotePCTag5"
+    },
+    {
+      "depth": 25,
+      "character": 310,
+      "matrix": {
+        "scale": [
+          1,
+          1
+        ],
+        "xy": [
+          196.95,
+          662.0
+        ],
+        "rotation": null
+      },
+      "name": "RemotePCTag4"
+    },
+    {
+      "depth": 49,
+      "character": 310,
+      "matrix": {
+        "scale": [
+          1,
+          1
+        ],
+        "xy": [
+          196.95,
+          568.0
+        ],
+        "rotation": null
+      },
+      "name": "RemotePCTag3"
+    },
+    {
+      "depth": 73,
+      "character": 310,
+      "matrix": {
+        "scale": [
+          1,
+          1
+        ],
+        "xy": [
+          196.95,
+          474.0
+        ],
+        "rotation": null
+      },
+      "name": "RemotePCTag2"
+    },
+    {
+      "depth": 97,
+      "character": 310,
+      "matrix": {
+        "scale": [
+          1,
+          1
+        ],
+        "xy": [
+          196.95,
+          380.0
+        ],
+        "rotation": null
+      },
+      "name": "RemotePCTag1"
+    },
+    {
+      "depth": 121,
+      "character": 310,
+      "matrix": {
+        "scale": [
+          1,
+          1
+        ],
+        "xy": [
+          196.7,
+          286.0
+        ],
+        "rotation": null
+      },
+      "name": "RemotePCTag0"
+    },
+    {
+      "depth": 447,
+      "character": 482,
+      "matrix": {
+        "scale": [
+          1,
+          1
+        ],
+        "xy": [
+          23.0,
+          561.0
+        ],
+        "rotation": null
+      },
+      "name": "Buddy"
+    }
+  ],
+  "sprite_children": {
+    "310": [
+      {
+        "depth": 1,
+        "character": 286,
+        "matrix": {
+          "scale": [
+            1,
+            1
+          ],
+          "xy": [
+            -69.05,
+            0.2
+          ],
+          "rotation": null
+        }
+      },
+      {
+        "depth": 2,
+        "character": 289,
+        "matrix": {
+          "scale": [
+            0.2599945068359375,
+            0.2599945068359375
+          ],
+          "xy": [
+            -109.0,
+            7.0
+          ],
+          "rotation": null
+        },
+        "name": "RankIcon"
+      },
+      {
+        "depth": 4,
+        "character": 300,
+        "matrix": {
+          "scale": [
+            1,
+            1
+          ],
+          "xy": [
+            0.0,
+            0.0
+          ],
+          "rotation": null
+        },
+        "name": "HP"
+      },
+      {
+        "depth": 15,
+        "character": 304,
+        "matrix": {
+          "scale": [
+            1,
+            1
+          ],
+          "xy": [
+            330.0,
+            -31.0
+          ],
+          "rotation": null
+        },
+        "name": "Name"
+      },
+      {
+        "depth": 17,
+        "character": 304,
+        "matrix": {
+          "scale": [
+            1,
+            1
+          ],
+          "xy": [
+            330.0,
+            -57.0
+          ],
+          "rotation": null
+        },
+        "name": "RoleName"
+      },
+      {
+        "depth": 19,
+        "character": 305,
+        "matrix": {
+          "scale": [
+            0.8499908447265625,
+            0.8499908447265625
+          ],
+          "xy": [
+            -98.0,
+            -13.0
+          ],
+          "rotation": null
+        },
+        "name": "BigRune"
+      },
+      {
+        "depth": 21,
+        "character": 308,
+        "matrix": {
+          "scale": [
+            -0.79998779296875,
+            0.79998779296875
+          ],
+          "xy": [
+            -85.0,
+            -26.0
+          ],
+          "rotation": null
+        },
+        "name": "VoiceChatIconRoot"
+      },
+      {
+        "depth": 23,
+        "character": 309,
+        "matrix": {
+          "scale": [
+            0.67999267578125,
+            0.67999267578125
+          ],
+          "xy": [
+            -85.0,
+            -50.0
+          ],
+          "rotation": null
+        },
+        "name": "MultiPlayWeakIcon"
+      }
+    ],
+    "482": [
+      {
+        "depth": 1,
+        "character": 481,
+        "matrix": {
+          "scale": [
+            1,
+            1
+          ],
+          "xy": [
+            0.0,
+            0.0
+          ],
+          "rotation": null
+        },
+        "name": "Anim"
+      },
+      {
+        "depth": 1,
+        "color_mult": [
+          256,
+          256,
+          256,
+          0
+        ]
+      },
+      {
+        "depth": 1,
+        "color_mult": [
+          256,
+          256,
+          256,
+          41
+        ]
+      },
+      {
+        "depth": 1,
+        "color_mult": [
+          256,
+          256,
+          256,
+          84
+        ]
+      },
+      {
+        "depth": 1,
+        "color_mult": [
+          256,
+          256,
+          256,
+          128
+        ]
+      },
+      {
+        "depth": 1,
+        "color_mult": [
+          256,
+          256,
+          256,
+          169
+        ]
+      },
+      {
+        "depth": 1,
+        "color_mult": [
+          256,
+          256,
+          256,
+          212
+        ]
+      },
+      {
+        "depth": 1
+      },
+      {
+        "depth": 1,
+        "color_mult": [
+          256,
+          256,
+          256,
+          223
+        ]
+      },
+      {
+        "depth": 1,
+        "color_mult": [
+          256,
+          256,
+          256,
+          192
+        ]
+      },
+      {
+        "depth": 1,
+        "color_mult": [
+          256,
+          256,
+          256,
+          159
+        ]
+      },
+      {
+        "depth": 1,
+        "color_mult": [
+          256,
+          256,
+          256,
+          128
+        ]
+      },
+      {
+        "depth": 1,
+        "color_mult": [
+          256,
+          256,
+          256,
+          95
+        ]
+      },
+      {
+        "depth": 1,
+        "color_mult": [
+          256,
+          256,
+          256,
+          64
+        ]
+      },
+      {
+        "depth": 1,
+        "color_mult": [
+          256,
+          256,
+          256,
+          31
+        ]
+      },
+      {
+        "depth": 1,
+        "color_mult": [
+          256,
+          256,
+          256,
+          0
+        ]
+      }
+    ]
+  },
+  "static_analysis_only": true
+}

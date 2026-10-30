@@ -1,0 +1,3 @@
+   Compiling eldenring v0.14.0 (<WORKSPACE>\outputs\SpiritAshResummon\vendor\fromsoftware-rs\crates\eldenring)
+   Compiling spirit-ash-resummon v0.1.7 (<WORKSPACE>\outputs\SpiritAshResummon)
+    Finished `release` profile [optimized + debuginfo] target(s) in 8.48s

@@ -1,0 +1,46 @@
+   Compiling spirit-ash-resummon v0.1.0 (<WORKSPACE>\outputs\SpiritAshResummon)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 2.32s
+     Running unittests src\lib.rs (../../work/prototype-build\x86_64-pc-windows-msvc\debug\deps\SpiritAshResummon-3c66bf6921009d2c.exe)
+
+running 26 tests
+test hooks::tests::rel32_range_checked ... ok
+test config::tests::defaults_work ... ok
+test config::tests::malformed_config_fails_closed ... ok
+test config::tests::cannot_disable_restrictions_or_costs ... ok
+test config::tests::rejects_nonfinite_or_outside_range ... ok
+test hooks::tests::known_native_call_encoding ... ok
+test hooks::tests::sites_are_unique ... ok
+test policy::tests::dead_and_invalid_never_heal ... ok
+test policy::tests::repeated_healing_clamps_without_changing_max ... ok
+test policy::tests::disabled_heal_keeps_native_same_ash_behavior ... ok
+test policy::tests::each_group_member_uses_own_max ... ok
+test runtime::tests::version_allowlist_is_exact ... ok
+test config::tests::example_matches_defaults ... ok
+test policy::tests::full_hp_does_not_charge ... ok
+test policy::tests::huge_hp_cannot_overflow ... ok
+test policy::tests::all_buddies_at_upgrade_ten ... ok
+test policy::tests::integer_rounding_is_explicit ... ok
+test policy::tests::living_matching_wounded_heals ... ok
+test policy::tests::different_ash_never_replaces ... ok
+test policy::tests::requested_examples ... ok
+test policy::tests::unknown_effect_has_no_family ... ok
+test runtime::tests::null_entity_is_rejected ... ok
+test runtime::tests::upstream_layout_offsets_are_pinned ... ok
+test policy::tests::first_and_dead_group_use_native_summon ... ok
+test policy::tests::native_cooldown_is_not_bypassed ... ok
+test policy::tests::restricted_area_cannot_heal ... ok
+
+test result: ok. 26 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src\bin\dll_probe.rs (../../work/prototype-build\x86_64-pc-windows-msvc\debug\deps\dll_probe-4745d17aaf37868f.exe)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests SpiritAshResummon
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+

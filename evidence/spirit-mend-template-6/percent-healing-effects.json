@@ -1,0 +1,1510 @@
+[
+  {
+    "id": 20,
+    "fields": {
+      "effectEndurance": 5,
+      "motionInterval": 999,
+      "changeHpRate": -50,
+      "changeHpPoint": 0,
+      "spCategory": 0,
+      "stateInfo": 59,
+      "effectTargetFriendlyTarget": 0,
+      "effectTargetSelfTarget": 1
+    }
+  },
+  {
+    "id": 100,
+    "fields": {
+      "effectEndurance": 0,
+      "motionInterval": 0,
+      "changeHpRate": -100,
+      "changeHpPoint": 0,
+      "spCategory": 0,
+      "stateInfo": 50,
+      "effectTargetFriendlyTarget": 0,
+      "effectTargetSelfTarget": 1
+    }
+  },
+  {
+    "id": 110,
+    "fields": {
+      "effectEndurance": 0,
+      "motionInterval": 0,
+      "changeHpRate": -100,
+      "changeHpPoint": 0,
+      "spCategory": 0,
+      "stateInfo": 0,
+      "effectTargetFriendlyTarget": 1,
+      "effectTargetSelfTarget": 1
+    }
+  },
+  {
+    "id": 300,
+    "fields": {
+      "effectEndurance": 0,
+      "motionInterval": 0,
+      "changeHpRate": -100,
+      "changeHpPoint": 0,
+      "spCategory": 0,
+      "stateInfo": 50,
+      "effectTargetFriendlyTarget": 0,
+      "effectTargetSelfTarget": 1
+    }
+  },
+  {
+    "id": 1200,
+    "fields": {
+      "effectEndurance": 0.06,
+      "motionInterval": 0,
+      "changeHpRate": -100,
+      "changeHpPoint": 0,
+      "spCategory": 10,
+      "stateInfo": 0,
+      "effectTargetFriendlyTarget": 1,
+      "effectTargetSelfTarget": 1
+    }
+  },
+  {
+    "id": 1210,
+    "fields": {
+      "effectEndurance": 0.06,
+      "motionInterval": 0,
+      "changeHpRate": -100,
+      "changeHpPoint": 0,
+      "spCategory": 10,
+      "stateInfo": 0,
+      "effectTargetFriendlyTarget": 1,
+      "effectTargetSelfTarget": 1
+    }
+  },
+  {
+    "id": 1300,
+    "fields": {
+      "effectEndurance": 0.06,
+      "motionInterval": 0,
+      "changeHpRate": -100,
+      "changeHpPoint": 0,
+      "spCategory": 10,
+      "stateInfo": 0,
+      "effectTargetFriendlyTarget": 1,
+      "effectTargetSelfTarget": 1
+    }
+  },
+  {
+    "id": 1310,
+    "fields": {
+      "effectEndurance": 0.06,
+      "motionInterval": 0,
+      "changeHpRate": -100,
+      "changeHpPoint": 0,
+      "spCategory": 10,
+      "stateInfo": 0,
+      "effectTargetFriendlyTarget": 1,
+      "effectTargetSelfTarget": 1
+    }
+  },
+  {
+    "id": 1565,
+    "fields": {
+      "effectEndurance": 0,
+      "motionInterval": 0.3,
+      "changeHpRate": -10,
+      "changeHpPoint": -150,
+      "spCategory": 0,
+      "stateInfo": 0,
+      "effectTargetFriendlyTarget": 0,
+      "effectTargetSelfTarget": 1
+    }
+  },
+  {
+    "id": 1611,
+    "fields": {
+      "effectEndurance": 0,
+      "motionInterval": 0.4,
+      "changeHpRate": -5,
+      "changeHpPoint": 0,
+      "spCategory": 0,
+      "stateInfo": 0,
+      "effectTargetFriendlyTarget": 0,
+      "effectTargetSelfTarget": 1
+    }
+  },
+  {
+    "id": 1612,
+    "fields": {
+      "effectEndurance": 0,
+      "motionInterval": 0.4,
+      "changeHpRate": -15,
+      "changeHpPoint": 0,
+      "spCategory": 0,
+      "stateInfo": 0,
+      "effectTargetFriendlyTarget": 0,
+      "effectTargetSelfTarget": 1
+    }
+  },
+  {
+    "id": 1631,
+    "fields": {
+      "effectEndurance": 0,
+      "motionInterval": 0,
+      "changeHpRate": -30,
+      "changeHpPoint": 0,
+      "spCategory": 10,
+      "stateInfo": 284,
+      "effectTargetFriendlyTarget": 1,
+      "effectTargetSelfTarget": 1
+    }
+  },
+  {
+    "id": 1632,
+    "fields": {
+      "effectEndurance": 0,
+      "motionInterval": 0,
+      "changeHpRate": -14,
+      "changeHpPoint": 0,
+      "spCategory": 10,
+      "stateInfo": 284,
+      "effectTargetFriendlyTarget": 1,
+      "effectTargetSelfTarget": 1
+    }
+  },
+  {
+    "id": 1636,
+    "fields": {
+      "effectEndurance": 0,
+      "motionInterval": 0,
+      "changeHpRate": -30,
+      "changeHpPoint": 0,
+      "spCategory": 10,
+      "stateInfo": 284,
+      "effectTargetFriendlyTarget": 1,
+      "effectTargetSelfTarget": 1
+    }
+  },
+  {
+    "id": 1830,
+    "fields": {
+      "effectEndurance": 0.03,
+      "motionInterval": 1,
+      "changeHpRate": -2,
+      "changeHpPoint": -25,
+      "spCategory": 0,
+      "stateInfo": 0,
+      "effectTargetFriendlyTarget": 0,
+      "effectTargetSelfTarget": 1
+    }
+  },
+  {
+    "id": 1831,
+    "fields": {
+      "effectEndurance": 0.03,
+      "motionInterval": 1,
+      "changeHpRate": -4,
+      "changeHpPoint": -45,
+      "spCategory": 0,
+      "stateInfo": 0,
+      "effectTargetFriendlyTarget": 0,
+      "effectTargetSelfTarget": 1
+    }
+  },
+  {
+    "id": 1896,
+    "fields": {
+      "effectEndurance": 0,
+      "motionInterval": 0,
+      "changeHpRate": -15,
+      "changeHpPoint": 0,
+      "spCategory": 10,
+      "stateInfo": 0,
+      "effectTargetFriendlyTarget": 0,
+      "effectTargetSelfTarget": 1
+    }
+  },
+  {
+    "id": 3000,
+    "fields": {
+      "effectEndurance": 0.03,
+      "motionInterval": 0,
+      "changeHpRate": -100,
+      "changeHpPoint": 0,
+      "spCategory": 0,
+      "stateInfo": 0,
+      "effectTargetFriendlyTarget": 1,
+      "effectTargetSelfTarget": 1
+    }
+  },
+  {
+    "id": 3231,
+    "fields": {
+      "effectEndurance": 0,
+      "motionInterval": 0,
+      "changeHpRate": -100,
+      "changeHpPoint": 0,
+      "spCategory": 0,
+      "stateInfo": 119,
+      "effectTargetFriendlyTarget": 1,
+      "effectTargetSelfTarget": 1
+    }
+  },
+  {
+    "id": 3330,
+    "fields": {
+      "effectEndurance": 0,
+      "motionInterval": 0,
+      "changeHpRate": -100,
+      "changeHpPoint": 0,
+      "spCategory": 0,
+      "stateInfo": 119,
+      "effectTargetFriendlyTarget": 1,
+      "effectTargetSelfTarget": 1
+    }
+  },
+  {
+    "id": 3505,
+    "fields": {
+      "effectEndurance": 0,
+      "motionInterval": 0,
+      "changeHpRate": -50,
+      "changeHpPoint": 0,
+      "spCategory": 0,
+      "stateInfo": 0,
+      "effectTargetFriendlyTarget": 1,
+      "effectTargetSelfTarget": 1
+    }
+  },
+  {
+    "id": 3513,
+    "fields": {
+      "effectEndurance": 0,
+      "motionInterval": 0,
+      "changeHpRate": -30,
+      "changeHpPoint": 0,
+      "spCategory": 0,
+      "stateInfo": 0,
+      "effectTargetFriendlyTarget": 1,
+      "effectTargetSelfTarget": 1
+    }
+  },
+  {
+    "id": 3584,
+    "fields": {
+      "effectEndurance": 0,
+      "motionInterval": 1,
+      "changeHpRate": -5,
+      "changeHpPoint": 0,
+      "spCategory": 100,
+      "stateInfo": 0,
+      "effectTargetFriendlyTarget": 1,
+      "effectTargetSelfTarget": 1
+    }
+  },
+  {
+    "id": 5460,
+    "fields": {
+      "effectEndurance": 0,
+      "motionInterval": 0,
+      "changeHpRate": -40,
+      "changeHpPoint": 0,
+      "spCategory": 0,
+      "stateInfo": 0,
+      "effectTargetFriendlyTarget": 1,
+      "effectTargetSelfTarget": 1
+    }
+  },
+  {
+    "id": 5461,
+    "fields": {
+      "effectEndurance": 0,
+      "motionInterval": 0,
+      "changeHpRate": -100,
+      "changeHpPoint": 0,
+      "spCategory": 0,
+      "stateInfo": 0,
+      "effectTargetFriendlyTarget": 1,
+      "effectTargetSelfTarget": 1
+    }
+  },
+  {
+    "id": 9743,
+    "fields": {
+      "effectEndurance": 0.05,
+      "motionInterval": 0.1,
+      "changeHpRate": -100,
+      "changeHpPoint": 0,
+      "spCategory": 0,
+      "stateInfo": 0,
+      "effectTargetFriendlyTarget": 0,
+      "effectTargetSelfTarget": 1
+    }
+  },
+  {
+    "id": 10591,
+    "fields": {
+      "effectEndurance": 0.1,
+      "motionInterval": 0,
+      "changeHpRate": -100,
+      "changeHpPoint": 0,
+      "spCategory": 0,
+      "stateInfo": 42,
+      "effectTargetFriendlyTarget": 0,
+      "effectTargetSelfTarget": 1
+    }
+  },
+  {
+    "id": 10596,
+    "fields": {
+      "effectEndurance": 0,
+      "motionInterval": 0.1,
+      "changeHpRate": -100,
+      "changeHpPoint": 0,
+      "spCategory": 0,
+      "stateInfo": 0,
+      "effectTargetFriendlyTarget": 0,
+      "effectTargetSelfTarget": 1
+    }
+  },
+  {
+    "id": 10655,
+    "fields": {
+      "effectEndurance": 0,
+      "motionInterval": 0.2,
+      "changeHpRate": -8,
+      "changeHpPoint": 0,
+      "spCategory": 0,
+      "stateInfo": 0,
+      "effectTargetFriendlyTarget": 0,
+      "effectTargetSelfTarget": 1
+    }
+  },
+  {
+    "id": 10656,
+    "fields": {
+      "effectEndurance": 0,
+      "motionInterval": 0.2,
+      "changeHpRate": -8,
+      "changeHpPoint": 0,
+      "spCategory": 0,
+      "stateInfo": 0,
+      "effectTargetFriendlyTarget": 0,
+      "effectTargetSelfTarget": 1
+    }
+  },
+  {
+    "id": 10657,
+    "fields": {
+      "effectEndurance": 0,
+      "motionInterval": 0.2,
+      "changeHpRate": -12,
+      "changeHpPoint": 0,
+      "spCategory": 0,
+      "stateInfo": 0,
+      "effectTargetFriendlyTarget": 0,
+      "effectTargetSelfTarget": 1
+    }
+  },
+  {
+    "id": 10895,
+    "fields": {
+      "effectEndurance": 0,
+      "motionInterval": 0.1,
+      "changeHpRate": -30,
+      "changeHpPoint": 0,
+      "spCategory": 0,
+      "stateInfo": 42,
+      "effectTargetFriendlyTarget": 1,
+      "effectTargetSelfTarget": 1
+    }
+  },
+  {
+    "id": 10950,
+    "fields": {
+      "effectEndurance": 0,
+      "motionInterval": 99,
+      "changeHpRate": -100,
+      "changeHpPoint": 0,
+      "spCategory": 0,
+      "stateInfo": 0,
+      "effectTargetFriendlyTarget": 0,
+      "effectTargetSelfTarget": 1
+    }
+  },
+  {
+    "id": 11767,
+    "fields": {
+      "effectEndurance": 0.1,
+      "motionInterval": 999,
+      "changeHpRate": -20,
+      "changeHpPoint": 0,
+      "spCategory": 0,
+      "stateInfo": 0,
+      "effectTargetFriendlyTarget": 0,
+      "effectTargetSelfTarget": 1
+    }
+  },
+  {
+    "id": 11841,
+    "fields": {
+      "effectEndurance": 0,
+      "motionInterval": 0,
+      "changeHpRate": -100,
+      "changeHpPoint": 0,
+      "spCategory": 0,
+      "stateInfo": 0,
+      "effectTargetFriendlyTarget": 1,
+      "effectTargetSelfTarget": 1
+    }
+  },
+  {
+    "id": 12044,
+    "fields": {
+      "effectEndurance": 0,
+      "motionInterval": 0,
+      "changeHpRate": -100,
+      "changeHpPoint": 0,
+      "spCategory": 0,
+      "stateInfo": 0,
+      "effectTargetFriendlyTarget": 1,
+      "effectTargetSelfTarget": 1
+    }
+  },
+  {
+    "id": 12520,
+    "fields": {
+      "effectEndurance": 0,
+      "motionInterval": 0.1,
+      "changeHpRate": -100,
+      "changeHpPoint": 0,
+      "spCategory": 0,
+      "stateInfo": 0,
+      "effectTargetFriendlyTarget": 0,
+      "effectTargetSelfTarget": 1
+    }
+  },
+  {
+    "id": 13191,
+    "fields": {
+      "effectEndurance": 0.1,
+      "motionInterval": 1,
+      "changeHpRate": -30,
+      "changeHpPoint": 0,
+      "spCategory": 0,
+      "stateInfo": 0,
+      "effectTargetFriendlyTarget": 0,
+      "effectTargetSelfTarget": 1
+    }
+  },
+  {
+    "id": 13197,
+    "fields": {
+      "effectEndurance": 0.1,
+      "motionInterval": 1,
+      "changeHpRate": -20,
+      "changeHpPoint": 0,
+      "spCategory": 0,
+      "stateInfo": 0,
+      "effectTargetFriendlyTarget": 0,
+      "effectTargetSelfTarget": 1
+    }
+  },
+  {
+    "id": 13199,
+    "fields": {
+      "effectEndurance": 0.1,
+      "motionInterval": 1,
+      "changeHpRate": -20,
+      "changeHpPoint": 0,
+      "spCategory": 0,
+      "stateInfo": 0,
+      "effectTargetFriendlyTarget": 0,
+      "effectTargetSelfTarget": 1
+    }
+  },
+  {
+    "id": 13305,
+    "fields": {
+      "effectEndurance": 0,
+      "motionInterval": 0,
+      "changeHpRate": -100,
+      "changeHpPoint": 0,
+      "spCategory": 0,
+      "stateInfo": 0,
+      "effectTargetFriendlyTarget": 0,
+      "effectTargetSelfTarget": 1
+    }
+  },
+  {
+    "id": 13632,
+    "fields": {
+      "effectEndurance": 3,
+      "motionInterval": 0.1,
+      "changeHpRate": -1.66,
+      "changeHpPoint": 0,
+      "spCategory": 157,
+      "stateInfo": 42,
+      "effectTargetFriendlyTarget": 1,
+      "effectTargetSelfTarget": 1
+    }
+  },
+  {
+    "id": 13633,
+    "fields": {
+      "effectEndurance": 3,
+      "motionInterval": 0.1,
+      "changeHpRate": -1,
+      "changeHpPoint": 0,
+      "spCategory": 157,
+      "stateInfo": 42,
+      "effectTargetFriendlyTarget": 1,
+      "effectTargetSelfTarget": 1
+    }
+  },
+  {
+    "id": 13634,
+    "fields": {
+      "effectEndurance": 3,
+      "motionInterval": 0.1,
+      "changeHpRate": -0.5,
+      "changeHpPoint": 0,
+      "spCategory": 157,
+      "stateInfo": 42,
+      "effectTargetFriendlyTarget": 1,
+      "effectTargetSelfTarget": 1
+    }
+  },
+  {
+    "id": 13781,
+    "fields": {
+      "effectEndurance": 30,
+      "motionInterval": 1,
+      "changeHpRate": -1,
+      "changeHpPoint": -5,
+      "spCategory": 20,
+      "stateInfo": 0,
+      "effectTargetFriendlyTarget": 1,
+      "effectTargetSelfTarget": 1
+    }
+  },
+  {
+    "id": 13783,
+    "fields": {
+      "effectEndurance": 30,
+      "motionInterval": 1,
+      "changeHpRate": -1,
+      "changeHpPoint": -5,
+      "spCategory": 20,
+      "stateInfo": 0,
+      "effectTargetFriendlyTarget": 1,
+      "effectTargetSelfTarget": 1
+    }
+  },
+  {
+    "id": 14058,
+    "fields": {
+      "effectEndurance": 0,
+      "motionInterval": 0,
+      "changeHpRate": -100,
+      "changeHpPoint": 0,
+      "spCategory": 0,
+      "stateInfo": 0,
+      "effectTargetFriendlyTarget": 0,
+      "effectTargetSelfTarget": 1
+    }
+  },
+  {
+    "id": 14433,
+    "fields": {
+      "effectEndurance": 0.1,
+      "motionInterval": 1,
+      "changeHpRate": -50,
+      "changeHpPoint": 0,
+      "spCategory": 0,
+      "stateInfo": 0,
+      "effectTargetFriendlyTarget": 0,
+      "effectTargetSelfTarget": 1
+    }
+  },
+  {
+    "id": 14463,
+    "fields": {
+      "effectEndurance": 0.1,
+      "motionInterval": 0,
+      "changeHpRate": -100,
+      "changeHpPoint": 0,
+      "spCategory": 0,
+      "stateInfo": 0,
+      "effectTargetFriendlyTarget": 0,
+      "effectTargetSelfTarget": 1
+    }
+  },
+  {
+    "id": 14465,
+    "fields": {
+      "effectEndurance": 60,
+      "motionInterval": 1,
+      "changeHpRate": -1,
+      "changeHpPoint": -5,
+      "spCategory": 162,
+      "stateInfo": 0,
+      "effectTargetFriendlyTarget": 1,
+      "effectTargetSelfTarget": 0
+    }
+  },
+  {
+    "id": 14466,
+    "fields": {
+      "effectEndurance": 60,
+      "motionInterval": 1,
+      "changeHpRate": -1,
+      "changeHpPoint": -5,
+      "spCategory": 162,
+      "stateInfo": 0,
+      "effectTargetFriendlyTarget": 0,
+      "effectTargetSelfTarget": 1
+    }
+  },
+  {
+    "id": 14553,
+    "fields": {
+      "effectEndurance": 1,
+      "motionInterval": 0.1,
+      "changeHpRate": -4,
+      "changeHpPoint": 0,
+      "spCategory": 0,
+      "stateInfo": 42,
+      "effectTargetFriendlyTarget": 0,
+      "effectTargetSelfTarget": 1
+    }
+  },
+  {
+    "id": 14571,
+    "fields": {
+      "effectEndurance": 0,
+      "motionInterval": 0,
+      "changeHpRate": -100,
+      "changeHpPoint": 0,
+      "spCategory": 0,
+      "stateInfo": 42,
+      "effectTargetFriendlyTarget": 0,
+      "effectTargetSelfTarget": 1
+    }
+  },
+  {
+    "id": 15466,
+    "fields": {
+      "effectEndurance": 0.1,
+      "motionInterval": 0.2,
+      "changeHpRate": -1,
+      "changeHpPoint": -30,
+      "spCategory": 20,
+      "stateInfo": 304,
+      "effectTargetFriendlyTarget": 0,
+      "effectTargetSelfTarget": 1
+    }
+  },
+  {
+    "id": 15510,
+    "fields": {
+      "effectEndurance": 0.1,
+      "motionInterval": 0.2,
+      "changeHpRate": -1,
+      "changeHpPoint": -30,
+      "spCategory": 20,
+      "stateInfo": 304,
+      "effectTargetFriendlyTarget": 0,
+      "effectTargetSelfTarget": 1
+    }
+  },
+  {
+    "id": 16317,
+    "fields": {
+      "effectEndurance": 0.1,
+      "motionInterval": 0,
+      "changeHpRate": -100,
+      "changeHpPoint": 0,
+      "spCategory": 0,
+      "stateInfo": 0,
+      "effectTargetFriendlyTarget": 0,
+      "effectTargetSelfTarget": 1
+    }
+  },
+  {
+    "id": 18400,
+    "fields": {
+      "effectEndurance": 0,
+      "motionInterval": 0.3,
+      "changeHpRate": -1.5,
+      "changeHpPoint": 0,
+      "spCategory": 0,
+      "stateInfo": 0,
+      "effectTargetFriendlyTarget": 0,
+      "effectTargetSelfTarget": 1
+    }
+  },
+  {
+    "id": 18401,
+    "fields": {
+      "effectEndurance": 0,
+      "motionInterval": 0.3,
+      "changeHpRate": -5,
+      "changeHpPoint": 0,
+      "spCategory": 0,
+      "stateInfo": 0,
+      "effectTargetFriendlyTarget": 0,
+      "effectTargetSelfTarget": 1
+    }
+  },
+  {
+    "id": 18402,
+    "fields": {
+      "effectEndurance": 0,
+      "motionInterval": 0.3,
+      "changeHpRate": -10,
+      "changeHpPoint": 0,
+      "spCategory": 0,
+      "stateInfo": 0,
+      "effectTargetFriendlyTarget": 0,
+      "effectTargetSelfTarget": 1
+    }
+  },
+  {
+    "id": 18403,
+    "fields": {
+      "effectEndurance": 0,
+      "motionInterval": 0.3,
+      "changeHpRate": -18,
+      "changeHpPoint": 0,
+      "spCategory": 0,
+      "stateInfo": 0,
+      "effectTargetFriendlyTarget": 0,
+      "effectTargetSelfTarget": 1
+    }
+  },
+  {
+    "id": 18404,
+    "fields": {
+      "effectEndurance": 0,
+      "motionInterval": 0.3,
+      "changeHpRate": -80,
+      "changeHpPoint": 0,
+      "spCategory": 0,
+      "stateInfo": 0,
+      "effectTargetFriendlyTarget": 0,
+      "effectTargetSelfTarget": 1
+    }
+  },
+  {
+    "id": 18405,
+    "fields": {
+      "effectEndurance": 0,
+      "motionInterval": 0.02,
+      "changeHpRate": -0.5,
+      "changeHpPoint": 0,
+      "spCategory": 0,
+      "stateInfo": 0,
+      "effectTargetFriendlyTarget": 0,
+      "effectTargetSelfTarget": 1
+    }
+  },
+  {
+    "id": 18410,
+    "fields": {
+      "effectEndurance": 0,
+      "motionInterval": 0.3,
+      "changeHpRate": -0.4,
+      "changeHpPoint": 0,
+      "spCategory": 0,
+      "stateInfo": 0,
+      "effectTargetFriendlyTarget": 0,
+      "effectTargetSelfTarget": 1
+    }
+  },
+  {
+    "id": 18411,
+    "fields": {
+      "effectEndurance": 0,
+      "motionInterval": 0.3,
+      "changeHpRate": -0.8,
+      "changeHpPoint": 0,
+      "spCategory": 0,
+      "stateInfo": 0,
+      "effectTargetFriendlyTarget": 0,
+      "effectTargetSelfTarget": 1
+    }
+  },
+  {
+    "id": 18412,
+    "fields": {
+      "effectEndurance": 0,
+      "motionInterval": 0.3,
+      "changeHpRate": -1.6,
+      "changeHpPoint": 0,
+      "spCategory": 0,
+      "stateInfo": 0,
+      "effectTargetFriendlyTarget": 0,
+      "effectTargetSelfTarget": 1
+    }
+  },
+  {
+    "id": 18413,
+    "fields": {
+      "effectEndurance": 0,
+      "motionInterval": 0.3,
+      "changeHpRate": -3.2,
+      "changeHpPoint": 0,
+      "spCategory": 0,
+      "stateInfo": 0,
+      "effectTargetFriendlyTarget": 0,
+      "effectTargetSelfTarget": 1
+    }
+  },
+  {
+    "id": 18414,
+    "fields": {
+      "effectEndurance": 0,
+      "motionInterval": 0.3,
+      "changeHpRate": -4.8,
+      "changeHpPoint": 0,
+      "spCategory": 0,
+      "stateInfo": 0,
+      "effectTargetFriendlyTarget": 0,
+      "effectTargetSelfTarget": 1
+    }
+  },
+  {
+    "id": 18415,
+    "fields": {
+      "effectEndurance": 0,
+      "motionInterval": 0.3,
+      "changeHpRate": -6.4,
+      "changeHpPoint": 0,
+      "spCategory": 0,
+      "stateInfo": 0,
+      "effectTargetFriendlyTarget": 0,
+      "effectTargetSelfTarget": 1
+    }
+  },
+  {
+    "id": 18416,
+    "fields": {
+      "effectEndurance": 0,
+      "motionInterval": 0.3,
+      "changeHpRate": -8.2,
+      "changeHpPoint": 0,
+      "spCategory": 0,
+      "stateInfo": 0,
+      "effectTargetFriendlyTarget": 0,
+      "effectTargetSelfTarget": 1
+    }
+  },
+  {
+    "id": 18417,
+    "fields": {
+      "effectEndurance": 0,
+      "motionInterval": 0.3,
+      "changeHpRate": -10.6,
+      "changeHpPoint": 0,
+      "spCategory": 0,
+      "stateInfo": 0,
+      "effectTargetFriendlyTarget": 0,
+      "effectTargetSelfTarget": 1
+    }
+  },
+  {
+    "id": 18418,
+    "fields": {
+      "effectEndurance": 0,
+      "motionInterval": 0.3,
+      "changeHpRate": -12.8,
+      "changeHpPoint": 0,
+      "spCategory": 0,
+      "stateInfo": 0,
+      "effectTargetFriendlyTarget": 0,
+      "effectTargetSelfTarget": 1
+    }
+  },
+  {
+    "id": 18419,
+    "fields": {
+      "effectEndurance": 0,
+      "motionInterval": 0.3,
+      "changeHpRate": -16.4,
+      "changeHpPoint": 0,
+      "spCategory": 0,
+      "stateInfo": 0,
+      "effectTargetFriendlyTarget": 0,
+      "effectTargetSelfTarget": 1
+    }
+  },
+  {
+    "id": 18731,
+    "fields": {
+      "effectEndurance": 1.5,
+      "motionInterval": 1,
+      "changeHpRate": -3,
+      "changeHpPoint": -8,
+      "spCategory": 20,
+      "stateInfo": 50,
+      "effectTargetFriendlyTarget": 1,
+      "effectTargetSelfTarget": 0
+    }
+  },
+  {
+    "id": 19391,
+    "fields": {
+      "effectEndurance": 0,
+      "motionInterval": 0.5,
+      "changeHpRate": -30,
+      "changeHpPoint": 0,
+      "spCategory": 0,
+      "stateInfo": 0,
+      "effectTargetFriendlyTarget": 1,
+      "effectTargetSelfTarget": 1
+    }
+  },
+  {
+    "id": 19392,
+    "fields": {
+      "effectEndurance": 0,
+      "motionInterval": 0.5,
+      "changeHpRate": -50,
+      "changeHpPoint": 0,
+      "spCategory": 0,
+      "stateInfo": 0,
+      "effectTargetFriendlyTarget": 1,
+      "effectTargetSelfTarget": 1
+    }
+  },
+  {
+    "id": 102152,
+    "fields": {
+      "effectEndurance": -1,
+      "motionInterval": 0,
+      "changeHpRate": -100,
+      "changeHpPoint": 0,
+      "spCategory": 165,
+      "stateInfo": 303,
+      "effectTargetFriendlyTarget": 0,
+      "effectTargetSelfTarget": 1
+    }
+  },
+  {
+    "id": 350301,
+    "fields": {
+      "effectEndurance": 0,
+      "motionInterval": 1,
+      "changeHpRate": -3,
+      "changeHpPoint": -30,
+      "spCategory": 10,
+      "stateInfo": 0,
+      "effectTargetFriendlyTarget": 0,
+      "effectTargetSelfTarget": 1
+    }
+  },
+  {
+    "id": 350401,
+    "fields": {
+      "effectEndurance": 1,
+      "motionInterval": 4,
+      "changeHpRate": -3,
+      "changeHpPoint": -30,
+      "spCategory": 20,
+      "stateInfo": 304,
+      "effectTargetFriendlyTarget": 0,
+      "effectTargetSelfTarget": 1
+    }
+  },
+  {
+    "id": 350502,
+    "fields": {
+      "effectEndurance": 1,
+      "motionInterval": 4,
+      "changeHpRate": -10,
+      "changeHpPoint": -85,
+      "spCategory": 20,
+      "stateInfo": 0,
+      "effectTargetFriendlyTarget": 0,
+      "effectTargetSelfTarget": 1
+    }
+  },
+  {
+    "id": 500030,
+    "fields": {
+      "effectEndurance": 0,
+      "motionInterval": 1,
+      "changeHpRate": -7,
+      "changeHpPoint": -80,
+      "spCategory": 10,
+      "stateInfo": 0,
+      "effectTargetFriendlyTarget": 0,
+      "effectTargetSelfTarget": 1
+    }
+  },
+  {
+    "id": 500041,
+    "fields": {
+      "effectEndurance": 0,
+      "motionInterval": 1,
+      "changeHpRate": -5,
+      "changeHpPoint": -60,
+      "spCategory": 10,
+      "stateInfo": 0,
+      "effectTargetFriendlyTarget": 0,
+      "effectTargetSelfTarget": 1
+    }
+  },
+  {
+    "id": 500137,
+    "fields": {
+      "effectEndurance": 0,
+      "motionInterval": 1,
+      "changeHpRate": -100,
+      "changeHpPoint": 0,
+      "spCategory": 10,
+      "stateInfo": 0,
+      "effectTargetFriendlyTarget": 0,
+      "effectTargetSelfTarget": 1
+    }
+  },
+  {
+    "id": 500810,
+    "fields": {
+      "effectEndurance": 0,
+      "motionInterval": 0,
+      "changeHpRate": -15,
+      "changeHpPoint": -300,
+      "spCategory": 0,
+      "stateInfo": 0,
+      "effectTargetFriendlyTarget": 1,
+      "effectTargetSelfTarget": 0
+    }
+  },
+  {
+    "id": 500811,
+    "fields": {
+      "effectEndurance": 0,
+      "motionInterval": 0,
+      "changeHpRate": -23,
+      "changeHpPoint": -450,
+      "spCategory": 0,
+      "stateInfo": 0,
+      "effectTargetFriendlyTarget": 1,
+      "effectTargetSelfTarget": 0
+    }
+  },
+  {
+    "id": 500812,
+    "fields": {
+      "effectEndurance": 0,
+      "motionInterval": 0,
+      "changeHpRate": -30,
+      "changeHpPoint": -600,
+      "spCategory": 0,
+      "stateInfo": 0,
+      "effectTargetFriendlyTarget": 1,
+      "effectTargetSelfTarget": 0
+    }
+  },
+  {
+    "id": 501235,
+    "fields": {
+      "effectEndurance": 0,
+      "motionInterval": 0,
+      "changeHpRate": -50,
+      "changeHpPoint": 0,
+      "spCategory": 0,
+      "stateInfo": 0,
+      "effectTargetFriendlyTarget": 1,
+      "effectTargetSelfTarget": 1
+    }
+  },
+  {
+    "id": 5031401,
+    "fields": {
+      "effectEndurance": 0,
+      "motionInterval": 0,
+      "changeHpRate": -4,
+      "changeHpPoint": -40,
+      "spCategory": 0,
+      "stateInfo": 0,
+      "effectTargetFriendlyTarget": 0,
+      "effectTargetSelfTarget": 1
+    }
+  },
+  {
+    "id": 5071101,
+    "fields": {
+      "effectEndurance": 0,
+      "motionInterval": 0,
+      "changeHpRate": -2.5,
+      "changeHpPoint": -25,
+      "spCategory": 0,
+      "stateInfo": 0,
+      "effectTargetFriendlyTarget": 0,
+      "effectTargetSelfTarget": 1
+    }
+  },
+  {
+    "id": 5120101,
+    "fields": {
+      "effectEndurance": 0,
+      "motionInterval": 0,
+      "changeHpRate": -2,
+      "changeHpPoint": -20,
+      "spCategory": 0,
+      "stateInfo": 0,
+      "effectTargetFriendlyTarget": 0,
+      "effectTargetSelfTarget": 1
+    }
+  },
+  {
+    "id": 5121800,
+    "fields": {
+      "effectEndurance": 0,
+      "motionInterval": 0,
+      "changeHpRate": -1,
+      "changeHpPoint": 0,
+      "spCategory": 0,
+      "stateInfo": 0,
+      "effectTargetFriendlyTarget": 0,
+      "effectTargetSelfTarget": 1
+    }
+  },
+  {
+    "id": 5151200,
+    "fields": {
+      "effectEndurance": 0,
+      "motionInterval": 0,
+      "changeHpRate": -1,
+      "changeHpPoint": 0,
+      "spCategory": 0,
+      "stateInfo": 0,
+      "effectTargetFriendlyTarget": 0,
+      "effectTargetSelfTarget": 1
+    }
+  },
+  {
+    "id": 20001012,
+    "fields": {
+      "effectEndurance": 0,
+      "motionInterval": 0,
+      "changeHpRate": -1,
+      "changeHpPoint": 0,
+      "spCategory": 0,
+      "stateInfo": 0,
+      "effectTargetFriendlyTarget": 0,
+      "effectTargetSelfTarget": 1
+    }
+  },
+  {
+    "id": 20001017,
+    "fields": {
+      "effectEndurance": 0,
+      "motionInterval": 0,
+      "changeHpRate": -1,
+      "changeHpPoint": 0,
+      "spCategory": 0,
+      "stateInfo": 0,
+      "effectTargetFriendlyTarget": 0,
+      "effectTargetSelfTarget": 1
+    }
+  },
+  {
+    "id": 20010443,
+    "fields": {
+      "effectEndurance": 0.03,
+      "motionInterval": 1,
+      "changeHpRate": -5,
+      "changeHpPoint": -45,
+      "spCategory": 0,
+      "stateInfo": 0,
+      "effectTargetFriendlyTarget": 0,
+      "effectTargetSelfTarget": 1
+    }
+  },
+  {
+    "id": 20011221,
+    "fields": {
+      "effectEndurance": 0,
+      "motionInterval": 0,
+      "changeHpRate": -5,
+      "changeHpPoint": 0,
+      "spCategory": 0,
+      "stateInfo": 0,
+      "effectTargetFriendlyTarget": 1,
+      "effectTargetSelfTarget": 1
+    }
+  },
+  {
+    "id": 20011222,
+    "fields": {
+      "effectEndurance": 0,
+      "motionInterval": 0,
+      "changeHpRate": -6,
+      "changeHpPoint": 0,
+      "spCategory": 0,
+      "stateInfo": 0,
+      "effectTargetFriendlyTarget": 1,
+      "effectTargetSelfTarget": 1
+    }
+  },
+  {
+    "id": 20011223,
+    "fields": {
+      "effectEndurance": 0,
+      "motionInterval": 0,
+      "changeHpRate": -7,
+      "changeHpPoint": 0,
+      "spCategory": 0,
+      "stateInfo": 0,
+      "effectTargetFriendlyTarget": 1,
+      "effectTargetSelfTarget": 1
+    }
+  },
+  {
+    "id": 20011224,
+    "fields": {
+      "effectEndurance": 0,
+      "motionInterval": 0,
+      "changeHpRate": -7,
+      "changeHpPoint": 0,
+      "spCategory": 0,
+      "stateInfo": 0,
+      "effectTargetFriendlyTarget": 1,
+      "effectTargetSelfTarget": 1
+    }
+  },
+  {
+    "id": 20011225,
+    "fields": {
+      "effectEndurance": 0,
+      "motionInterval": 0,
+      "changeHpRate": -7,
+      "changeHpPoint": 0,
+      "spCategory": 0,
+      "stateInfo": 0,
+      "effectTargetFriendlyTarget": 1,
+      "effectTargetSelfTarget": 1
+    }
+  },
+  {
+    "id": 20011226,
+    "fields": {
+      "effectEndurance": 0,
+      "motionInterval": 0,
+      "changeHpRate": -8,
+      "changeHpPoint": 0,
+      "spCategory": 0,
+      "stateInfo": 0,
+      "effectTargetFriendlyTarget": 1,
+      "effectTargetSelfTarget": 1
+    }
+  },
+  {
+    "id": 20011227,
+    "fields": {
+      "effectEndurance": 0,
+      "motionInterval": 0,
+      "changeHpRate": -9,
+      "changeHpPoint": 0,
+      "spCategory": 0,
+      "stateInfo": 0,
+      "effectTargetFriendlyTarget": 1,
+      "effectTargetSelfTarget": 1
+    }
+  },
+  {
+    "id": 20011228,
+    "fields": {
+      "effectEndurance": 0,
+      "motionInterval": 0,
+      "changeHpRate": -10,
+      "changeHpPoint": 0,
+      "spCategory": 0,
+      "stateInfo": 0,
+      "effectTargetFriendlyTarget": 1,
+      "effectTargetSelfTarget": 1
+    }
+  },
+  {
+    "id": 20011229,
+    "fields": {
+      "effectEndurance": 0,
+      "motionInterval": 0,
+      "changeHpRate": -11,
+      "changeHpPoint": 0,
+      "spCategory": 0,
+      "stateInfo": 0,
+      "effectTargetFriendlyTarget": 1,
+      "effectTargetSelfTarget": 1
+    }
+  },
+  {
+    "id": 20011230,
+    "fields": {
+      "effectEndurance": 0,
+      "motionInterval": 0,
+      "changeHpRate": -12,
+      "changeHpPoint": 0,
+      "spCategory": 0,
+      "stateInfo": 0,
+      "effectTargetFriendlyTarget": 1,
+      "effectTargetSelfTarget": 1
+    }
+  },
+  {
+    "id": 20011231,
+    "fields": {
+      "effectEndurance": 0,
+      "motionInterval": 0,
+      "changeHpRate": -13,
+      "changeHpPoint": 0,
+      "spCategory": 0,
+      "stateInfo": 0,
+      "effectTargetFriendlyTarget": 1,
+      "effectTargetSelfTarget": 1
+    }
+  },
+  {
+    "id": 20011232,
+    "fields": {
+      "effectEndurance": 0,
+      "motionInterval": 0,
+      "changeHpRate": -14,
+      "changeHpPoint": 0,
+      "spCategory": 0,
+      "stateInfo": 0,
+      "effectTargetFriendlyTarget": 1,
+      "effectTargetSelfTarget": 1
+    }
+  },
+  {
+    "id": 20011233,
+    "fields": {
+      "effectEndurance": 0,
+      "motionInterval": 0,
+      "changeHpRate": -15,
+      "changeHpPoint": 0,
+      "spCategory": 0,
+      "stateInfo": 0,
+      "effectTargetFriendlyTarget": 1,
+      "effectTargetSelfTarget": 1
+    }
+  },
+  {
+    "id": 20011300,
+    "fields": {
+      "effectEndurance": 0,
+      "motionInterval": 0.1,
+      "changeHpRate": -45,
+      "changeHpPoint": 0,
+      "spCategory": 0,
+      "stateInfo": 42,
+      "effectTargetFriendlyTarget": 1,
+      "effectTargetSelfTarget": 1
+    }
+  },
+  {
+    "id": 20011440,
+    "fields": {
+      "effectEndurance": 0,
+      "motionInterval": 0,
+      "changeHpRate": -100,
+      "changeHpPoint": 0,
+      "spCategory": 10,
+      "stateInfo": 284,
+      "effectTargetFriendlyTarget": 0,
+      "effectTargetSelfTarget": 1
+    }
+  },
+  {
+    "id": 20011834,
+    "fields": {
+      "effectEndurance": 0,
+      "motionInterval": 0.1,
+      "changeHpRate": -25,
+      "changeHpPoint": 0,
+      "spCategory": 0,
+      "stateInfo": 42,
+      "effectTargetFriendlyTarget": 1,
+      "effectTargetSelfTarget": 1
+    }
+  },
+  {
+    "id": 20011835,
+    "fields": {
+      "effectEndurance": 0,
+      "motionInterval": 0.1,
+      "changeHpRate": -45,
+      "changeHpPoint": 0,
+      "spCategory": 0,
+      "stateInfo": 42,
+      "effectTargetFriendlyTarget": 1,
+      "effectTargetSelfTarget": 1
+    }
+  },
+  {
+    "id": 20013400,
+    "fields": {
+      "effectEndurance": 0,
+      "motionInterval": 0,
+      "changeHpRate": -20,
+      "changeHpPoint": 0,
+      "spCategory": 0,
+      "stateInfo": 42,
+      "effectTargetFriendlyTarget": 1,
+      "effectTargetSelfTarget": 1
+    }
+  },
+  {
+    "id": 20013511,
+    "fields": {
+      "effectEndurance": 0,
+      "motionInterval": 0,
+      "changeHpRate": -100,
+      "changeHpPoint": 0,
+      "spCategory": 0,
+      "stateInfo": 0,
+      "effectTargetFriendlyTarget": 0,
+      "effectTargetSelfTarget": 1
+    }
+  },
+  {
+    "id": 20018028,
+    "fields": {
+      "effectEndurance": 0,
+      "motionInterval": 0.5,
+      "changeHpRate": -70,
+      "changeHpPoint": 0,
+      "spCategory": 0,
+      "stateInfo": 0,
+      "effectTargetFriendlyTarget": 1,
+      "effectTargetSelfTarget": 1
+    }
+  },
+  {
+    "id": 20500901,
+    "fields": {
+      "effectEndurance": 0,
+      "motionInterval": 0,
+      "changeHpRate": -100,
+      "changeHpPoint": 0,
+      "spCategory": 0,
+      "stateInfo": 0,
+      "effectTargetFriendlyTarget": 0,
+      "effectTargetSelfTarget": 1
+    }
+  },
+  {
+    "id": 20511023,
+    "fields": {
+      "effectEndurance": 0.25,
+      "motionInterval": 1.5,
+      "changeHpRate": -0.8,
+      "changeHpPoint": 0,
+      "spCategory": 0,
+      "stateInfo": 0,
+      "effectTargetFriendlyTarget": 0,
+      "effectTargetSelfTarget": 1
+    }
+  }
+]

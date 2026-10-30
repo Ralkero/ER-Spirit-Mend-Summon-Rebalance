@@ -1,0 +1,76 @@
+{
+  "path": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\ELDEN RING\\Game\\eldenring.exe",
+  "fileVersion": "2.7.2.0",
+  "sha256": "f9118fea2cfd8fa3901e8060bfadb1552cb2471771ded8a5b662c4e298ffb328",
+  "supportedVersion": true,
+  "calls": [
+    {
+      "rva": "7c4154",
+      "expectedTarget": "4b73d0",
+      "observedTarget": "4b73d0",
+      "matches": true
+    },
+    {
+      "rva": "847ed0",
+      "expectedTarget": "4b73d0",
+      "observedTarget": "4b73d0",
+      "matches": true
+    },
+    {
+      "rva": "848194",
+      "expectedTarget": "4b73d0",
+      "observedTarget": "4b73d0",
+      "matches": true
+    },
+    {
+      "rva": "69063a",
+      "expectedTarget": "4b73d0",
+      "observedTarget": "4b73d0",
+      "matches": true
+    },
+    {
+      "rva": "6906dd",
+      "expectedTarget": "4b73d0",
+      "observedTarget": "4b73d0",
+      "matches": true
+    },
+    {
+      "rva": "3c0b79",
+      "expectedTarget": "4b73d0",
+      "observedTarget": "4b73d0",
+      "matches": true
+    },
+    {
+      "rva": "3c0c2f",
+      "expectedTarget": "4b73d0",
+      "observedTarget": "4b73d0",
+      "matches": true
+    },
+    {
+      "rva": "3fb268",
+      "expectedTarget": "4b8690",
+      "observedTarget": "4b8690",
+      "matches": true
+    }
+  ],
+  "signatures": [
+    {
+      "rva": "4b73d0",
+      "matches": true,
+      "observed": "48895c24084889742410"
+    },
+    {
+      "rva": "4b8690",
+      "matches": true,
+      "observed": "48895c24084889742410574883ec20"
+    },
+    {
+      "rva": "4b86ae",
+      "matches": true,
+      "observed": "83f801761b83f8027504c6432801"
+    }
+  ],
+  "staticPreflightPassed": true,
+  "gameExecuted": false,
+  "runtimeHooksTested": false
+}

@@ -1,0 +1,134 @@
+[
+  {
+    "bundle": "item.msgbnd.dcx",
+    "file": "N:\\GR\\data\\INTERROOT_win64\\msg\\engUS\\GoodsName.fmg",
+    "fileId": 10,
+    "text": "Swift Glintstone Shard"
+  },
+  {
+    "bundle": "item.msgbnd.dcx",
+    "file": "N:\\GR\\data\\INTERROOT_win64\\msg\\engUS\\AccessoryName.fmg",
+    "fileId": 13,
+    "text": "Spelldrake Talisman"
+  },
+  {
+    "bundle": "item.msgbnd.dcx",
+    "file": "N:\\GR\\data\\INTERROOT_win64\\msg\\engUS\\GoodsInfo.fmg",
+    "fileId": 20,
+    "text": "Swiftly fires magic projectiles from glintstone"
+  },
+  {
+    "bundle": "item.msgbnd.dcx",
+    "file": "N:\\GR\\data\\INTERROOT_win64\\msg\\engUS\\AccessoryInfo.fmg",
+    "fileId": 23,
+    "text": "Boosts magical damage negation"
+  },
+  {
+    "bundle": "item.msgbnd.dcx",
+    "file": "N:\\GR\\data\\INTERROOT_win64\\msg\\engUS\\GoodsCaption.fmg",
+    "fileId": 24,
+    "text": "One of the glintstone sorceries of the Academy of Raya Lucaria.\n\nThe glintstone serves as a conduit, launching swift magical projectiles at foes.\nThis sorcery can be used without delay after performing another action.\n\nThose unworthy of the stone crown typically end their brief journey into sorcery here."
+  },
+  {
+    "bundle": "item.msgbnd.dcx",
+    "file": "N:\\GR\\data\\INTERROOT_win64\\msg\\engUS\\AccessoryCaption.fmg",
+    "fileId": 27,
+    "text": "Talisman depicting a blue ancient dragon.\nBoosts magic damage negation.\n\nThe ancient dragons, who ruled in the prehistoric era before the Erdtree, would protect their lord as a wall of living rock.\nAnd so it is that the shape of the dragon has become symbolic of all manner of protections."
+  },
+  {
+    "bundle": "item_dlc01.msgbnd.dcx",
+    "file": "N:\\GR\\data\\INTERROOT_win64\\msg\\engUS\\GoodsName.fmg",
+    "fileId": 10,
+    "text": "Swift Glintstone Shard"
+  },
+  {
+    "bundle": "item_dlc01.msgbnd.dcx",
+    "file": "N:\\GR\\data\\INTERROOT_win64\\msg\\engUS\\AccessoryName.fmg",
+    "fileId": 13,
+    "text": "Spelldrake Talisman"
+  },
+  {
+    "bundle": "item_dlc01.msgbnd.dcx",
+    "file": "N:\\GR\\data\\INTERROOT_win64\\msg\\engUS\\GoodsInfo.fmg",
+    "fileId": 20,
+    "text": "Swiftly fires magic projectiles from glintstone"
+  },
+  {
+    "bundle": "item_dlc01.msgbnd.dcx",
+    "file": "N:\\GR\\data\\INTERROOT_win64\\msg\\engUS\\AccessoryInfo.fmg",
+    "fileId": 23,
+    "text": "Boosts magical damage negation"
+  },
+  {
+    "bundle": "item_dlc01.msgbnd.dcx",
+    "file": "N:\\GR\\data\\INTERROOT_win64\\msg\\engUS\\GoodsCaption.fmg",
+    "fileId": 24,
+    "text": "One of the glintstone sorceries of the Academy of Raya Lucaria.\n\nThe glintstone serves as a conduit, launching swift magical projectiles at foes.\nThis sorcery can be used without delay after performing another action.\n\nThose unworthy of the stone crown typically end their brief journey into sorcery here."
+  },
+  {
+    "bundle": "item_dlc01.msgbnd.dcx",
+    "file": "N:\\GR\\data\\INTERROOT_win64\\msg\\engUS\\AccessoryCaption.fmg",
+    "fileId": 27,
+    "text": "Talisman depicting a blue ancient dragon.\nBoosts magic damage negation.\n\nThe ancient dragons, who ruled in the prehistoric era before the Erdtree, would protect their lord as a wall of living rock.\nAnd so it is that the shape of the dragon has become symbolic of all manner of protections."
+  },
+  {
+    "bundle": "item_dlc01.msgbnd.dcx",
+    "file": "N:\\GR\\data\\INTERROOT_win64\\msg\\engUS\\ArtsName_dlc01.fmg",
+    "fileId": 331,
+    "text": "Palm Blast"
+  },
+  {
+    "bundle": "item_dlc01.msgbnd.dcx",
+    "file": "N:\\GR\\data\\INTERROOT_win64\\msg\\engUS\\ArtsCaption_dlc01.fmg",
+    "fileId": 332,
+    "text": "Skill: Palm Blast\n\nSkill of the spiritual seekers known as the Dryleaf Sect. Imbues hand with energy before using a palm strike to unleash an explosive blast. The already formidable power and impact can be bolstered by charging the attack."
+  },
+  {
+    "bundle": "item_dlc02.msgbnd.dcx",
+    "file": "N:\\GR\\data\\INTERROOT_win64\\msg\\engUS\\GoodsName.fmg",
+    "fileId": 10,
+    "text": "Swift Glintstone Shard"
+  },
+  {
+    "bundle": "item_dlc02.msgbnd.dcx",
+    "file": "N:\\GR\\data\\INTERROOT_win64\\msg\\engUS\\AccessoryName.fmg",
+    "fileId": 13,
+    "text": "Spelldrake Talisman"
+  },
+  {
+    "bundle": "item_dlc02.msgbnd.dcx",
+    "file": "N:\\GR\\data\\INTERROOT_win64\\msg\\engUS\\GoodsInfo.fmg",
+    "fileId": 20,
+    "text": "Swiftly fires magic projectiles from glintstone"
+  },
+  {
+    "bundle": "item_dlc02.msgbnd.dcx",
+    "file": "N:\\GR\\data\\INTERROOT_win64\\msg\\engUS\\AccessoryInfo.fmg",
+    "fileId": 23,
+    "text": "Boosts magical damage negation"
+  },
+  {
+    "bundle": "item_dlc02.msgbnd.dcx",
+    "file": "N:\\GR\\data\\INTERROOT_win64\\msg\\engUS\\GoodsCaption.fmg",
+    "fileId": 24,
+    "text": "One of the glintstone sorceries of the Academy of Raya Lucaria.\n\nThe glintstone serves as a conduit, launching swift magical projectiles at foes.\nThis sorcery can be used without delay after performing another action.\n\nThose unworthy of the stone crown typically end their brief journey into sorcery here."
+  },
+  {
+    "bundle": "item_dlc02.msgbnd.dcx",
+    "file": "N:\\GR\\data\\INTERROOT_win64\\msg\\engUS\\AccessoryCaption.fmg",
+    "fileId": 27,
+    "text": "Talisman depicting a blue ancient dragon.\nBoosts magic damage negation.\n\nThe ancient dragons, who ruled in the prehistoric era before the Erdtree, would protect their lord as a wall of living rock.\nAnd so it is that the shape of the dragon has become symbolic of all manner of protections."
+  },
+  {
+    "bundle": "item_dlc02.msgbnd.dcx",
+    "file": "N:\\GR\\data\\INTERROOT_win64\\msg\\engUS\\ArtsName_dlc01.fmg",
+    "fileId": 331,
+    "text": "Palm Blast"
+  },
+  {
+    "bundle": "item_dlc02.msgbnd.dcx",
+    "file": "N:\\GR\\data\\INTERROOT_win64\\msg\\engUS\\ArtsCaption_dlc01.fmg",
+    "fileId": 332,
+    "text": "Skill: Palm Blast\n\nSkill of the spiritual seekers known as the Dryleaf Sect. Imbues hand with energy before using a palm strike to unleash an explosive blast. The already formidable power and impact can be bolstered by charging the attack."
+  }
+]

@@ -1,0 +1,19 @@
+{
+  "version": "0.3.0",
+  "staged": "<WORKSPACE>\\outputs\\SpiritAshResummon\\pending-0.3.0",
+  "stagedDllSHA256": "A0CED2BA762A218F6DD2798C9EDD28DBF4DA7B1B3FC87CFB59EB7E1465FD7B44",
+  "installedVersion": "0.2.2",
+  "installedDllSHA256": "E655D3DD7FEED27CC9F6BC8602DA25EAECB1B5A2167DF3AB7AB3E51763EF8517",
+  "installedFilesChanged": false,
+  "compileSucceeded": true,
+  "compileWarnings": 0,
+  "automatedTestsExecuted": false,
+  "gameplayTestsExecuted": false,
+  "prototypeDllLoaded": false,
+  "hudEnabledInStage": true,
+  "hudDefaultWithoutConfiguration": false,
+  "hudRowCount": 2,
+  "gameplayCallHooks": 11,
+  "additionalHudInterceptions": 2,
+  "gamePids": []
+}

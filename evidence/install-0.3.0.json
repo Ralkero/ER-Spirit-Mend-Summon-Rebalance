@@ -1,0 +1,22 @@
+{
+  "version": "0.3.0",
+  "timestamp": "2026-10-29T22:07:22.8055601-05:00",
+  "installed": "<WORKSPACE>\\outputs\\SpiritAshResummon\\dist",
+  "backup": "<WORKSPACE>\\outputs\\SpiritAshResummon\\evidence\\installed-0.2.2-before-0.3.0-20261029-220722",
+  "priorDllSHA256": "E655D3DD7FEED27CC9F6BC8602DA25EAECB1B5A2167DF3AB7AB3E51763EF8517",
+  "newDllSHA256": "A0CED2BA762A218F6DD2798C9EDD28DBF4DA7B1B3FC87CFB59EB7E1465FD7B44",
+  "gameplayConfigurationPreserved": true,
+  "hudEnabled": true,
+  "hudSettings": {
+    "Scale": 0.82,
+    "OffsetX": -91.0,
+    "RowSpacing": 45.0,
+    "OffsetY": -350.0
+  },
+  "loggingEnabled": true,
+  "logPreserved": true,
+  "installedFilesVerified": 12,
+  "gameLaunched": false,
+  "automatedTestsExecuted": false,
+  "gameplayTestsExecuted": false
+}

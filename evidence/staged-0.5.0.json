@@ -1,0 +1,88 @@
+{
+  "version": "0.5.0",
+  "status": "development prototype staged, not installed or game-tested",
+  "priorInstalledVersion": "0.4.2",
+  "automatedTestsExecuted": false,
+  "gameplayTestsExecuted": false,
+  "soulsFormatsCommit": "9e1c36f54962f80c143e3c1fe8a709204aefacf9",
+  "paramdexCommit": "ff7245e524329bc3eab00036723d2bd53384cedf",
+  "dllSha256": "7e242fa3077450362c84858d2f4021654a82293d4ad00f79948c1a8110f0d9aa",
+  "installedDllSha256": "c04ff547e9e4a8c8245610a86ab5075c68d9151e3fcc1f229b7c637be1af21fc",
+  "files": [
+    {
+      "name": "config_spirit_mend.toml",
+      "bytes": 508,
+      "sha256": "e6ec038e19fa06a47888e07f39b9c1475b6b62aa56199941d2cd2e1954d0ae14"
+    },
+    {
+      "name": "partial-rows.json",
+      "bytes": 106128,
+      "sha256": "8c9adebe05e2c0d0e2a745490b0ade9005a8bbb7c251d624429a805b68d69f95"
+    },
+    {
+      "name": "patch-manifest.json",
+      "bytes": 3166,
+      "sha256": "de335b883957423187177a4ff7a50c7853ea6e1cd32f0283e72eab2c2dd0fb15"
+    },
+    {
+      "name": "percent-healing-effects.json",
+      "bytes": 33627,
+      "sha256": "38afd16ce6ae4f8c1408d0a2d7826d1b606f4bc642ac25c46f75046096d66771"
+    },
+    {
+      "name": "source.json",
+      "bytes": 220,
+      "sha256": "6d5f2a20890eae0e4426adb65edbe6ed40c90e78f80cf840c1b40b45137ffff7"
+    },
+    {
+      "name": "SPIRIT-MEND.md",
+      "bytes": 8384,
+      "sha256": "84f65c22fdb971808630ea95415f98335f7372e79df44f19a260f0189373f3ad"
+    },
+    {
+      "name": "SpiritAshResummon.dll",
+      "bytes": 523264,
+      "sha256": "7e242fa3077450362c84858d2f4021654a82293d4ad00f79948c1a8110f0d9aa"
+    },
+    {
+      "name": "SpiritAshResummon.ini",
+      "bytes": 439,
+      "sha256": "2b16430e29af29f3c2f43ab189d8e884a5e45e80da25d0e94748c8e1e56d4b67"
+    },
+    {
+      "name": "SpiritAshResummon.pdb",
+      "bytes": 10252288,
+      "sha256": "2526d457b6497d327bbf94931bbf0aaf4cf6d2eec4397d10ea935f5fca891194"
+    },
+    {
+      "name": "template-rows.json",
+      "bytes": 106128,
+      "sha256": "8c9adebe05e2c0d0e2a745490b0ade9005a8bbb7c251d624429a805b68d69f95"
+    },
+    {
+      "name": "template-text.json",
+      "bytes": 6214,
+      "sha256": "3ba2487929d00c9d20cf18f90ce04b4c3d3ffcc2badc3c2c807a6823722b92ad"
+    },
+    {
+      "name": "mod/regulation.bin",
+      "bytes": 1927248,
+      "sha256": "c485ca70a09b162c8ee11d302a85dc3bd96d333d9bf5a72bccc95be5acbe9380"
+    },
+    {
+      "name": "mod/msg/engus/item.msgbnd.dcx",
+      "bytes": 241920,
+      "sha256": "dc2e8ed565ff97cac6f3cd835dc3e902c1d47872c9b5387f9f1b4051c6139373"
+    },
+    {
+      "name": "mod/msg/engus/item_dlc01.msgbnd.dcx",
+      "bytes": 321344,
+      "sha256": "a591079f8c7d4dc1456a7bb7e852cac18b5fc33ab453c3bf12793d8f175a2d77"
+    },
+    {
+      "name": "mod/msg/engus/item_dlc02.msgbnd.dcx",
+      "bytes": 321408,
+      "sha256": "9334382ef5c725842755032b9ef645fb8901c0c8322dc3ede60b095c2ec25ae1"
+    }
+  ]
+}

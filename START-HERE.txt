@@ -1,0 +1,60 @@
+Current release: 0.5.1. Use the usual tools/Launch-Test.ps1 offline launcher.
+Your existing Spirit Mend purchase and memorization remain usable.
+Start with SPIRIT-MEND.md steps 1-3: invalid casts should spend zero FP;
+one injured-wolf cast should heal on impact for the normal modified cost.
+Then test unlocking/switching AFTER projectile release.
+No automated/gameplay tests were run by the agent. User acceptance pending.
+
+---
+
+0.5.0: SPIRIT MEND IMPACT-HEALING PROTOTYPE
+Use the usual tools/Launch-Test.ps1 offline launcher; it now loads the spell assets. Launch-SpiritMend.ps1 uses the same installed profile.
+Buy Spirit Mend from Kale at Church of Elleh (300 runes), memorize it at grace, and equip a staff. Prototype: 12 INT, one memory slot, 5 FP.
+Cast once at an injured locked-on wolf; KEEP THAT WOLF SELECTED until impact. Expected: +25% of its max HP capped at max, only that wolf healed, 5 FP once, no stagger or duplicates. Wait 10 seconds and leave the game open for log inspection.
+If the shop entry is absent, stop and report. Report FPS, animation/projectile, healing and FP change. No automated or gameplay tests have been run by the agent.
+Misses, full-health and rejected impacts still cost FP in this prototype. Cast preflight and cast-time target latching remain unfinished. See SPIRIT-MEND.md.
+Earlier instructions below are historical.
+
+0.4.2: FRIENDLY SPIRIT LOCK-ON PROTOTYPE
+The installed INI enables [Targeting] EnableFriendlySpiritLockOn=true.
+Follow the first procedure in VALIDATION.md: summon wolves, try native lock-on to each, then directional cycling between wolves and enemies. Hold successful selections five seconds; report FPS and input method, then leave the game open for log review.
+If wolves cannot be selected, hold one enemy selection five seconds and report it.
+No gameplay or automated tests have been run by the agent. Same-Ash duplicates and the Intelligence healing sorcery are not included yet. Ash reuse still heals its existing group.
+Set EnableFriendlySpiritLockOn=false and restart to disable this experiment.
+Previous instructions below are historical.
+
+0.4.1: READ-ONLY LOCK-ON DIAGNOSTIC
+Follow the first procedure in VALIDATION.md: unlock, summon wolves, lock enemy A, cycle B, cycle A, unlock. Hold each state5seconds.
+Friendly lock-on, duplicates and the healing sorcery are not enabled in this diagnostic. Current0.4.0 gameplay is retained.
+
+0.4.0: UNRESTRICTED ZONE PROTOTYPE
+The prepared local INI sets PreserveSummoningRestrictions=false.
+Start with the Church of Elleh check in VALIDATION.md. User performs all gameplay tests.
+Normal costs, one group per Ash and four individual HUD rows remain.
+Set PreserveSummoningRestrictions=true and restart to restore normal zones.
+See the install manifest for installed version/hash; older instructions below are historical.
+
+SpiritAshResummon 0.1.1 — diagnostic prototype
+
+The DLL is in dist\SpiritAshResummon.dll. The prior user-run log recorded a
+caught panic despite a normal-looking menu launch. Repeat startup before gameplay.
+No game test has been performed. The exact native cost/heal timing is not yet proven.
+
+FIRST USER TEST: STARTUP ONLY
+1. Completely close Elden Ring.
+2. Read VALIDATION.md Stage 0 (offline/EAC-disabled loader and save precautions).
+3. Edit dist\SpiritAshResummon.ini: set EnableLogging = true.
+4. Open PowerShell in this folder and run:
+   .\tools\Launch-Test.ps1
+5. Stop at the main menu. Do not select Continue.
+6. After about 30 seconds, report that you are at the menu and leave the game open
+   so the log can be inspected before shutdown. Do not select Continue.
+
+The launcher uses a separate clean profile with this DLL only. Your existing
+co-op profile is unchanged. There is NO save redirection; do not load a valuable
+character in later tests. Review Stage 1 before continuing to combat tests.
+
+README.md: installation/configuration and compatibility.
+IMPLEMENTATION.md: internals and unresolved resource transaction boundary.
+VALIDATION.md: completed static checks and the full staged manual test procedure.
+UPSTREAM.md: provenance and licenses.

@@ -1,0 +1,26 @@
+/target/
+/external/
+/dist/
+/package*/
+/generated-assets*/
+/config_spiritash_test.toml
+**/bin/
+**/obj/
+!src/bin/
+!src/bin/**
+*.pdb
+*.dll
+*.exe
+*.dcx
+*.bhd
+*.bdt
+*.sl2
+*.sl2.bak
+regulation.bin
+.env
+.env.*
+*.pem
+*.key
+*.pfx
+# Archived sanitized evidence is intentionally tracked; new runtime logs stay local.
+/SpiritAshResummon.log

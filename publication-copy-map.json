@@ -1,0 +1,1782 @@
+{
+  "version": "0.5.1",
+  "files": [
+    {
+      "source": "outputs/SpiritAshResummon/src/anywhere.rs",
+      "published": "src/anywhere.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/src/capacity.rs",
+      "published": "src/capacity.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/src/cleanup.rs",
+      "published": "src/cleanup.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/src/config.rs",
+      "published": "src/config.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/src/friendly_lockon.rs",
+      "published": "src/friendly_lockon.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/src/hooks.rs",
+      "published": "src/hooks.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/src/hud.rs",
+      "published": "src/hud.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/src/hud_movie.rs",
+      "published": "src/hud_movie.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/src/hud_snapshot.rs",
+      "published": "src/hud_snapshot.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/src/lib.rs",
+      "published": "src/lib.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/src/mend_cast.rs",
+      "published": "src/mend_cast.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/src/multi.rs",
+      "published": "src/multi.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/src/policy.rs",
+      "published": "src/policy.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/src/runtime.rs",
+      "published": "src/runtime.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/src/spirit_mend.rs",
+      "published": "src/spirit_mend.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/src/targeting_diagnostic.rs",
+      "published": "src/targeting_diagnostic.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/src/threads.rs",
+      "published": "src/threads.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/src/timing.rs",
+      "published": "src/timing.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/Cargo.toml",
+      "published": "vendor/fromsoftware-rs/Cargo.toml"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/LICENSE-ASL2",
+      "published": "vendor/fromsoftware-rs/LICENSE-ASL2"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/LICENSE-MIT",
+      "published": "vendor/fromsoftware-rs/LICENSE-MIT"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/README.md",
+      "published": "vendor/fromsoftware-rs/README.md"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/eldenring/.gitignore",
+      "published": "vendor/fromsoftware-rs/crates/eldenring/.gitignore"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/eldenring/Cargo.toml",
+      "published": "vendor/fromsoftware-rs/crates/eldenring/Cargo.toml"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/eldenring/mapper-profile.toml",
+      "published": "vendor/fromsoftware-rs/crates/eldenring/mapper-profile.toml"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/shared/Cargo.toml",
+      "published": "vendor/fromsoftware-rs/crates/shared/Cargo.toml"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/shared/macros/Cargo.toml",
+      "published": "vendor/fromsoftware-rs/crates/shared/macros/Cargo.toml"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/shared/src/arxan.rs",
+      "published": "vendor/fromsoftware-rs/crates/shared/src/arxan.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/shared/src/dl_math.rs",
+      "published": "vendor/fromsoftware-rs/crates/shared/src/dl_math.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/shared/src/empty.rs",
+      "published": "vendor/fromsoftware-rs/crates/shared/src/empty.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/shared/src/ext.rs",
+      "published": "vendor/fromsoftware-rs/crates/shared/src/ext.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/shared/src/game_allocator.rs",
+      "published": "vendor/fromsoftware-rs/crates/shared/src/game_allocator.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/shared/src/game_version.rs",
+      "published": "vendor/fromsoftware-rs/crates/shared/src/game_version.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/shared/src/lib.rs",
+      "published": "vendor/fromsoftware-rs/crates/shared/src/lib.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/shared/src/owned_pointer.rs",
+      "published": "vendor/fromsoftware-rs/crates/shared/src/owned_pointer.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/shared/src/program.rs",
+      "published": "vendor/fromsoftware-rs/crates/shared/src/program.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/shared/src/researching.rs",
+      "published": "vendor/fromsoftware-rs/crates/shared/src/researching.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/shared/src/rtti.rs",
+      "published": "vendor/fromsoftware-rs/crates/shared/src/rtti.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/shared/src/static.rs",
+      "published": "vendor/fromsoftware-rs/crates/shared/src/static.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/shared/src/steam.rs",
+      "published": "vendor/fromsoftware-rs/crates/shared/src/steam.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/shared/src/stepper.rs",
+      "published": "vendor/fromsoftware-rs/crates/shared/src/stepper.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/shared/src/subclass.rs",
+      "published": "vendor/fromsoftware-rs/crates/shared/src/subclass.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/shared/src/task.rs",
+      "published": "vendor/fromsoftware-rs/crates/shared/src/task.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/shared/src/unknown_pointer.rs",
+      "published": "vendor/fromsoftware-rs/crates/shared/src/unknown_pointer.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/shared/src/util.rs",
+      "published": "vendor/fromsoftware-rs/crates/shared/src/util.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/shared/stl/Cargo.toml",
+      "published": "vendor/fromsoftware-rs/crates/shared/stl/Cargo.toml"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/shared/stl/src/allocator.rs",
+      "published": "vendor/fromsoftware-rs/crates/shared/stl/src/allocator.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/shared/stl/src/deque.rs",
+      "published": "vendor/fromsoftware-rs/crates/shared/stl/src/deque.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/shared/stl/src/lib.rs",
+      "published": "vendor/fromsoftware-rs/crates/shared/stl/src/lib.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/shared/stl/src/linked_list.rs",
+      "published": "vendor/fromsoftware-rs/crates/shared/stl/src/linked_list.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/shared/stl/src/pair.rs",
+      "published": "vendor/fromsoftware-rs/crates/shared/stl/src/pair.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/shared/stl/src/rb_tree.rs",
+      "published": "vendor/fromsoftware-rs/crates/shared/stl/src/rb_tree.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/shared/stl/src/string.rs",
+      "published": "vendor/fromsoftware-rs/crates/shared/stl/src/string.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/shared/stl/src/vector.rs",
+      "published": "vendor/fromsoftware-rs/crates/shared/stl/src/vector.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/shared/stl/src/vector_bool.rs",
+      "published": "vendor/fromsoftware-rs/crates/shared/stl/src/vector_bool.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/shared/stl/tests/common.rs",
+      "published": "vendor/fromsoftware-rs/crates/shared/stl/tests/common.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/shared/stl/tests/deque.rs",
+      "published": "vendor/fromsoftware-rs/crates/shared/stl/tests/deque.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/shared/stl/tests/linked_list.rs",
+      "published": "vendor/fromsoftware-rs/crates/shared/stl/tests/linked_list.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/shared/stl/tests/rb_tree.rs",
+      "published": "vendor/fromsoftware-rs/crates/shared/stl/tests/rb_tree.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/shared/stl/tests/string.rs",
+      "published": "vendor/fromsoftware-rs/crates/shared/stl/tests/string.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/shared/stl/tests/vector.rs",
+      "published": "vendor/fromsoftware-rs/crates/shared/stl/tests/vector.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/shared/stl/tests/vector_bool.rs",
+      "published": "vendor/fromsoftware-rs/crates/shared/stl/tests/vector_bool.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/shared/src/dl_math/linear.rs",
+      "published": "vendor/fromsoftware-rs/crates/shared/src/dl_math/linear.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/shared/src/dl_math/matrix.rs",
+      "published": "vendor/fromsoftware-rs/crates/shared/src/dl_math/matrix.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/shared/src/dl_math/special.rs",
+      "published": "vendor/fromsoftware-rs/crates/shared/src/dl_math/special.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/shared/src/dl_math/vector.rs",
+      "published": "vendor/fromsoftware-rs/crates/shared/src/dl_math/vector.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/shared/src/ext/read.rs",
+      "published": "vendor/fromsoftware-rs/crates/shared/src/ext/read.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/shared/src/ext/write.rs",
+      "published": "vendor/fromsoftware-rs/crates/shared/src/ext/write.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/shared/src/util/incomplete_array_field.rs",
+      "published": "vendor/fromsoftware-rs/crates/shared/src/util/incomplete_array_field.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/shared/src/util/unknown_struct.rs",
+      "published": "vendor/fromsoftware-rs/crates/shared/src/util/unknown_struct.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/shared/macros/src/for_all_subclasses.rs",
+      "published": "vendor/fromsoftware-rs/crates/shared/macros/src/for_all_subclasses.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/shared/macros/src/lib.rs",
+      "published": "vendor/fromsoftware-rs/crates/shared/macros/src/lib.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/shared/macros/src/multi_param.rs",
+      "published": "vendor/fromsoftware-rs/crates/shared/macros/src/multi_param.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/shared/macros/src/researching.rs",
+      "published": "vendor/fromsoftware-rs/crates/shared/macros/src/researching.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/shared/macros/src/singleton.rs",
+      "published": "vendor/fromsoftware-rs/crates/shared/macros/src/singleton.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/shared/macros/src/stepper.rs",
+      "published": "vendor/fromsoftware-rs/crates/shared/macros/src/stepper.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/shared/macros/src/subclass.rs",
+      "published": "vendor/fromsoftware-rs/crates/shared/macros/src/subclass.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/shared/macros/src/superclass.rs",
+      "published": "vendor/fromsoftware-rs/crates/shared/macros/src/superclass.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/shared/macros/src/utils.rs",
+      "published": "vendor/fromsoftware-rs/crates/shared/macros/src/utils.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/eldenring/.cargo/config.toml",
+      "published": "vendor/fromsoftware-rs/crates/eldenring/.cargo/config.toml"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/eldenring/src/asterids.rs",
+      "published": "vendor/fromsoftware-rs/crates/eldenring/src/asterids.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/eldenring/src/cs.rs",
+      "published": "vendor/fromsoftware-rs/crates/eldenring/src/cs.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/eldenring/src/dlcr.rs",
+      "published": "vendor/fromsoftware-rs/crates/eldenring/src/dlcr.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/eldenring/src/dlio.rs",
+      "published": "vendor/fromsoftware-rs/crates/eldenring/src/dlio.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/eldenring/src/dlkr.rs",
+      "published": "vendor/fromsoftware-rs/crates/eldenring/src/dlkr.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/eldenring/src/dlkrd.rs",
+      "published": "vendor/fromsoftware-rs/crates/eldenring/src/dlkrd.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/eldenring/src/dlrf.rs",
+      "published": "vendor/fromsoftware-rs/crates/eldenring/src/dlrf.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/eldenring/src/dltx.rs",
+      "published": "vendor/fromsoftware-rs/crates/eldenring/src/dltx.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/eldenring/src/dluid.rs",
+      "published": "vendor/fromsoftware-rs/crates/eldenring/src/dluid.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/eldenring/src/dlut.rs",
+      "published": "vendor/fromsoftware-rs/crates/eldenring/src/dlut.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/eldenring/src/ez_state.rs",
+      "published": "vendor/fromsoftware-rs/crates/eldenring/src/ez_state.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/eldenring/src/fd4.rs",
+      "published": "vendor/fromsoftware-rs/crates/eldenring/src/fd4.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/eldenring/src/ffx.rs",
+      "published": "vendor/fromsoftware-rs/crates/eldenring/src/ffx.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/eldenring/src/from_net.rs",
+      "published": "vendor/fromsoftware-rs/crates/eldenring/src/from_net.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/eldenring/src/gxffx.rs",
+      "published": "vendor/fromsoftware-rs/crates/eldenring/src/gxffx.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/eldenring/src/lib.rs",
+      "published": "vendor/fromsoftware-rs/crates/eldenring/src/lib.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/eldenring/src/param.rs",
+      "published": "vendor/fromsoftware-rs/crates/eldenring/src/param.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/eldenring/src/position.rs",
+      "published": "vendor/fromsoftware-rs/crates/eldenring/src/position.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/eldenring/src/rotation.rs",
+      "published": "vendor/fromsoftware-rs/crates/eldenring/src/rotation.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/eldenring/src/rva.rs",
+      "published": "vendor/fromsoftware-rs/crates/eldenring/src/rva.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/eldenring/src/stl.rs",
+      "published": "vendor/fromsoftware-rs/crates/eldenring/src/stl.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/eldenring/src/util.rs",
+      "published": "vendor/fromsoftware-rs/crates/eldenring/src/util.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/eldenring/src/asterids/allocator.rs",
+      "published": "vendor/fromsoftware-rs/crates/eldenring/src/asterids/allocator.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/eldenring/src/cs/action_button.rs",
+      "published": "vendor/fromsoftware-rs/crates/eldenring/src/cs/action_button.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/eldenring/src/cs/auto_invade_point.rs",
+      "published": "vendor/fromsoftware-rs/crates/eldenring/src/cs/auto_invade_point.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/eldenring/src/cs/block_id.rs",
+      "published": "vendor/fromsoftware-rs/crates/eldenring/src/cs/block_id.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/eldenring/src/cs/bullet_ins.rs",
+      "published": "vendor/fromsoftware-rs/crates/eldenring/src/cs/bullet_ins.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/eldenring/src/cs/bullet_manager.rs",
+      "published": "vendor/fromsoftware-rs/crates/eldenring/src/cs/bullet_manager.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/eldenring/src/cs/camera.rs",
+      "published": "vendor/fromsoftware-rs/crates/eldenring/src/cs/camera.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/eldenring/src/cs/character_debug_flags.rs",
+      "published": "vendor/fromsoftware-rs/crates/eldenring/src/cs/character_debug_flags.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/eldenring/src/cs/character_type_properties.rs",
+      "published": "vendor/fromsoftware-rs/crates/eldenring/src/cs/character_type_properties.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/eldenring/src/cs/chr_ins.rs",
+      "published": "vendor/fromsoftware-rs/crates/eldenring/src/cs/chr_ins.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/eldenring/src/cs/chr_manipulator.rs",
+      "published": "vendor/fromsoftware-rs/crates/eldenring/src/cs/chr_manipulator.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/eldenring/src/cs/chr_slot.rs",
+      "published": "vendor/fromsoftware-rs/crates/eldenring/src/cs/chr_slot.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/eldenring/src/cs/cs_rand.rs",
+      "published": "vendor/fromsoftware-rs/crates/eldenring/src/cs/cs_rand.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/eldenring/src/cs/event_flag.rs",
+      "published": "vendor/fromsoftware-rs/crates/eldenring/src/cs/event_flag.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/eldenring/src/cs/event_man.rs",
+      "published": "vendor/fromsoftware-rs/crates/eldenring/src/cs/event_man.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/eldenring/src/cs/ez_select_bot.rs",
+      "published": "vendor/fromsoftware-rs/crates/eldenring/src/cs/ez_select_bot.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/eldenring/src/cs/ez_state_talk.rs",
+      "published": "vendor/fromsoftware-rs/crates/eldenring/src/cs/ez_state_talk.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/eldenring/src/cs/fade.rs",
+      "published": "vendor/fromsoftware-rs/crates/eldenring/src/cs/fade.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/eldenring/src/cs/fe_man.rs",
+      "published": "vendor/fromsoftware-rs/crates/eldenring/src/cs/fe_man.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/eldenring/src/cs/field_area.rs",
+      "published": "vendor/fromsoftware-rs/crates/eldenring/src/cs/field_area.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/eldenring/src/cs/field_ins.rs",
+      "published": "vendor/fromsoftware-rs/crates/eldenring/src/cs/field_ins.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/eldenring/src/cs/file.rs",
+      "published": "vendor/fromsoftware-rs/crates/eldenring/src/cs/file.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/eldenring/src/cs/flipper.rs",
+      "published": "vendor/fromsoftware-rs/crates/eldenring/src/cs/flipper.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/eldenring/src/cs/gaitem.rs",
+      "published": "vendor/fromsoftware-rs/crates/eldenring/src/cs/gaitem.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/eldenring/src/cs/game_data_man.rs",
+      "published": "vendor/fromsoftware-rs/crates/eldenring/src/cs/game_data_man.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/eldenring/src/cs/game_man.rs",
+      "published": "vendor/fromsoftware-rs/crates/eldenring/src/cs/game_man.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/eldenring/src/cs/havok_man.rs",
+      "published": "vendor/fromsoftware-rs/crates/eldenring/src/cs/havok_man.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/eldenring/src/cs/item.rs",
+      "published": "vendor/fromsoftware-rs/crates/eldenring/src/cs/item.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/eldenring/src/cs/item_id.rs",
+      "published": "vendor/fromsoftware-rs/crates/eldenring/src/cs/item_id.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/eldenring/src/cs/item_lot.rs",
+      "published": "vendor/fromsoftware-rs/crates/eldenring/src/cs/item_lot.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/eldenring/src/cs/job.rs",
+      "published": "vendor/fromsoftware-rs/crates/eldenring/src/cs/job.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/eldenring/src/cs/key_assign.rs",
+      "published": "vendor/fromsoftware-rs/crates/eldenring/src/cs/key_assign.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/eldenring/src/cs/location.rs",
+      "published": "vendor/fromsoftware-rs/crates/eldenring/src/cs/location.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/eldenring/src/cs/lua_event_man.rs",
+      "published": "vendor/fromsoftware-rs/crates/eldenring/src/cs/lua_event_man.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/eldenring/src/cs/menu_man.rs",
+      "published": "vendor/fromsoftware-rs/crates/eldenring/src/cs/menu_man.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/eldenring/src/cs/menu_type.rs",
+      "published": "vendor/fromsoftware-rs/crates/eldenring/src/cs/menu_type.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/eldenring/src/cs/mouse_man.rs",
+      "published": "vendor/fromsoftware-rs/crates/eldenring/src/cs/mouse_man.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/eldenring/src/cs/msb.rs",
+      "published": "vendor/fromsoftware-rs/crates/eldenring/src/cs/msb.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/eldenring/src/cs/msg_repository.rs",
+      "published": "vendor/fromsoftware-rs/crates/eldenring/src/cs/msg_repository.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/eldenring/src/cs/multiplay_type.rs",
+      "published": "vendor/fromsoftware-rs/crates/eldenring/src/cs/multiplay_type.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/eldenring/src/cs/network_session.rs",
+      "published": "vendor/fromsoftware-rs/crates/eldenring/src/cs/network_session.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/eldenring/src/cs/net_chr_sync.rs",
+      "published": "vendor/fromsoftware-rs/crates/eldenring/src/cs/net_chr_sync.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/eldenring/src/cs/net_man.rs",
+      "published": "vendor/fromsoftware-rs/crates/eldenring/src/cs/net_man.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/eldenring/src/cs/now_loading.rs",
+      "published": "vendor/fromsoftware-rs/crates/eldenring/src/cs/now_loading.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/eldenring/src/cs/pad.rs",
+      "published": "vendor/fromsoftware-rs/crates/eldenring/src/cs/pad.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/eldenring/src/cs/pair_anim.rs",
+      "published": "vendor/fromsoftware-rs/crates/eldenring/src/cs/pair_anim.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/eldenring/src/cs/party_member_info.rs",
+      "published": "vendor/fromsoftware-rs/crates/eldenring/src/cs/party_member_info.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/eldenring/src/cs/player_game_data.rs",
+      "published": "vendor/fromsoftware-rs/crates/eldenring/src/cs/player_game_data.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/eldenring/src/cs/rend_man.rs",
+      "published": "vendor/fromsoftware-rs/crates/eldenring/src/cs/rend_man.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/eldenring/src/cs/server_interface.rs",
+      "published": "vendor/fromsoftware-rs/crates/eldenring/src/cs/server_interface.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/eldenring/src/cs/session_manager.rs",
+      "published": "vendor/fromsoftware-rs/crates/eldenring/src/cs/session_manager.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/eldenring/src/cs/sfx.rs",
+      "published": "vendor/fromsoftware-rs/crates/eldenring/src/cs/sfx.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/eldenring/src/cs/solo_param_repository.rs",
+      "published": "vendor/fromsoftware-rs/crates/eldenring/src/cs/solo_param_repository.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/eldenring/src/cs/sos_sign_man.rs",
+      "published": "vendor/fromsoftware-rs/crates/eldenring/src/cs/sos_sign_man.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/eldenring/src/cs/sp_effect.rs",
+      "published": "vendor/fromsoftware-rs/crates/eldenring/src/cs/sp_effect.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/eldenring/src/cs/talk_script.rs",
+      "published": "vendor/fromsoftware-rs/crates/eldenring/src/cs/talk_script.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/eldenring/src/cs/targeting.rs",
+      "published": "vendor/fromsoftware-rs/crates/eldenring/src/cs/targeting.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/eldenring/src/cs/task.rs",
+      "published": "vendor/fromsoftware-rs/crates/eldenring/src/cs/task.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/eldenring/src/cs/team_relation.rs",
+      "published": "vendor/fromsoftware-rs/crates/eldenring/src/cs/team_relation.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/eldenring/src/cs/trophy.rs",
+      "published": "vendor/fromsoftware-rs/crates/eldenring/src/cs/trophy.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/eldenring/src/cs/window.rs",
+      "published": "vendor/fromsoftware-rs/crates/eldenring/src/cs/window.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/eldenring/src/cs/world_area_time.rs",
+      "published": "vendor/fromsoftware-rs/crates/eldenring/src/cs/world_area_time.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/eldenring/src/cs/world_chr_man.rs",
+      "published": "vendor/fromsoftware-rs/crates/eldenring/src/cs/world_chr_man.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/eldenring/src/cs/world_chr_man_dbg.rs",
+      "published": "vendor/fromsoftware-rs/crates/eldenring/src/cs/world_chr_man_dbg.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/eldenring/src/cs/world_geom_man.rs",
+      "published": "vendor/fromsoftware-rs/crates/eldenring/src/cs/world_geom_man.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/eldenring/src/cs/world_scene_draw_param_manager.rs",
+      "published": "vendor/fromsoftware-rs/crates/eldenring/src/cs/world_scene_draw_param_manager.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/eldenring/src/cs/world_sfx_man.rs",
+      "published": "vendor/fromsoftware-rs/crates/eldenring/src/cs/world_sfx_man.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/eldenring/src/dlio/common.rs",
+      "published": "vendor/fromsoftware-rs/crates/eldenring/src/dlio/common.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/eldenring/src/dlio/file_device.rs",
+      "published": "vendor/fromsoftware-rs/crates/eldenring/src/dlio/file_device.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/eldenring/src/dlio/stream.rs",
+      "published": "vendor/fromsoftware-rs/crates/eldenring/src/dlio/stream.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/eldenring/src/dlkr/allocator.rs",
+      "published": "vendor/fromsoftware-rs/crates/eldenring/src/dlkr/allocator.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/eldenring/src/dlkr/mutex.rs",
+      "published": "vendor/fromsoftware-rs/crates/eldenring/src/dlkr/mutex.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/eldenring/src/dlkr/runnable.rs",
+      "published": "vendor/fromsoftware-rs/crates/eldenring/src/dlkr/runnable.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/eldenring/src/dlkr/signal.rs",
+      "published": "vendor/fromsoftware-rs/crates/eldenring/src/dlkr/signal.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/eldenring/src/dluid/user_input_device.rs",
+      "published": "vendor/fromsoftware-rs/crates/eldenring/src/dluid/user_input_device.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/eldenring/src/dluid/user_input_manager.rs",
+      "published": "vendor/fromsoftware-rs/crates/eldenring/src/dluid/user_input_manager.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/eldenring/src/dluid/virtual_input_data.rs",
+      "published": "vendor/fromsoftware-rs/crates/eldenring/src/dluid/virtual_input_data.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/eldenring/src/dlut/date_time.rs",
+      "published": "vendor/fromsoftware-rs/crates/eldenring/src/dlut/date_time.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/eldenring/src/dlut/fixed_vector.rs",
+      "published": "vendor/fromsoftware-rs/crates/eldenring/src/dlut/fixed_vector.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/eldenring/src/dlut/reference_pointer.rs",
+      "published": "vendor/fromsoftware-rs/crates/eldenring/src/dlut/reference_pointer.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/eldenring/src/ez_state/environment_query.rs",
+      "published": "vendor/fromsoftware-rs/crates/eldenring/src/ez_state/environment_query.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/eldenring/src/ez_state/event.rs",
+      "published": "vendor/fromsoftware-rs/crates/eldenring/src/ez_state/event.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/eldenring/src/ez_state/shared_string.rs",
+      "published": "vendor/fromsoftware-rs/crates/eldenring/src/ez_state/shared_string.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/eldenring/src/ez_state/value.rs",
+      "published": "vendor/fromsoftware-rs/crates/eldenring/src/ez_state/value.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/eldenring/src/fd4/base_key_assign.rs",
+      "published": "vendor/fromsoftware-rs/crates/eldenring/src/fd4/base_key_assign.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/eldenring/src/fd4/base_pad.rs",
+      "published": "vendor/fromsoftware-rs/crates/eldenring/src/fd4/base_pad.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/eldenring/src/fd4/basic_hash_string.rs",
+      "published": "vendor/fromsoftware-rs/crates/eldenring/src/fd4/basic_hash_string.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/eldenring/src/fd4/pad_manager.rs",
+      "published": "vendor/fromsoftware-rs/crates/eldenring/src/fd4/pad_manager.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/eldenring/src/fd4/param_repository.rs",
+      "published": "vendor/fromsoftware-rs/crates/eldenring/src/fd4/param_repository.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/eldenring/src/fd4/resource.rs",
+      "published": "vendor/fromsoftware-rs/crates/eldenring/src/fd4/resource.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/eldenring/src/fd4/slot.rs",
+      "published": "vendor/fromsoftware-rs/crates/eldenring/src/fd4/slot.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/eldenring/src/fd4/stepper.rs",
+      "published": "vendor/fromsoftware-rs/crates/eldenring/src/fd4/stepper.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/eldenring/src/fd4/task.rs",
+      "published": "vendor/fromsoftware-rs/crates/eldenring/src/fd4/task.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/eldenring/src/fd4/time.rs",
+      "published": "vendor/fromsoftware-rs/crates/eldenring/src/fd4/time.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/eldenring/src/from_net/allocator.rs",
+      "published": "vendor/fromsoftware-rs/crates/eldenring/src/from_net/allocator.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/eldenring/src/from_net/stl.rs",
+      "published": "vendor/fromsoftware-rs/crates/eldenring/src/from_net/stl.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/eldenring/src/param/generated.rs",
+      "published": "vendor/fromsoftware-rs/crates/eldenring/src/param/generated.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/eldenring/src/rva/bundle.rs",
+      "published": "vendor/fromsoftware-rs/crates/eldenring/src/rva/bundle.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/eldenring/src/rva/rva_jp.rs",
+      "published": "vendor/fromsoftware-rs/crates/eldenring/src/rva/rva_jp.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/eldenring/src/rva/rva_jp2721.rs",
+      "published": "vendor/fromsoftware-rs/crates/eldenring/src/rva/rva_jp2721.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/eldenring/src/rva/rva_ww.rs",
+      "published": "vendor/fromsoftware-rs/crates/eldenring/src/rva/rva_ww.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/eldenring/src/rva/rva_ww2720.rs",
+      "published": "vendor/fromsoftware-rs/crates/eldenring/src/rva/rva_ww2720.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/eldenring/src/util/input.rs",
+      "published": "vendor/fromsoftware-rs/crates/eldenring/src/util/input.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/eldenring/src/util/system.rs",
+      "published": "vendor/fromsoftware-rs/crates/eldenring/src/util/system.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/eldenring/src/cs/chr_ins/module.rs",
+      "published": "vendor/fromsoftware-rs/crates/eldenring/src/cs/chr_ins/module.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/eldenring/src/cs/chr_ins/module/action_flag.rs",
+      "published": "vendor/fromsoftware-rs/crates/eldenring/src/cs/chr_ins/module/action_flag.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/eldenring/src/cs/chr_ins/module/action_request.rs",
+      "published": "vendor/fromsoftware-rs/crates/eldenring/src/cs/chr_ins/module/action_request.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/eldenring/src/cs/chr_ins/module/behavior.rs",
+      "published": "vendor/fromsoftware-rs/crates/eldenring/src/cs/chr_ins/module/behavior.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/eldenring/src/cs/chr_ins/module/behavior_data.rs",
+      "published": "vendor/fromsoftware-rs/crates/eldenring/src/cs/chr_ins/module/behavior_data.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/eldenring/src/cs/chr_ins/module/data.rs",
+      "published": "vendor/fromsoftware-rs/crates/eldenring/src/cs/chr_ins/module/data.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/eldenring/src/cs/chr_ins/module/event.rs",
+      "published": "vendor/fromsoftware-rs/crates/eldenring/src/cs/chr_ins/module/event.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/eldenring/src/cs/chr_ins/module/fall.rs",
+      "published": "vendor/fromsoftware-rs/crates/eldenring/src/cs/chr_ins/module/fall.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/eldenring/src/cs/chr_ins/module/grass_hit.rs",
+      "published": "vendor/fromsoftware-rs/crates/eldenring/src/cs/chr_ins/module/grass_hit.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/eldenring/src/cs/chr_ins/module/ladder.rs",
+      "published": "vendor/fromsoftware-rs/crates/eldenring/src/cs/chr_ins/module/ladder.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/eldenring/src/cs/chr_ins/module/material.rs",
+      "published": "vendor/fromsoftware-rs/crates/eldenring/src/cs/chr_ins/module/material.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/eldenring/src/cs/chr_ins/module/model_param_modifier.rs",
+      "published": "vendor/fromsoftware-rs/crates/eldenring/src/cs/chr_ins/module/model_param_modifier.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/eldenring/src/cs/chr_ins/module/physics.rs",
+      "published": "vendor/fromsoftware-rs/crates/eldenring/src/cs/chr_ins/module/physics.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/eldenring/src/cs/chr_ins/module/ride.rs",
+      "published": "vendor/fromsoftware-rs/crates/eldenring/src/cs/chr_ins/module/ride.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/eldenring/src/cs/chr_ins/module/super_armor.rs",
+      "published": "vendor/fromsoftware-rs/crates/eldenring/src/cs/chr_ins/module/super_armor.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/eldenring/src/cs/chr_ins/module/throw.rs",
+      "published": "vendor/fromsoftware-rs/crates/eldenring/src/cs/chr_ins/module/throw.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/eldenring/src/cs/chr_ins/module/time_act.rs",
+      "published": "vendor/fromsoftware-rs/crates/eldenring/src/cs/chr_ins/module/time_act.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/eldenring/src/cs/chr_ins/module/toughness.rs",
+      "published": "vendor/fromsoftware-rs/crates/eldenring/src/cs/chr_ins/module/toughness.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/vendor/fromsoftware-rs/crates/eldenring/src/cs/chr_ins/module/wet.rs",
+      "published": "vendor/fromsoftware-rs/crates/eldenring/src/cs/chr_ins/module/wet.rs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/config/SpiritAshResummon.ini",
+      "published": "config/SpiritAshResummon.ini"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/Cargo.lock",
+      "published": "Cargo.lock"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/Cargo.toml",
+      "published": "Cargo.toml"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/CHANGELOG.md",
+      "published": "CHANGELOG.md"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/HUD-INVESTIGATION.md",
+      "published": "HUD-INVESTIGATION.md"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/IMPLEMENTATION.md",
+      "published": "IMPLEMENTATION.md"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/LICENSE-APACHE",
+      "published": "LICENSE-APACHE"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/LICENSE-MIT",
+      "published": "LICENSE-MIT"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/README.md",
+      "published": "docs/HISTORY-README.md"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/rust-toolchain.toml",
+      "published": "rust-toolchain.toml"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/SPIRIT-MEND.md",
+      "published": "SPIRIT-MEND.md"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/START-HERE.txt",
+      "published": "START-HERE.txt"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/TARGETED-HEALING-INVESTIGATION.md",
+      "published": "TARGETED-HEALING-INVESTIGATION.md"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/THIRD-PARTY-NOTICES.txt",
+      "published": "THIRD-PARTY-NOTICES.txt"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/UPSTREAM.md",
+      "published": "UPSTREAM.md"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/VALIDATION.md",
+      "published": "VALIDATION.md"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/tools/Build.ps1",
+      "published": "tools/Build.ps1"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/tools/Launch-SpiritMend.ps1",
+      "published": "tools/Launch-SpiritMend.ps1"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/tools/Launch-Test.ps1",
+      "published": "tools/Launch-Test.ps1"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/tools/Preflight.ps1",
+      "published": "tools/Preflight.ps1"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/tools/SpiritMendAssets/LICENSE",
+      "published": "tools/SpiritMendAssets/LICENSE"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/tools/SpiritMendAssets/oodle-legacy-printf.patch",
+      "published": "tools/SpiritMendAssets/oodle-legacy-printf.patch"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/tools/SpiritMendAssets/Program.cs",
+      "published": "tools/SpiritMendAssets/Program.cs"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/tools/SpiritMendAssets/README.md",
+      "published": "tools/SpiritMendAssets/README.md"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/tools/SpiritMendAssets/SpiritMendAssets.csproj",
+      "published": "tools/SpiritMendAssets/SpiritMendAssets.csproj"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/evidence/0.1.10-heal-20261029-184942.log",
+      "published": "evidence/0.1.10-heal-20261029-184942.log"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/evidence/0.1.10-resummon-delay-20261029-185311.log",
+      "published": "evidence/0.1.10-resummon-delay-20261029-185311.log"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/evidence/0.1.11-resummon-20261029-191755.log",
+      "published": "evidence/0.1.11-resummon-20261029-191755.log"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/evidence/0.1.12-area-transition-20261029-195844.log",
+      "published": "evidence/0.1.12-area-transition-20261029-195844.log"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/evidence/0.1.12-boss-20261029-200709.log",
+      "published": "evidence/0.1.12-boss-20261029-200709.log"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/evidence/0.1.12-boss-resummon-20261029-201823.log",
+      "published": "evidence/0.1.12-boss-resummon-20261029-201823.log"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/evidence/0.1.12-different-ash-20261029-194930.log",
+      "published": "evidence/0.1.12-different-ash-20261029-194930.log"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/evidence/0.1.12-full-health-20261029-195041.log",
+      "published": "evidence/0.1.12-full-health-20261029-195041.log"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/evidence/0.1.12-insufficient-fp-20261029-194752.log",
+      "published": "evidence/0.1.12-insufficient-fp-20261029-194752.log"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/evidence/0.1.12-partial-group-20261029-193045.log",
+      "published": "evidence/0.1.12-partial-group-20261029-193045.log"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/evidence/0.1.12-player-death-20261029-200330.log",
+      "published": "evidence/0.1.12-player-death-20261029-200330.log"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/evidence/0.1.12-resummon-20261029-192744.log",
+      "published": "evidence/0.1.12-resummon-20261029-192744.log"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/evidence/0.1.12-title-reload-20261029-200115.log",
+      "published": "evidence/0.1.12-title-reload-20261029-200115.log"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/evidence/0.1.12-wolf-heal-20261029-194602.log",
+      "published": "evidence/0.1.12-wolf-heal-20261029-194602.log"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/evidence/0.1.3-low-fps-20261029-172054.log",
+      "published": "evidence/0.1.3-low-fps-20261029-172054.log"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/evidence/0.1.4-low-fps-20261029-172633.log",
+      "published": "evidence/0.1.4-low-fps-20261029-172633.log"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/evidence/0.1.5-active-10fps-20261029-173836.log",
+      "published": "evidence/0.1.5-active-10fps-20261029-173836.log"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/evidence/0.1.5-greyed-ash-20261029-173520.log",
+      "published": "evidence/0.1.5-greyed-ash-20261029-173520.log"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/evidence/0.1.5-idle-60fps-20261029-173313.log",
+      "published": "evidence/0.1.5-idle-60fps-20261029-173313.log"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/evidence/0.1.6-active-20261029-181436.log",
+      "published": "evidence/0.1.6-active-20261029-181436.log"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/evidence/0.1.7-startup-disabled-20261029-181942.log",
+      "published": "evidence/0.1.7-startup-disabled-20261029-181942.log"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/evidence/0.1.8-active-20261029-182351.log",
+      "published": "evidence/0.1.8-active-20261029-182351.log"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/evidence/0.1.8-idle-20261029-182245.log",
+      "published": "evidence/0.1.8-idle-20261029-182245.log"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/evidence/0.1.9-active-20261029-183144.log",
+      "published": "evidence/0.1.9-active-20261029-183144.log"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/evidence/0.1.9-heal-20261029-183449.log",
+      "published": "evidence/0.1.9-heal-20261029-183449.log"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/evidence/0.2.0-idle-20261029-204111.log",
+      "published": "evidence/0.2.0-idle-20261029-204111.log"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/evidence/0.2.0-second-ash-blocked-20261029-204428.log",
+      "published": "evidence/0.2.0-second-ash-blocked-20261029-204428.log"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/evidence/0.2.1-militiaman-heal-multiple-20261029-210130.log",
+      "published": "evidence/0.2.1-militiaman-heal-multiple-20261029-210130.log"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/evidence/0.2.1-resummon-blocked-20261029-211535.log",
+      "published": "evidence/0.2.1-resummon-blocked-20261029-211535.log"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/evidence/0.2.1-second-ash-20261029-204950.log",
+      "published": "evidence/0.2.1-second-ash-20261029-204950.log"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/evidence/0.2.1-wolf-heal-multiple-20261029-205629.log",
+      "published": "evidence/0.2.1-wolf-heal-multiple-20261029-205629.log"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/evidence/0.2.1-wolf-resummon-with-militiaman-20261029-210536.log",
+      "published": "evidence/0.2.1-wolf-resummon-with-militiaman-20261029-210536.log"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/evidence/0.3.0-hud-healing-20261029-221612.log",
+      "published": "evidence/0.3.0-hud-healing-20261029-221612.log"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/evidence/0.3.0-two-bars-20261029-221202.log",
+      "published": "evidence/0.3.0-two-bars-20261029-221202.log"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/evidence/0.3.1-ui-user-accepted-20261029-230635.log",
+      "published": "evidence/0.3.1-ui-user-accepted-20261029-230635.log"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/evidence/0.4.0-elleh-boundary-20261029-231346.log",
+      "published": "evidence/0.4.0-elleh-boundary-20261029-231346.log"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/evidence/0.4.0-elleh-boundary-review.json",
+      "published": "evidence/0.4.0-elleh-boundary-review.json"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/evidence/0.4.1-lockon-20261029-233642.log",
+      "published": "evidence/0.4.1-lockon-20261029-233642.log"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/evidence/0.4.1-lockon-review.json",
+      "published": "evidence/0.4.1-lockon-review.json"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/evidence/0.4.2-friendly-lockon-20261029-234735.log",
+      "published": "evidence/0.4.2-friendly-lockon-20261029-234735.log"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/evidence/0.4.2-friendly-lockon-review.json",
+      "published": "evidence/0.4.2-friendly-lockon-review.json"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/evidence/0.4.2-grace-lockon-20261029-235017.log",
+      "published": "evidence/0.4.2-grace-lockon-20261029-235017.log"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/evidence/0.4.2-grace-lockon-review.json",
+      "published": "evidence/0.4.2-grace-lockon-review.json"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/evidence/0.5.0-lusat-cost-param.json",
+      "published": "evidence/0.5.0-lusat-cost-param.json"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/evidence/0.5.0-missing-shop-20261030-002153.log",
+      "published": "evidence/0.5.0-missing-shop-20261030-002153.log"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/evidence/0.5.0-spirit-mend-success-20261030-002802.log",
+      "published": "evidence/0.5.0-spirit-mend-success-20261030-002802.log"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/evidence/0.5.0-spirit-mend-success-review.json",
+      "published": "evidence/0.5.0-spirit-mend-success-review.json"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/evidence/build-0.1.1.txt",
+      "published": "evidence/build-0.1.1.txt"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/evidence/build-0.1.10.txt",
+      "published": "evidence/build-0.1.10.txt"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/evidence/build-0.1.11.txt",
+      "published": "evidence/build-0.1.11.txt"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/evidence/build-0.1.12.txt",
+      "published": "evidence/build-0.1.12.txt"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/evidence/build-0.1.2.txt",
+      "published": "evidence/build-0.1.2.txt"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/evidence/build-0.1.3.txt",
+      "published": "evidence/build-0.1.3.txt"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/evidence/build-0.1.4.txt",
+      "published": "evidence/build-0.1.4.txt"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/evidence/build-0.1.5.txt",
+      "published": "evidence/build-0.1.5.txt"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/evidence/build-0.1.6.txt",
+      "published": "evidence/build-0.1.6.txt"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/evidence/build-0.1.7.txt",
+      "published": "evidence/build-0.1.7.txt"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/evidence/build-0.1.8.txt",
+      "published": "evidence/build-0.1.8.txt"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/evidence/build-0.1.9.txt",
+      "published": "evidence/build-0.1.9.txt"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/evidence/build-0.2.0.txt",
+      "published": "evidence/build-0.2.0.txt"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/evidence/build-0.2.1.txt",
+      "published": "evidence/build-0.2.1.txt"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/evidence/build-0.2.2.txt",
+      "published": "evidence/build-0.2.2.txt"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/evidence/build-0.3.0.txt",
+      "published": "evidence/build-0.3.0.txt"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/evidence/build-0.3.1.txt",
+      "published": "evidence/build-0.3.1.txt"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/evidence/build-0.4.0.txt",
+      "published": "evidence/build-0.4.0.txt"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/evidence/build-0.4.1.txt",
+      "published": "evidence/build-0.4.1.txt"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/evidence/build-0.4.2.txt",
+      "published": "evidence/build-0.4.2.txt"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/evidence/build-0.5.0-assets.txt",
+      "published": "evidence/build-0.5.0-assets.txt"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/evidence/build-0.5.0-shopfix.txt",
+      "published": "evidence/build-0.5.0-shopfix.txt"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/evidence/build-0.5.0.txt",
+      "published": "evidence/build-0.5.0.txt"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/evidence/build-0.5.1-initial.txt",
+      "published": "evidence/build-0.5.1-initial.txt"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/evidence/build-0.5.1.txt",
+      "published": "evidence/build-0.5.1.txt"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/evidence/build.txt",
+      "published": "evidence/build.txt"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/evidence/character-loaded-0.1.1.log",
+      "published": "evidence/character-loaded-0.1.1.log"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/evidence/clippy.txt",
+      "published": "evidence/clippy.txt"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/evidence/dependency-inventory.json",
+      "published": "evidence/dependency-inventory.json"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/evidence/game-preflight.json",
+      "published": "evidence/game-preflight.json"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/evidence/hud-layout-analysis.json",
+      "published": "evidence/hud-layout-analysis.json"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/evidence/hud-native-analysis.json",
+      "published": "evidence/hud-native-analysis.json"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/evidence/install-0.1.10.json",
+      "published": "evidence/install-0.1.10.json"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/evidence/install-0.1.11.json",
+      "published": "evidence/install-0.1.11.json"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/evidence/install-0.1.12.json",
+      "published": "evidence/install-0.1.12.json"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/evidence/install-0.1.4.json",
+      "published": "evidence/install-0.1.4.json"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/evidence/install-0.1.5.json",
+      "published": "evidence/install-0.1.5.json"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/evidence/install-0.1.6.json",
+      "published": "evidence/install-0.1.6.json"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/evidence/install-0.1.7.json",
+      "published": "evidence/install-0.1.7.json"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/evidence/install-0.1.8.json",
+      "published": "evidence/install-0.1.8.json"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/evidence/install-0.1.9.json",
+      "published": "evidence/install-0.1.9.json"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/evidence/install-0.2.0.json",
+      "published": "evidence/install-0.2.0.json"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/evidence/install-0.2.1.json",
+      "published": "evidence/install-0.2.1.json"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/evidence/install-0.2.2.json",
+      "published": "evidence/install-0.2.2.json"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/evidence/install-0.3.0.json",
+      "published": "evidence/install-0.3.0.json"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/evidence/install-0.3.1.json",
+      "published": "evidence/install-0.3.1.json"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/evidence/install-0.4.0.json",
+      "published": "evidence/install-0.4.0.json"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/evidence/install-0.4.1.json",
+      "published": "evidence/install-0.4.1.json"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/evidence/install-0.4.2.json",
+      "published": "evidence/install-0.4.2.json"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/evidence/install-0.5.0-shopfix.json",
+      "published": "evidence/install-0.5.0-shopfix.json"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/evidence/install-0.5.0.json",
+      "published": "evidence/install-0.5.0.json"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/evidence/install-0.5.1.json",
+      "published": "evidence/install-0.5.1.json"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/evidence/item-eligibility-0.2.1.md",
+      "published": "evidence/item-eligibility-0.2.1.md"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/evidence/offline-gate-blocker-0.1.2.log",
+      "published": "evidence/offline-gate-blocker-0.1.2.log"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/evidence/registry-state-0.1.9.md",
+      "published": "evidence/registry-state-0.1.9.md"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/evidence/release-dll-0.1.1.json",
+      "published": "evidence/release-dll-0.1.1.json"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/evidence/release-dll.json",
+      "published": "evidence/release-dll.json"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/evidence/SPIRIT-MEND-before-0.5.1.md",
+      "published": "evidence/SPIRIT-MEND-before-0.5.1.md"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/evidence/staged-0.1.10.json",
+      "published": "evidence/staged-0.1.10.json"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/evidence/staged-0.1.11.json",
+      "published": "evidence/staged-0.1.11.json"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/evidence/staged-0.2.1.json",
+      "published": "evidence/staged-0.2.1.json"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/evidence/staged-0.2.2.json",
+      "published": "evidence/staged-0.2.2.json"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/evidence/staged-0.3.0.json",
+      "published": "evidence/staged-0.3.0.json"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/evidence/staged-0.3.1.json",
+      "published": "evidence/staged-0.3.1.json"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/evidence/staged-0.4.0.json",
+      "published": "evidence/staged-0.4.0.json"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/evidence/staged-0.4.1.json",
+      "published": "evidence/staged-0.4.1.json"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/evidence/staged-0.4.2.json",
+      "published": "evidence/staged-0.4.2.json"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/evidence/staged-0.5.0-shopfix.json",
+      "published": "evidence/staged-0.5.0-shopfix.json"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/evidence/staged-0.5.0.json",
+      "published": "evidence/staged-0.5.0.json"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/evidence/startup-0.1.0-original-20261029-162841.log",
+      "published": "evidence/startup-0.1.0-original-20261029-162841.log"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/evidence/targeted-healing-lockon-leads.json",
+      "published": "evidence/targeted-healing-lockon-leads.json"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/evidence/tests.txt",
+      "published": "evidence/tests.txt"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/evidence/upstream-build.log",
+      "published": "evidence/upstream-build.log"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/evidence/uxm-hud-extraction.json",
+      "published": "evidence/uxm-hud-extraction.json"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/evidence/cast-static/hook-review.json",
+      "published": "evidence/cast-static/hook-review.json"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/evidence/spirit-mend-template-2/partial-rows.json",
+      "published": "evidence/spirit-mend-template-2/partial-rows.json"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/evidence/spirit-mend-template-3/partial-rows.json",
+      "published": "evidence/spirit-mend-template-3/partial-rows.json"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/evidence/spirit-mend-template-3/source.json",
+      "published": "evidence/spirit-mend-template-3/source.json"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/evidence/spirit-mend-template-3/template-rows.json",
+      "published": "evidence/spirit-mend-template-3/template-rows.json"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/evidence/spirit-mend-template-4/partial-rows.json",
+      "published": "evidence/spirit-mend-template-4/partial-rows.json"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/evidence/spirit-mend-template-4/percent-healing-effects.json",
+      "published": "evidence/spirit-mend-template-4/percent-healing-effects.json"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/evidence/spirit-mend-template-4/source.json",
+      "published": "evidence/spirit-mend-template-4/source.json"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/evidence/spirit-mend-template-4/template-rows.json",
+      "published": "evidence/spirit-mend-template-4/template-rows.json"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/evidence/spirit-mend-template-5/partial-rows.json",
+      "published": "evidence/spirit-mend-template-5/partial-rows.json"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/evidence/spirit-mend-template-5/percent-healing-effects.json",
+      "published": "evidence/spirit-mend-template-5/percent-healing-effects.json"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/evidence/spirit-mend-template-5/source.json",
+      "published": "evidence/spirit-mend-template-5/source.json"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/evidence/spirit-mend-template-5/template-rows.json",
+      "published": "evidence/spirit-mend-template-5/template-rows.json"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/evidence/spirit-mend-template-6/partial-rows.json",
+      "published": "evidence/spirit-mend-template-6/partial-rows.json"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/evidence/spirit-mend-template-6/percent-healing-effects.json",
+      "published": "evidence/spirit-mend-template-6/percent-healing-effects.json"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/evidence/spirit-mend-template-6/source.json",
+      "published": "evidence/spirit-mend-template-6/source.json"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/evidence/spirit-mend-template-6/template-rows.json",
+      "published": "evidence/spirit-mend-template-6/template-rows.json"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/evidence/spirit-mend-template-6/template-text.json",
+      "published": "evidence/spirit-mend-template-6/template-text.json"
+    },
+    {
+      "source": "work/cast_inspect.py",
+      "published": "research/history/cast_inspect.py"
+    },
+    {
+      "source": "work/disasm_states.py",
+      "published": "research/history/disasm_states.py"
+    },
+    {
+      "source": "work/docs_multi.py",
+      "published": "research/history/docs_multi.py"
+    },
+    {
+      "source": "work/document-0.4.1.py",
+      "published": "research/history/document-0.4.1.py"
+    },
+    {
+      "source": "work/document-0.5.1.py",
+      "published": "research/history/document-0.5.1.py"
+    },
+    {
+      "source": "work/document_anywhere.py",
+      "published": "research/history/document_anywhere.py"
+    },
+    {
+      "source": "work/edit_multi_hooks.py",
+      "published": "research/history/edit_multi_hooks.py"
+    },
+    {
+      "source": "work/edit_multi_runtime.py",
+      "published": "research/history/edit_multi_runtime.py"
+    },
+    {
+      "source": "work/find_registry.py",
+      "published": "research/history/find_registry.py"
+    },
+    {
+      "source": "work/finish_capacity.py",
+      "published": "research/history/finish_capacity.py"
+    },
+    {
+      "source": "work/finish_multi_policy.py",
+      "published": "research/history/finish_multi_policy.py"
+    },
+    {
+      "source": "work/implement_anywhere.py",
+      "published": "research/history/implement_anywhere.py"
+    },
+    {
+      "source": "work/inspect-0.4.0-log.py",
+      "published": "research/history/inspect-0.4.0-log.py"
+    },
+    {
+      "source": "work/inspect_eligibility.py",
+      "published": "research/history/inspect_eligibility.py"
+    },
+    {
+      "source": "work/inspect_game.py",
+      "published": "research/history/inspect_game.py"
+    },
+    {
+      "source": "work/inspect_item_gates.py",
+      "published": "research/history/inspect_item_gates.py"
+    },
+    {
+      "source": "work/inspect_lockon_leads.py",
+      "published": "research/history/inspect_lockon_leads.py"
+    },
+    {
+      "source": "work/inspect_multi.py",
+      "published": "research/history/inspect_multi.py"
+    },
+    {
+      "source": "work/inspect_multi_helpers.py",
+      "published": "research/history/inspect_multi_helpers.py"
+    },
+    {
+      "source": "work/inspect_native_death.py",
+      "published": "research/history/inspect_native_death.py"
+    },
+    {
+      "source": "work/install-0.4.0.ps1",
+      "published": "research/history/install-0.4.0.ps1"
+    },
+    {
+      "source": "work/install-0.4.1.ps1",
+      "published": "research/history/install-0.4.1.ps1"
+    },
+    {
+      "source": "work/install-0.4.2.ps1",
+      "published": "research/history/install-0.4.2.ps1"
+    },
+    {
+      "source": "work/install-0.5.0-shopfix.ps1",
+      "published": "research/history/install-0.5.0-shopfix.ps1"
+    },
+    {
+      "source": "work/install-0.5.0.ps1",
+      "published": "research/history/install-0.5.0.ps1"
+    },
+    {
+      "source": "work/install-0.5.1.ps1",
+      "published": "research/history/install-0.5.1.ps1"
+    },
+    {
+      "source": "work/lockon_admission.py",
+      "published": "research/history/lockon_admission.py"
+    },
+    {
+      "source": "work/lockon_candidates.py",
+      "published": "research/history/lockon_candidates.py"
+    },
+    {
+      "source": "work/lockon_disasm.py",
+      "published": "research/history/lockon_disasm.py"
+    },
+    {
+      "source": "work/lockon_gather.py",
+      "published": "research/history/lockon_gather.py"
+    },
+    {
+      "source": "work/prepare-install-0.4.1.py",
+      "published": "research/history/prepare-install-0.4.1.py"
+    },
+    {
+      "source": "work/prepare-target-diagnostic.py",
+      "published": "research/history/prepare-target-diagnostic.py"
+    },
+    {
+      "source": "work/prepare_021_docs.py",
+      "published": "research/history/prepare_021_docs.py"
+    },
+    {
+      "source": "work/record-0.4.0-review.py",
+      "published": "research/history/record-0.4.0-review.py"
+    },
+    {
+      "source": "work/record-lockon-0.4.1-review.py",
+      "published": "research/history/record-lockon-0.4.1-review.py"
+    },
+    {
+      "source": "work/record_020_idle.py",
+      "published": "research/history/record_020_idle.py"
+    },
+    {
+      "source": "work/record_021_coexistence.py",
+      "published": "research/history/record_021_coexistence.py"
+    },
+    {
+      "source": "work/refine_anywhere.py",
+      "published": "research/history/refine_anywhere.py"
+    },
+    {
+      "source": "work/registry_cfg.py",
+      "published": "research/history/registry_cfg.py"
+    },
+    {
+      "source": "work/registry_functions.py",
+      "published": "research/history/registry_functions.py"
+    },
+    {
+      "source": "work/registry_vtable.py",
+      "published": "research/history/registry_vtable.py"
+    },
+    {
+      "source": "work/retain_states.py",
+      "published": "research/history/retain_states.py"
+    },
+    {
+      "source": "work/review-lockon-0.4.1.py",
+      "published": "research/history/review-lockon-0.4.1.py"
+    },
+    {
+      "source": "work/revise-targeted-healing-sorcery.py",
+      "published": "research/history/revise-targeted-healing-sorcery.py"
+    },
+    {
+      "source": "work/state_accesses.py",
+      "published": "research/history/state_accesses.py"
+    },
+    {
+      "source": "work/state_candidates.py",
+      "published": "research/history/state_candidates.py"
+    },
+    {
+      "source": "work/state_immediates.py",
+      "published": "research/history/state_immediates.py"
+    },
+    {
+      "source": "work/summarize-0.4.0-log.py",
+      "published": "research/history/summarize-0.4.0-log.py"
+    },
+    {
+      "source": "work/tools_multi.py",
+      "published": "research/history/tools_multi.py"
+    },
+    {
+      "source": "work/uxm/inspect_hud.py",
+      "published": "research/history/uxm/inspect_hud.py"
+    },
+    {
+      "source": "work/uxm/inspect_hud_native.py",
+      "published": "research/history/uxm/inspect_hud_native.py"
+    },
+    {
+      "source": "work/uxm/Extract-Selected.ps1",
+      "published": "research/history/uxm/Extract-Selected.ps1"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/dist/patch-manifest.json",
+      "published": "assets/patch-manifest-0.5.1.json"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/dist/SpiritAshResummon.ini",
+      "published": "config/SpiritMend-Prototype.ini"
+    },
+    {
+      "source": "outputs/SpiritAshResummon/src/bin/dll_probe.rs",
+      "published": "src/bin/dll_probe.rs"
+    }
+  ],
+  "note": "Source paths are workspace-relative provenance, not additional dependencies. Runtime/vendor are exact copies; text evidence has local identifiers redacted. Portable setup changes are documented in PUBLICATION.md."
+}

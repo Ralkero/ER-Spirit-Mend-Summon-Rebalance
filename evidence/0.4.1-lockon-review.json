@@ -1,0 +1,33 @@
+{
+  "version": "0.4.1",
+  "pid": 11968,
+  "archive": "0.4.1-lockon-20261029-233642.log",
+  "user_report": "Targeted several enemies, attempted approximately five seconds per target.",
+  "diagnostic_ready": true,
+  "distinct_non_owned_selected_handles": [
+    "17300018:3c2a2500",
+    "17300019:3c2a2500",
+    "1730001a:3c2a2500",
+    "1730001c:3c2a2500",
+    "1730001e:3c2a2500",
+    "17300022:3c2a2500",
+    "1730002b:3c2a2500"
+  ],
+  "owned_spirit_handles": [
+    "17100014:ffffffff",
+    "17100015:ffffffff",
+    "17100016:ffffffff"
+  ],
+  "unlock_cleared_handle_observed": true,
+  "target_sample_calls": 634,
+  "target_sample_total_us": 11305,
+  "target_sample_max_us": 499,
+  "readable_probe_calls": 0,
+  "startup_note": "One scheduler NotFound retry at407ms, followed by successful initialization.",
+  "limitations": [
+    "No FPS or input-device report; no independent frame-time claim.",
+    "Enemy identity is based on user report; observer intentionally labels unmatched handles other_or_unresolved.",
+    "No owned-Spirit targeting observed or enabled; this does not validate friendly eligibility/cycling.",
+    "No automated or agent-operated gameplay tests."
+  ]
+}

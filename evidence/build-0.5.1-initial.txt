@@ -1,0 +1,22 @@
+   Compiling eldenring v0.14.0 (<WORKSPACE>\outputs\SpiritAshResummon\vendor\fromsoftware-rs\crates\eldenring)
+   Compiling spirit-ash-resummon v0.5.0 (<WORKSPACE>\outputs\SpiritAshResummon)
+error[E0308]: mismatched types
+   --> src\mend_cast.rs:164:27
+    |
+164 |         block_id: BlockId(u32::from_le_bytes(bytes.get(4..8)?.try_into().ok()?)),
+    |                   ------- ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ expected `i32`, found `u32`
+    |                   |
+    |                   arguments to this struct are incorrect
+    |
+note: tuple struct defined here
+   --> vendor\fromsoftware-rs\crates\eldenring\src\cs\block_id.rs:8:16
+    |
+  8 |     pub struct BlockId(i32);
+    |                ^^^^^^^
+help: you can convert a `u32` to an `i32` and panic if the converted value doesn't fit
+    |
+164 |         block_id: BlockId(u32::from_le_bytes(bytes.get(4..8)?.try_into().ok()?).try_into().unwrap()),
+    |                                                                                ++++++++++++++++++++
+
+For more information about this error, try `rustc --explain E0308`.
+error: could not compile `spirit-ash-resummon` (lib) due to 1 previous error

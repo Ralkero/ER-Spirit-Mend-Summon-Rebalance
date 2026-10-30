@@ -1,0 +1,93 @@
+{
+  "exe_sha256": "f9118fea2cfd8fa3901e8060bfadb1552cb2471771ded8a5b662c4e298ffb328",
+  "copy_call": {
+    "rva": "0x772fbd",
+    "bytes": "e8be240000",
+    "target": "0x775480"
+  },
+  "copy_prologue": "488bc45556574154415541564157488d",
+  "message_lookup": "3b51107329443b41147323488b41088b",
+  "rtti": {
+    ".?AVCSScaleformFileOpener@CS@@": {
+      "vtable": "0x2bc0748",
+      "entries": [
+        {
+          "slot": 0,
+          "rva": "0xd73a30",
+          "bytes": "48894c2408574883ec3048c7442420fe"
+        },
+        {
+          "slot": 1,
+          "rva": "0xd6e970",
+          "bytes": "4055535657415441564157488d6c24d9"
+        },
+        {
+          "slot": 2,
+          "rva": "0x115a020",
+          "bytes": "48895c24084889742410574883ec4048"
+        },
+        {
+          "slot": 3,
+          "rva": "0x115a0a0",
+          "bytes": "48895c24084889742410574883ec2048"
+        },
+        {
+          "slot": 4,
+          "rva": "0x3365110",
+          "bytes": "0100000000000000000000008081d003"
+        },
+        {
+          "slot": 5,
+          "rva": "0xd73aa0",
+          "bytes": "48894c2408574883ec3048c7442420fe"
+        },
+        {
+          "slot": 6,
+          "rva": "0xd6f060",
+          "bytes": "488bc455488d68a14881ece000000048"
+        }
+      ]
+    },
+    ".?AVMemoryFile@Scaleform@@": {
+      "vtable": "0x2baa020",
+      "entries": [
+        {
+          "slot": 0,
+          "rva": "0xceae20",
+          "bytes": "48894c2408574883ec3048c7442420fe"
+        },
+        {
+          "slot": 1,
+          "rva": "0xceb050",
+          "bytes": "488b41104883e0fc4883c00cc390b1e3"
+        },
+        {
+          "slot": 2,
+          "rva": "0xceb220",
+          "bytes": "0fb64128c390818bb30aeea369aebe85"
+        },
+        {
+          "slot": 3,
+          "rva": "0xceb230",
+          "bytes": "32c0c3ccb9e9876a50cc1a4b637c0708"
+        },
+        {
+          "slot": 4,
+          "rva": "0xceb340",
+          "bytes": "8b4124c34c8d0d694b4002e92fd23701"
+        },
+        {
+          "slot": 5,
+          "rva": "0xceb270",
+          "bytes": "48634124c3904489702483481008e943"
+        },
+        {
+          "slot": 6,
+          "rva": "0xceb060",
+          "bytes": "8b4120c3488b0de5700903e90fdbd7ff"
+        }
+      ]
+    }
+  },
+  "static_only": true
+}

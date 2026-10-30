@@ -1,0 +1,80 @@
+{
+  "version": "0.5.0-shopfix",
+  "pid": 27464,
+  "archive": "outputs\\SpiritAshResummon\\evidence\\0.5.0-spirit-mend-success-20261030-002802.log",
+  "sha256": "fc5ab96fe3fef4845da8a749093443170ab4a0105fcb63d0713f7e12ee8350c4",
+  "userReport": "Purchased and memorized Spirit Mend; successfully healed injured locked-on wolf; stable, no FPS drops or animation problems.",
+  "impactEvents": [
+    {
+      "ms": 136694,
+      "handle": "17100015:ffffffff",
+      "hp_before": 392,
+      "max_hp": 500,
+      "expected_hp": 500,
+      "native_accepted": 1
+    },
+    {
+      "ms": 140972,
+      "handle": "17100016:ffffffff",
+      "hp_before": 365,
+      "max_hp": 500,
+      "expected_hp": 490,
+      "native_accepted": 1
+    },
+    {
+      "ms": 143905,
+      "handle": "17100014:ffffffff",
+      "hp_before": 381,
+      "max_hp": 500,
+      "expected_hp": 500,
+      "native_accepted": 1
+    }
+  ],
+  "hudEvidence": [
+    {
+      "ms": 123704,
+      "line": "[+123704ms] HUD entity snapshot: members=[Member { key: MemberKey { base: 232000, handle: FieldInsHandle { selector: FieldInsSelector { .0: 386924564, index: 20, container: 113, _field_ins_type: 1 }, block_id: BlockId { .0: -1, area: 255, block: 255, region: 255, index: 255 } } }, hp: 446, max: 500 }, Member { key: MemberKey { base: 232000, handle: FieldInsHandle { selector: FieldInsSelector { .0: 386924565, index: 21, container: 113, _field_ins_type: 1 }, block_id: BlockId { .0: -1, area: 255, block: 255, region: 255, index: 255 } } }, hp: 500, max: 500 }, Member { key: MemberKey { base: 232000, handle: FieldInsHandle { selector: FieldInsSelector { .0: 386924566, index: 22, container: 113, _field_ins_type: 1 }, block_id: BlockId { .0: -1, area: 255, block: 255, region: 255, index: 255 } } }, hp: 435, max: 500 }]; shown=[(\"Lone Wolf Ashes #1\", 446, 500), (\"Lone Wolf Ashes #2\", 500, 500), (\"Lone Wolf Ashes #3\", 435, 500)]; movie_ready=true; copies=606; native_occupied=0"
+    },
+    {
+      "ms": 133788,
+      "line": "[+133788ms] HUD entity snapshot: members=[Member { key: MemberKey { base: 232000, handle: FieldInsHandle { selector: FieldInsSelector { .0: 386924564, index: 20, container: 113, _field_ins_type: 1 }, block_id: BlockId { .0: -1, area: 255, block: 255, region: 255, index: 255 } } }, hp: 381, max: 500 }, Member { key: MemberKey { base: 232000, handle: FieldInsHandle { selector: FieldInsSelector { .0: 386924565, index: 21, container: 113, _field_ins_type: 1 }, block_id: BlockId { .0: -1, area: 255, block: 255, region: 255, index: 255 } } }, hp: 392, max: 500 }, Member { key: MemberKey { base: 232000, handle: FieldInsHandle { selector: FieldInsSelector { .0: 386924566, index: 22, container: 113, _field_ins_type: 1 }, block_id: BlockId { .0: -1, area: 255, block: 255, region: 255, index: 255 } } }, hp: 435, max: 500 }]; shown=[(\"Lone Wolf Ashes #1\", 381, 500), (\"Lone Wolf Ashes #2\", 392, 500), (\"Lone Wolf Ashes #3\", 435, 500)]; movie_ready=true; copies=605; native_occupied=0"
+    },
+    {
+      "ms": 143867,
+      "line": "[+143867ms] HUD entity snapshot: members=[Member { key: MemberKey { base: 232000, handle: FieldInsHandle { selector: FieldInsSelector { .0: 386924564, index: 20, container: 113, _field_ins_type: 1 }, block_id: BlockId { .0: -1, area: 255, block: 255, region: 255, index: 255 } } }, hp: 381, max: 500 }, Member { key: MemberKey { base: 232000, handle: FieldInsHandle { selector: FieldInsSelector { .0: 386924565, index: 21, container: 113, _field_ins_type: 1 }, block_id: BlockId { .0: -1, area: 255, block: 255, region: 255, index: 255 } } }, hp: 500, max: 500 }, Member { key: MemberKey { base: 232000, handle: FieldInsHandle { selector: FieldInsSelector { .0: 386924566, index: 22, container: 113, _field_ins_type: 1 }, block_id: BlockId { .0: -1, area: 255, block: 255, region: 255, index: 255 } } }, hp: 490, max: 500 }]; shown=[(\"Lone Wolf Ashes #1\", 381, 500), (\"Lone Wolf Ashes #2\", 500, 500), (\"Lone Wolf Ashes #3\", 490, 500)]; movie_ready=true; copies=604; native_occupied=0"
+    },
+    {
+      "ms": 153952,
+      "line": "[+153952ms] HUD entity snapshot: members=[Member { key: MemberKey { base: 232000, handle: FieldInsHandle { selector: FieldInsSelector { .0: 386924564, index: 20, container: 113, _field_ins_type: 1 }, block_id: BlockId { .0: -1, area: 255, block: 255, region: 255, index: 255 } } }, hp: 500, max: 500 }, Member { key: MemberKey { base: 232000, handle: FieldInsHandle { selector: FieldInsSelector { .0: 386924565, index: 21, container: 113, _field_ins_type: 1 }, block_id: BlockId { .0: -1, area: 255, block: 255, region: 255, index: 255 } } }, hp: 500, max: 500 }, Member { key: MemberKey { base: 232000, handle: FieldInsHandle { selector: FieldInsSelector { .0: 386924566, index: 22, container: 113, _field_ins_type: 1 }, block_id: BlockId { .0: -1, area: 255, block: 255, region: 255, index: 255 } } }, hp: 490, max: 500 }]; shown=[(\"Lone Wolf Ashes #1\", 500, 500), (\"Lone Wolf Ashes #2\", 500, 500), (\"Lone Wolf Ashes #3\", 490, 500)]; movie_ready=true; copies=605; native_occupied=0"
+    },
+    {
+      "ms": 164036,
+      "line": "[+164036ms] HUD entity snapshot: members=[Member { key: MemberKey { base: 232000, handle: FieldInsHandle { selector: FieldInsSelector { .0: 386924564, index: 20, container: 113, _field_ins_type: 1 }, block_id: BlockId { .0: -1, area: 255, block: 255, region: 255, index: 255 } } }, hp: 500, max: 500 }, Member { key: MemberKey { base: 232000, handle: FieldInsHandle { selector: FieldInsSelector { .0: 386924565, index: 21, container: 113, _field_ins_type: 1 }, block_id: BlockId { .0: -1, area: 255, block: 255, region: 255, index: 255 } } }, hp: 500, max: 500 }, Member { key: MemberKey { base: 232000, handle: FieldInsHandle { selector: FieldInsSelector { .0: 386924566, index: 22, container: 113, _field_ins_type: 1 }, block_id: BlockId { .0: -1, area: 255, block: 255, region: 255, index: 255 } } }, hp: 490, max: 500 }]; shown=[(\"Lone Wolf Ashes #1\", 500, 500), (\"Lone Wolf Ashes #2\", 500, 500), (\"Lone Wolf Ashes #3\", 490, 500)]; movie_ready=true; copies=605; native_occupied=0"
+    }
+  ],
+  "fpChanges": [
+    {
+      "ms": 115321,
+      "fp": 295
+    },
+    {
+      "ms": 136538,
+      "fp": 287
+    },
+    {
+      "ms": 140700,
+      "fp": 279
+    },
+    {
+      "ms": 143850,
+      "fp": 271
+    }
+  ],
+  "diagnosticLines": [
+    "[+255ms] Waiting for task scheduler: elapsed_ms=10, attempts=1, error=NotFound(\"CSTask\")"
+  ],
+  "costAssessment": "Three FP drops 295->287->279->271. Installed SpEffect1934 magicConsumptionRate=1.5; observed8FP per cast is consistent with base5*1.5 rounded up. No evidence of double charge. Exact charging internals not separately traced.",
+  "agentExecutedGameplay": false,
+  "staffUserReport": "Lusat's Glintstone Staff +10; no other FP-increasing gear reported",
+  "costParameterEvidence": "evidence/0.5.0-lusat-cost-param.json"
+}

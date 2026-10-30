@@ -1,0 +1,10 @@
+{
+  "version": "0.1.8",
+  "installed_at": "2026-10-29T18:21:25.3958967-05:00",
+  "backup": "<WORKSPACE>\\outputs\\SpiritAshResummon\\evidence\\before-0.1.8-20261029-182125",
+  "dll_sha256": "BA563BC597D844DE5B99A80F86AF87CCE2D4CBB4F97BAEC1C0A2BCC61D1ED381",
+  "configuration_preserved": true,
+  "configuration_sha256": "04BBAE8B459A9746E0EBEEF83FF3886890E1BC6B430B88CD7A11558DF7D307BD",
+  "build": "release --lib --locked x86_64-pc-windows-msvc",
+  "tests_run": false
+}

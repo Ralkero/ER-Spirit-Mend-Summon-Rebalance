@@ -1,0 +1,21 @@
+[package]
+name = "spirit-ash-resummon"
+version = "0.5.1"
+edition = "2024"
+license = "MIT OR Apache-2.0"
+publish = false
+
+[lib]
+name = "SpiritAshResummon"
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+eldenring = { path = "vendor/fromsoftware-rs/crates/eldenring" }
+fromsoftware-shared = { path = "vendor/fromsoftware-rs/crates/shared" }
+pelite = "0.10"
+windows = { version = "0.61", features = ["Win32_Foundation", "Win32_System_Kernel", "Win32_System_Threading", "Win32_System_Diagnostics_Debug", "Win32_System_Diagnostics_ToolHelp", "Win32_System_LibraryLoader", "Win32_System_Memory"] }
+
+[profile.release]
+debug = 2
+strip = "none"
+

@@ -1,0 +1,2 @@
+   Compiling spirit-ash-resummon v0.3.1 (<WORKSPACE>\outputs\SpiritAshResummon)
+    Finished `release` profile [optimized + debuginfo] target(s) in 5.66s

@@ -1,0 +1,110 @@
+{
+  "session_pid": 10064,
+  "version": "0.4.0",
+  "archive": "outputs\\SpiritAshResummon\\evidence\\0.4.0-elleh-boundary-20261029-231346.log",
+  "user_report": "Church of Elleh summon 55 FP; Gatefront and back without dismissal; 60 FPS; rested afterward explains later cleanup",
+  "activations": [
+    {
+      "at_ms": 38035,
+      "effect": 232000,
+      "fp_before": 350,
+      "fp_next_sample": 295,
+      "delta": 55
+    },
+    {
+      "at_ms": 54366,
+      "effect": 212010,
+      "fp_before": 295,
+      "fp_next_sample": 251,
+      "delta": 44
+    },
+    {
+      "at_ms": 81370,
+      "effect": 232000,
+      "fp_before": 251,
+      "fp_next_sample": 196,
+      "delta": 55
+    },
+    {
+      "at_ms": 85747,
+      "effect": 232000,
+      "fp_before": 196,
+      "fp_next_sample": 141,
+      "delta": 55
+    },
+    {
+      "at_ms": 89641,
+      "effect": 212010,
+      "fp_before": 141,
+      "fp_next_sample": 97,
+      "delta": 44
+    },
+    {
+      "at_ms": 94106,
+      "effect": 232000,
+      "fp_before": 97,
+      "fp_next_sample": 42,
+      "delta": 55
+    },
+    {
+      "at_ms": 102023,
+      "effect": 232000,
+      "fp_before": 212,
+      "fp_next_sample": 157,
+      "delta": 55
+    },
+    {
+      "at_ms": 106017,
+      "effect": 232000,
+      "fp_before": 157,
+      "fp_next_sample": 102,
+      "delta": 55
+    },
+    {
+      "at_ms": 166700,
+      "effect": 232000,
+      "fp_before": 350,
+      "fp_next_sample": 295,
+      "delta": 55
+    }
+  ],
+  "faults": [],
+  "timings": {
+    "task": {
+      "calls": 20297,
+      "total_us": 623493,
+      "max_us": 10686
+    },
+    "query": {
+      "calls": 55376,
+      "total_us": 113476,
+      "max_us": 180
+    },
+    "cost": {
+      "calls": 73268,
+      "total_us": 371980,
+      "max_us": 405
+    },
+    "summon": {
+      "calls": 9,
+      "total_us": 112257,
+      "max_us": 18972
+    },
+    "hud_sample": {
+      "calls": 2996,
+      "total_us": 64451,
+      "max_us": 615
+    },
+    "inactive_cleanup": {
+      "calls": 646,
+      "total_us": 11117,
+      "max_us": 10664
+    },
+    "readable_probe": {
+      "calls": 22,
+      "total_us": 112530,
+      "max_us": 11365
+    }
+  },
+  "scope": "User-operated observation and log review only; no agent-run tests. Other maps unverified."
+}

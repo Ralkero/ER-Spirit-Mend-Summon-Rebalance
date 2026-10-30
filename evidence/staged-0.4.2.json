@@ -1,0 +1,73 @@
+{
+  "version": "0.4.2",
+  "timestamp": "2026-10-29T23:44:34.2630350-05:00",
+  "staged": "<WORKSPACE>\\outputs\\SpiritAshResummon\\pending-0.4.2",
+  "stagedDllSHA256": "C04FF547E9E4A8C8245610A86AB5075C68D9151E3FCC1F229B7C637BE1AF21FC",
+  "priorInstalledDllSHA256": "71596B937B72A5A15EFAB5EBB734E6616A4DA6996467BCD8372211B60B7E52CE",
+  "compileSucceeded": true,
+  "automatedTestsExecuted": false,
+  "gameplayTestsExecuted": false,
+  "configurationChange": "Targeting.EnableFriendlySpiritLockOn=true; all other settings retained",
+  "files": [
+    {
+      "name": "CHANGELOG.md",
+      "sha256": "FFC8D86EF1C92D7F2E23A96662FE6AAD87A027CFFF5526A7764B9DAC857C74A2",
+      "bytes": 25541
+    },
+    {
+      "name": "IMPLEMENTATION.md",
+      "sha256": "EAFA4A51ACA91ABACDB8C7DF8E533282F019024D0CC8CB58EA1DB24DAA0A18FC",
+      "bytes": 45983
+    },
+    {
+      "name": "LICENSE-APACHE",
+      "sha256": "19DFC44CF86B3B3C419E22EB331C287D208E1B17D5BA407BEC99DCB292DAC5D4",
+      "bytes": 11541
+    },
+    {
+      "name": "LICENSE-MIT",
+      "sha256": "3690A286D00707B013A29B518F3361D17E97EAB01E3BB7D2D30DEB5C8BBA0216",
+      "bytes": 1088
+    },
+    {
+      "name": "README.md",
+      "sha256": "335F2883B9558D2D4B99B083E7963932935F43581459AEF1477E047DEA577355",
+      "bytes": 12977
+    },
+    {
+      "name": "SpiritAshResummon.dll",
+      "sha256": "C04FF547E9E4A8C8245610A86AB5075C68D9151E3FCC1F229B7C637BE1AF21FC",
+      "bytes": 516608
+    },
+    {
+      "name": "SpiritAshResummon.ini",
+      "sha256": "3D58C862CECC01CB69A6924416424FB814935A73F9C7CDBA24C66FF476F38E4A",
+      "bytes": 391
+    },
+    {
+      "name": "SpiritAshResummon.pdb",
+      "sha256": "DCF49EABE36F002F6CB55E54CBFD2C67E39BDDA7E770EB26E3BEA0421CE21891",
+      "bytes": 10203136
+    },
+    {
+      "name": "START-HERE.txt",
+      "sha256": "5575ECAE56548A596F97587745BBA34BCB1403A71458A8B6BFFFB6BB22693342",
+      "bytes": 2737
+    },
+    {
+      "name": "THIRD-PARTY-NOTICES.txt",
+      "sha256": "BDFE6B3B0611C40846641F0BA60853788E7439D19AD2BACC332CB8A9AFF27496",
+      "bytes": 59940
+    },
+    {
+      "name": "UPSTREAM.md",
+      "sha256": "A2E49DE2D9C4FA8E3F15A25C5AFE7381A32D910E536B0DC7FE20759E7D800305",
+      "bytes": 4051
+    },
+    {
+      "name": "VALIDATION.md",
+      "sha256": "000463D39260A2CD3EE621EB2DCF52DCE0B03D57C4AA417046B2D5D1A98C9402",
+      "bytes": 102837
+    }
+  ]
+}

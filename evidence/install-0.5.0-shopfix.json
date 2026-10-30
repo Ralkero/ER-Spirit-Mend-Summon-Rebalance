@@ -1,0 +1,30 @@
+{
+  "version": "0.5.0-shopfix",
+  "timestamp": "2026-10-30T00:23:19.9343643-05:00",
+  "backup": "<WORKSPACE>\\outputs\\SpiritAshResummon\\evidence\\installed-0.5.0-before-shopfix-20261030-002319",
+  "oldShopRow": 100599,
+  "newShopRow": 100521,
+  "dllUnchanged": true,
+  "logPreserved": true,
+  "files": [
+    {
+      "path": "regulation.bin",
+      "sha256": "75F7C3B041992EB6499D5B31690E14398485F9C4954A036A72F4676DCE73B447"
+    },
+    {
+      "path": "msg\\engus\\item.msgbnd.dcx",
+      "sha256": "DC2E8ED565FF97CAC6F3CD835DC3E902C1D47872C9B5387F9F1B4051C6139373"
+    },
+    {
+      "path": "msg\\engus\\item_dlc01.msgbnd.dcx",
+      "sha256": "A591079F8C7D4DC1456A7BB7E852CAC18B5FC33AB453C3BF12793D8F175A2D77"
+    },
+    {
+      "path": "msg\\engus\\item_dlc02.msgbnd.dcx",
+      "sha256": "9334382EF5C725842755032B9EF645FB8901C0C8322DC3EDE60B095C2EC25AE1"
+    }
+  ],
+  "gameLaunched": false,
+  "automatedTestsExecuted": false,
+  "gameplayTestsExecuted": false
+}

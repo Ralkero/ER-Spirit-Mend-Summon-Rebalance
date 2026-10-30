@@ -1,0 +1,70 @@
+{
+  "tool": "UXM Selective Unpacker 2.4.2.0",
+  "download": "https://github.com/Nordgaren/UXM-Selective-Unpack/releases/download/2.4.2/UXM.Selective.Unpack.2.4.2.0.zip",
+  "downloadSHA256": "F190D4C1C2CC545644D5755F2FD2035F2F0443C0CE51C92EB3777450BC006AB9",
+  "toolSHA256": "B9C7397E3530160A6EDA53E4438B75C1C6D1C47B70A503001FF55CD1175B0764",
+  "destination": "E:\\Elden Ring Unpacked Files",
+  "extractedCount": 8,
+  "totalBytes": 123217059.0,
+  "method": "Official unmodified assembly UnpackArchive routine invoked through a PowerShell/C# wrapper; explicit selection, unknown files skipped; temporary menu/msg junctions routed writes to E: and were removed",
+  "patchCalled": false,
+  "restoreCalled": false,
+  "gamePreservation": {
+    "before": "F9118FEA2CFD8FA3901E8060BFADB1552CB2471771DED8A5B662C4E298FFB328",
+    "after": "F9118FEA2CFD8FA3901E8060BFADB1552CB2471771DED8A5B662C4E298FFB328",
+    "unchanged": true,
+    "junctionsRemoved": true
+  },
+  "files": [
+    {
+      "path": "/menu/01_000_fe.gfx",
+      "bytes": 1634768,
+      "sha256": "CEF2BA8350AA8A03B58729472C3B3B110AF798881EEDC8B4284A499F9B8754ED"
+    },
+    {
+      "path": "/menu/hi/01_common.sblytbnd.dcx",
+      "bytes": 21123,
+      "sha256": "322FFAC0CDE5E52BFC0230809D9E1315B9F7E3DD7B78D80F51365A2CCA2D1C2E"
+    },
+    {
+      "path": "/menu/hi/01_common.tpf.dcx",
+      "bytes": 67434496,
+      "sha256": "055798AD5D526A3394A13D63C8F9E5F9FFDE01716CD7B0EB25DFE67528AA4EDE"
+    },
+    {
+      "path": "/menu/low/01_common.sblytbnd.dcx",
+      "bytes": 21264,
+      "sha256": "EC93261EF4D7A85C35D1080DF67D9636D4E3262704AD9970E27D41E64DC87856"
+    },
+    {
+      "path": "/menu/low/01_common.tpf.dcx",
+      "bytes": 53217808,
+      "sha256": "7275B50C8A684206FE77DABED209D191F2E082A509A21C933CC62378A58B6724"
+    },
+    {
+      "path": "/msg/engus/item.msgbnd.dcx",
+      "bytes": 242832,
+      "sha256": "E4873644E9B6B2F76183197B69E6C2F1BC1CA468B4B7289377E5949A2DF24E1A"
+    },
+    {
+      "path": "/msg/engus/item_dlc01.msgbnd.dcx",
+      "bytes": 322320,
+      "sha256": "762C2619B74A88B4160702D914C4E251967EFAB4D4E2C7C5E83B564731D17CF8"
+    },
+    {
+      "path": "/msg/engus/item_dlc02.msgbnd.dcx",
+      "bytes": 322448,
+      "sha256": "9E8CE62DA854A7F6AEF51DA5E37C0E9BB26D7A40D88898B7076CE7081D209D96"
+    }
+  ],
+  "hudObservation": {
+    "signature": "GFX",
+    "RemotePCTag1NamePresent": true,
+    "declaredBytes": 1634757,
+    "BuddyNamePresent": true,
+    "storedBytes": 1634768,
+    "renderingTested": false,
+    "RemotePCTag0NamePresent": true
+  },
+  "destinationHashesIndependentlyVerified": true
+}

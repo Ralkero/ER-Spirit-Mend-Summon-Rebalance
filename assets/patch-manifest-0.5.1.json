@@ -1,0 +1,124 @@
+{
+  "schema": 1,
+  "spell": 990001,
+  "bullet": 99000100,
+  "attack": 99000100,
+  "marker": 99000100,
+  "heal": 99000101,
+  "shop": 100521,
+  "changes": [
+    {
+      "table": "Magic",
+      "original": 4010,
+      "id": 990001,
+      "edits": {
+        "refId1": 99000100,
+        "sortId": 4011,
+        "enable_multi": 0,
+        "enable_gray": 0,
+        "enable_white": 0,
+        "enable_black": 0
+      }
+    },
+    {
+      "table": "EquipParamGoods",
+      "original": 4010,
+      "id": 990001,
+      "edits": {
+        "sortId": 250011,
+        "maxNum": 1,
+        "maxRepositoryNum": 1
+      }
+    },
+    {
+      "table": "Bullet",
+      "original": 10401000,
+      "id": 99000100,
+      "edits": {
+        "atkId_Bullet": 99000100,
+        "isHitBothTeam": 1,
+        "spEffectId0": 99000100
+      }
+    },
+    {
+      "table": "AtkParam_Pc",
+      "original": 210640001,
+      "id": 99000100,
+      "edits": {
+        "friendlyTarget": 1,
+        "selfTarget": 0,
+        "opposeTarget": 0,
+        "spEffectAtkPowerCorrectRate_byRate": 100
+      }
+    },
+    {
+      "table": "SpEffectParam",
+      "original": 21640001,
+      "id": 99000100,
+      "edits": {
+        "changeHpPoint": 0,
+        "changeHpRate": 0,
+        "stateInfo": 0,
+        "effectEndurance": 0,
+        "motionInterval": 0,
+        "effectTargetSelfTarget": 0,
+        "effectTargetOpposeTarget": 0,
+        "effectTargetFriendlyTarget": 1,
+        "effectTargetPlayer": 0,
+        "effectTargetAI": 1
+      }
+    },
+    {
+      "table": "SpEffectParam",
+      "original": 21640001,
+      "id": 99000101,
+      "edits": {
+        "changeHpPoint": 0,
+        "changeHpRate": -25,
+        "stateInfo": 0,
+        "effectEndurance": 0,
+        "motionInterval": 0,
+        "effectTargetSelfTarget": 0,
+        "effectTargetOpposeTarget": 0,
+        "effectTargetFriendlyTarget": 1,
+        "effectTargetPlayer": 0,
+        "effectTargetAI": 1
+      }
+    },
+    {
+      "table": "ShopLineupParam",
+      "original": 100507,
+      "id": 100521,
+      "edits": {
+        "equipId": 990001,
+        "value": 300,
+        "eventFlag_forStock": 0,
+        "eventFlag_forRelease": 0,
+        "sellQuantity": -1,
+        "nameMsgId": -1
+      }
+    }
+  ],
+  "sourceRegulation": "<GAME_DIRECTORY>/regulation.bin",
+  "sourceSha256": "B8CDAB84C0772F66811FDC5176A381877CA6657B37D420CC2C1562A90D63870E",
+  "regulationVersion": "11730034",
+  "files": [
+    {
+      "path": "regulation.bin",
+      "sha256": "75F7C3B041992EB6499D5B31690E14398485F9C4954A036A72F4676DCE73B447"
+    },
+    {
+      "path": "msg\\engus\\item.msgbnd.dcx",
+      "sha256": "DC2E8ED565FF97CAC6F3CD835DC3E902C1D47872C9B5387F9F1B4051C6139373"
+    },
+    {
+      "path": "msg\\engus\\item_dlc01.msgbnd.dcx",
+      "sha256": "A591079F8C7D4DC1456A7BB7E852CAC18B5FC33AB453C3BF12793D8F175A2D77"
+    },
+    {
+      "path": "msg\\engus\\item_dlc02.msgbnd.dcx",
+      "sha256": "9334382EF5C725842755032B9EF645FB8901C0C8322DC3EDE60B095C2EC25AE1"
+    }
+  ],
+  "note": "Asset edits unchanged from corrected 0.5.0; hashes describe local generated files, which are not distributed."
+}

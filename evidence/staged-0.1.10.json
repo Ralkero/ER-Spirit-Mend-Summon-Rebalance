@@ -1,0 +1,9 @@
+{
+  "version": "0.1.10",
+  "staged_at": "2026-10-29T18:38:49.6192855-05:00",
+  "staged_dll_sha256": "B06F4A9443C3BC281307613EF00D27833D42230219A31654857203174D99947E",
+  "installed_dll_sha256": "AA8CFAF32187AB365AC5CBB1BAB398A0BB16E61C5390C7E7E5F54F7F8A766EEE",
+  "installed_version": "0.1.9",
+  "tests_run": false,
+  "runtime_performance": "unverified"
+}

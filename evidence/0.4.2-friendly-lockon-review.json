@@ -1,0 +1,266 @@
+{
+  "version": "0.4.2",
+  "pid": 27708,
+  "archivedSession": "outputs\\SpiritAshResummon\\evidence\\0.4.2-friendly-lockon-20261029-234735.log",
+  "snapshotSha256": "37d5a9919873d5d04354f8db3a6159957b414cbcb143b246ed652837a7185be0",
+  "ownedSelectedHandles": [
+    "17100014:ffffffff",
+    "17100015:ffffffff",
+    "17100016:ffffffff"
+  ],
+  "otherSelectedHandles": [
+    "17300018:3c2a2500"
+  ],
+  "samples": [
+    {
+      "ms": 27859,
+      "locked": false,
+      "handle": "ffffffff:ffffffff",
+      "classification": "not_locked",
+      "buddy": "None",
+      "registered": 0,
+      "skipped": 0
+    },
+    {
+      "ms": 37913,
+      "locked": false,
+      "handle": "ffffffff:ffffffff",
+      "classification": "not_locked",
+      "buddy": "None",
+      "registered": 0,
+      "skipped": 0
+    },
+    {
+      "ms": 43947,
+      "locked": false,
+      "handle": "ffffffff:ffffffff",
+      "classification": "not_locked",
+      "buddy": "None",
+      "registered": 0,
+      "skipped": 3
+    },
+    {
+      "ms": 44163,
+      "locked": false,
+      "handle": "ffffffff:ffffffff",
+      "classification": "not_locked",
+      "buddy": "None",
+      "registered": 3,
+      "skipped": 0
+    },
+    {
+      "ms": 47030,
+      "locked": true,
+      "handle": "17100014:ffffffff",
+      "classification": "owned_spirit",
+      "buddy": "Some(23200000)",
+      "registered": 3,
+      "skipped": 0
+    },
+    {
+      "ms": 47864,
+      "locked": true,
+      "handle": "17100015:ffffffff",
+      "classification": "owned_spirit",
+      "buddy": "Some(23200001)",
+      "registered": 3,
+      "skipped": 0
+    },
+    {
+      "ms": 48280,
+      "locked": true,
+      "handle": "17100016:ffffffff",
+      "classification": "owned_spirit",
+      "buddy": "Some(23200002)",
+      "registered": 3,
+      "skipped": 0
+    },
+    {
+      "ms": 48930,
+      "locked": true,
+      "handle": "17100014:ffffffff",
+      "classification": "owned_spirit",
+      "buddy": "Some(23200000)",
+      "registered": 3,
+      "skipped": 0
+    },
+    {
+      "ms": 50397,
+      "locked": false,
+      "handle": "ffffffff:ffffffff",
+      "classification": "not_locked",
+      "buddy": "None",
+      "registered": 3,
+      "skipped": 0
+    },
+    {
+      "ms": 59414,
+      "locked": true,
+      "handle": "17300018:3c2a2500",
+      "classification": "other_or_unresolved",
+      "buddy": "None",
+      "registered": 3,
+      "skipped": 0
+    },
+    {
+      "ms": 61281,
+      "locked": true,
+      "handle": "17100014:ffffffff",
+      "classification": "owned_spirit",
+      "buddy": "Some(23200000)",
+      "registered": 3,
+      "skipped": 0
+    },
+    {
+      "ms": 61914,
+      "locked": true,
+      "handle": "17300018:3c2a2500",
+      "classification": "other_or_unresolved",
+      "buddy": "None",
+      "registered": 3,
+      "skipped": 0
+    },
+    {
+      "ms": 62131,
+      "locked": true,
+      "handle": "17100016:ffffffff",
+      "classification": "owned_spirit",
+      "buddy": "Some(23200002)",
+      "registered": 3,
+      "skipped": 0
+    },
+    {
+      "ms": 63198,
+      "locked": true,
+      "handle": "17100015:ffffffff",
+      "classification": "owned_spirit",
+      "buddy": "Some(23200001)",
+      "registered": 3,
+      "skipped": 0
+    },
+    {
+      "ms": 64047,
+      "locked": true,
+      "handle": "17300018:3c2a2500",
+      "classification": "other_or_unresolved",
+      "buddy": "None",
+      "registered": 3,
+      "skipped": 0
+    },
+    {
+      "ms": 70714,
+      "locked": true,
+      "handle": "17100016:ffffffff",
+      "classification": "owned_spirit",
+      "buddy": "Some(23200002)",
+      "registered": 3,
+      "skipped": 0
+    },
+    {
+      "ms": 80814,
+      "locked": true,
+      "handle": "17100016:ffffffff",
+      "classification": "owned_spirit",
+      "buddy": "Some(23200002)",
+      "registered": 3,
+      "skipped": 0
+    },
+    {
+      "ms": 82264,
+      "locked": true,
+      "handle": "17300018:3c2a2500",
+      "classification": "other_or_unresolved",
+      "buddy": "None",
+      "registered": 3,
+      "skipped": 0
+    },
+    {
+      "ms": 86450,
+      "locked": false,
+      "handle": "ffffffff:ffffffff",
+      "classification": "not_locked",
+      "buddy": "None",
+      "registered": 3,
+      "skipped": 0
+    },
+    {
+      "ms": 96572,
+      "locked": false,
+      "handle": "ffffffff:ffffffff",
+      "classification": "not_locked",
+      "buddy": "None",
+      "registered": 3,
+      "skipped": 0
+    },
+    {
+      "ms": 106656,
+      "locked": false,
+      "handle": "ffffffff:ffffffff",
+      "classification": "not_locked",
+      "buddy": "None",
+      "registered": 3,
+      "skipped": 0
+    },
+    {
+      "ms": 116710,
+      "locked": false,
+      "handle": "ffffffff:ffffffff",
+      "classification": "not_locked",
+      "buddy": "None",
+      "registered": 3,
+      "skipped": 0
+    },
+    {
+      "ms": 126882,
+      "locked": false,
+      "handle": "ffffffff:ffffffff",
+      "classification": "not_locked",
+      "buddy": "None",
+      "registered": 3,
+      "skipped": 0
+    },
+    {
+      "ms": 137015,
+      "locked": false,
+      "handle": "ffffffff:ffffffff",
+      "classification": "not_locked",
+      "buddy": "None",
+      "registered": 3,
+      "skipped": 0
+    },
+    {
+      "ms": 147033,
+      "locked": false,
+      "handle": "ffffffff:ffffffff",
+      "classification": "not_locked",
+      "buddy": "None",
+      "registered": 3,
+      "skipped": 0
+    }
+  ],
+  "metrics": {
+    "friendly_relation_adapter": {
+      "calls": 424451,
+      "total_us": 37338,
+      "max_us": 32,
+      "mean_us": 0.08796775128342259
+    },
+    "target_sample": {
+      "calls": 665,
+      "total_us": 12573,
+      "max_us": 499,
+      "mean_us": 18.906766917293233
+    },
+    "readable_probe": {
+      "calls": 0,
+      "total_us": 0,
+      "max_us": 0,
+      "mean_us": 0.0
+    }
+  },
+  "diagnosticIssues": [],
+  "userReport": "Able to lock onto wolves, cycle among them and from wolves to an enemy.",
+  "fpsReported": false,
+  "inputMethodReported": false,
+  "agentExecutedGameplay": false
+}
