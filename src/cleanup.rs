@@ -17,7 +17,7 @@ struct CleanupStats {
 /// Return the exact inactive registry entry without touching actor storage.
 fn inactive_entry(world: &WorldChrMan, chr: *const ChrIns) -> Option<usize> {
     let set = &world.summon_buddy_chr_set;
-    if set.capacity != crate::capacity::ENTRIES
+    if set.capacity != crate::capacity::expected_entries()
         || !pointer_shape(chr)
         || !pointer_shape(set.entries.as_ptr())
     {

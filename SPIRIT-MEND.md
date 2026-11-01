@@ -1,3 +1,21 @@
+# Current compatible main baseline (2026-11-01)
+
+Runtime version is 0.6.1-solo.5. See docs/CURRENT-COMPATIBILITY.md. The recommended CompatibleSolo.ini enables duplicate groups; Ash reuse summons another group, and Spirit Mend heals individual owned actors. Current-profile spell acceptance is pending. The shop migration below is staged, not installed. Older development statements are historical.
+
+## Acquisition update prepared 2026-10-31
+
+The current solo profile's staged shop migration places Spirit Mend in **Purchase**
+at the **Isolated Merchant on the wooded bridge outside Raya Lucaria's Main Academy
+Gate**, for **300 runes**. It removes Kale's special Study sorcery option. The spell
+ID and all casting/healing values stay unchanged; already-owned spells need no
+repurchase. Source and asset readback are verified; installation/gameplay are pending.
+See [migration instructions](tools/SpiritMendShopMove/README.md). Earlier shop IDs
+and locations below describe previous packages, not the migrated overlay.
+
+# Development note
+
+Spell balance/assets remain unchanged. The impact ledger now prunes by complete native registry lifetime rather than five-second expiry. Optional duplicate mode routes Ash reuse to spawning; Spirit Mend heals one actor from any validated owned group. New mechanics still await user acceptance. See docs/STABILIZATION.md and docs/DUPLICATE-GROUPS.md.
+
 # Spirit Mend 0.5.1
 
 A Swift Glintstone Shard-based Intelligence sorcery that heals one owned living Spirit on projectile impact by 25% of its maximum HP, capped at maximum. Original visuals, staff casting animation and icon remain. Base requirements: 12 INT, one slot, 5 FP, zero Faith/Arcane. Native equipment cost modifiers apply: the user's Lusat's Glintstone Staff+10 produced 8 FP per cast in 0.5.0, consistent with its 1.5x multiplier and native rounding.

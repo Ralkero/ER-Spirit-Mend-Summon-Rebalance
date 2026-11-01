@@ -8,6 +8,17 @@ use windows::Win32::System::{
     Threading::GetCurrentProcess,
 };
 pub const ENTRIES: u32 = 520;
+pub const SEAMLESS_ENTRIES: u32 = 1000;
+
+/// Only the startup hash-pinned solo profile may use the observed larger pool.
+pub fn expected_entries() -> u32 {
+    if crate::runtime::accepted_seamless_solo_module() != 0 {
+        SEAMLESS_ENTRIES
+    } else {
+        ENTRIES
+    }
+}
+
 pub const FIRST_SPIRIT_SLOT: usize = 20;
 pub const MAX_GROUP_MEMBERS: usize = (ENTRIES as usize) - FIRST_SPIRIT_SLOT;
 pub type Patch = (usize, Vec<u8>, Vec<u8>);
@@ -19,8 +30,12 @@ const SLOT_LOOP: [u8; 57] = [
 ];
 /// Prepared before the startup transaction. The constructor epilogue expands
 /// only its freshly built empty registry, using the game's allocator/free pair.
-/// No published registry is resized. If already constructed, runtime refuses.
-pub fn prepare(p: &Program) -> Result<Vec<Patch>, String> {
+/// No published registry is resized. The pinned Seamless solo profile instead
+/// preserves its existing constructor and requires its exact 1000-entry pool.
+pub fn prepare(
+    p: &Program,
+    guards: &mut Vec<crate::seamless_hooks::ReadGuard>,
+) -> Result<Vec<Patch>, String> {
     let va = |rva| {
         p.rva_to_va(rva)
             .map(|x| x as usize)
@@ -29,7 +44,9 @@ pub fn prepare(p: &Program) -> Result<Vec<Patch>, String> {
     let mut patches = Vec::new();
     // One epilogue redirect avoids mixing old allocation sizes with new loop
     // bounds if a constructor was already running during patch installation.
-    patches.push(prepare_constructor(p)?);
+    if let Some(patch) = prepare_constructor(p, guards)? {
+        patches.push(patch);
+    }
     patches.push((
         va(0x493492)?,
         vec![0x83, 0xc0, 2, 0x8d, 4, 0x80, 0x44, 0x8d, 0x14, 0],
@@ -92,24 +109,44 @@ pub fn prepare(p: &Program) -> Result<Vec<Patch>, String> {
     Ok(patches)
 }
 
+const VANILLA_CONSTRUCTOR: &[u8] = &[
+    0x48, 0x8b, 0x0d, 0x6f, 0x8d, 0x8f, 0x03, 0x48, 0x8b, 0x01, 0xba, 0x00, 0x05, 0x00, 0x00, 0x41,
+    0xb8, 0x08, 0x00, 0x00, 0x00, 0xff, 0x50, 0x50, 0x48, 0x89, 0x46, 0x18, 0x48, 0x85, 0xc0, 0x74,
+    0x4a, 0xbf, 0x50, 0x00, 0x00, 0x00, 0x89, 0x7e, 0x10, 0x33, 0xd2, 0x41, 0xb8, 0x00, 0x05, 0x00,
+    0x00, 0x48, 0x8b, 0xc8, 0xe8, 0x4d, 0xac, 0x08, 0x02, 0x33, 0xdb, 0x66, 0x66, 0x66, 0x0f, 0x1f,
+    0x84, 0x00, 0x00, 0x00, 0x00, 0x00, 0x48, 0x8b, 0x4e, 0x18, 0x48, 0x03, 0xcb, 0x48, 0x89, 0x4c,
+    0x24, 0x58, 0x48, 0x89, 0x4c, 0x24, 0x60, 0x74, 0x08, 0x33, 0xd2, 0xe8, 0xa6, 0xe1, 0xf2, 0xff,
+    0x90, 0x48, 0x83, 0xc3, 0x10, 0x48, 0x83, 0xef, 0x01, 0x75, 0xdb, 0x48, 0x83, 0xc4, 0x30, 0x5f,
+    0x5e, 0x5b, 0xc3,
+];
+
+fn constructor_signature(seamless: bool) -> Vec<u8> {
+    let mut signature = VANILLA_CONSTRUCTOR.to_vec();
+    if seamless {
+        signature[11..15].copy_from_slice(&(SEAMLESS_ENTRIES * 16).to_le_bytes());
+        signature[34..38].copy_from_slice(&SEAMLESS_ENTRIES.to_le_bytes());
+        signature[45..49].copy_from_slice(&(SEAMLESS_ENTRIES * 16).to_le_bytes());
+    }
+    signature
+}
+
 // Adapted from upstream spirit_set_size; original notices retained in UPSTREAM.md.
-fn prepare_constructor(p: &Program) -> Result<Patch, String> {
+fn prepare_constructor(
+    p: &Program,
+    guards: &mut Vec<crate::seamless_hooks::ReadGuard>,
+) -> Result<Option<Patch>, String> {
+    let seamless = crate::runtime::accepted_seamless_solo_module() != 0;
     let init = p
         .rva_to_va(0x49560a)
         .map_err(|e| format!("Constructor RVA: {e:?}"))? as usize;
     // Pin the complete constructor, including allocator and entry constructor.
-    let expected: &[u8] = &[
-        0x48, 0x8b, 0x0d, 0x6f, 0x8d, 0x8f, 0x03, 0x48, 0x8b, 0x01, 0xba, 0x00, 0x05, 0x00, 0x00,
-        0x41, 0xb8, 0x08, 0x00, 0x00, 0x00, 0xff, 0x50, 0x50, 0x48, 0x89, 0x46, 0x18, 0x48, 0x85,
-        0xc0, 0x74, 0x4a, 0xbf, 0x50, 0x00, 0x00, 0x00, 0x89, 0x7e, 0x10, 0x33, 0xd2, 0x41, 0xb8,
-        0x00, 0x05, 0x00, 0x00, 0x48, 0x8b, 0xc8, 0xe8, 0x4d, 0xac, 0x08, 0x02, 0x33, 0xdb, 0x66,
-        0x66, 0x66, 0x0f, 0x1f, 0x84, 0x00, 0x00, 0x00, 0x00, 0x00, 0x48, 0x8b, 0x4e, 0x18, 0x48,
-        0x03, 0xcb, 0x48, 0x89, 0x4c, 0x24, 0x58, 0x48, 0x89, 0x4c, 0x24, 0x60, 0x74, 0x08, 0x33,
-        0xd2, 0xe8, 0xa6, 0xe1, 0xf2, 0xff, 0x90, 0x48, 0x83, 0xc3, 0x10, 0x48, 0x83, 0xef, 0x01,
-        0x75, 0xdb, 0x48, 0x83, 0xc4, 0x30, 0x5f, 0x5e, 0x5b, 0xc3,
-    ];
-    if unsafe { std::slice::from_raw_parts(init as *const u8, expected.len()) } != expected {
-        return Err("Summon registry constructor conflict".into());
+    let expected = constructor_signature(seamless);
+    guards.push(crate::seamless_hooks::capture_exact(init, &expected)?);
+    if seamless {
+        crate::runtime::log(format!(
+            "Verified pinned Seamless registry constructor: preserving {SEAMLESS_ENTRIES} entries; local tracking limit {MAX_GROUP_MEMBERS}; no constructor patch"
+        ));
+        return Ok(None);
     }
     let site = init + 0x6b;
     let allocator = (init + 7)
@@ -164,5 +201,26 @@ fn prepare_constructor(p: &Program) -> Result<Patch, String> {
     let delta =
         i32::try_from(cave as i128 - (site as i128 + 5)).map_err(|_| "Constructor stub range")?;
     jump[1..5].copy_from_slice(&delta.to_le_bytes());
-    Ok((site, expected[0x6b..].to_vec(), jump))
+    Ok(Some((site, expected[0x6b..].to_vec(), jump)))
+}
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn constructor_profiles_preserve_all_instructions() {
+        let vanilla = constructor_signature(false);
+        let seamless = constructor_signature(true);
+        assert_eq!(vanilla, VANILLA_CONSTRUCTOR);
+        assert_eq!(seamless.len(), 115);
+        for (offset, expected) in [(11, 16000u32), (34, 1000), (45, 16000)] {
+            assert_eq!(&seamless[offset..offset + 4], &expected.to_le_bytes());
+        }
+        for i in 0..115 {
+            if !(11..15).contains(&i) && !(34..38).contains(&i) && !(45..49).contains(&i) {
+                assert_eq!(vanilla[i], seamless[i]);
+            }
+        }
+    }
 }

@@ -1,3 +1,147 @@
+## 2026-11-01: compatible solo main publication
+
+The current runtime is 0.6.1-solo.5. User acceptance covers Wolves/Lhutel coexistence, friendly lock-on, normal FPS (solo.4), and corrected names (solo.5). Same-Ash duplicates are configured on but not yet reported gameplay-accepted. Spirit Mend invalid casts, flight tracking and healing in this profile remain pending, as does merchant migration installation/gameplay. Earlier observations are version-specific.
+
+Publication preserves runtime/vendor bytes and changes only packaging/configuration/documentation around the accumulated development source. Fresh build evidence is in evidence/publication-0.6.1-solo.5.json. Tests and gameplay were not run. No installed profile/save files were changed.
+
+## 2026-10-31: Academy bridge shop migration - staged
+
+Implemented: move ShopLineupParam 100599 to 100699 in the reviewed solo overlay,
+remove Kale's added menu route, and use the Isolated Merchant's native Purchase
+range 100675..100699. Spell 990001 and price 300 remain unchanged.
+
+Compilation: `dotnet build tools/SpiritMendShopMove -c Release` with the existing
+SoulsFormatsProject override succeeded, zero warnings/errors. Asset generation
+completed; decrypted readback verified 164 unrelated NPC scripts and 193 unrelated
+regulation members byte-identical. All 1,324 shop rows retained their field values
+and names, with only the authorized row identity moved. Original inputs unchanged.
+
+Installer preview succeeded and identified 25 protected files. Game was running;
+no installed assets, DLL, INI, game-root files or saves were changed. Unit tests
+and gameplay were not executed. Shop usability/purchase, existing-spell retention,
+and Bell Bearing behavior are not gameplay-validated.
+
+Next acceptance after closed-game installation: visit the Isolated Merchant on
+the Academy bridge; find Spirit Mend under Purchase for 300 runes; verify other
+stock/Sell/Leave; check an existing or newly purchased spell remains usable; verify
+Kale's ordinary shop remains and Study sorcery is gone. See
+[tool and rollback procedure](tools/SpiritMendShopMove/README.md).
+
+## 2026-10-31: same-Ash duplicate groups enabled in active solo profile
+
+At the user's request, enabled the existing solo.5 duplicate-group implementation
+in the active Mod Engine 2 INI: AllowDuplicateAshGroups=true, MaxGroupsPerAsh=3.
+Game/launchers were absent before the atomic INI change. Only those two keys were
+added; DLL, launcher and mod assets retained their hashes (26 protected files).
+The prior INI and guarded rollback are in the profile backups directory.
+
+This is configuration activation, not a new DLL or gameplay acceptance. No build
+or tests were run. The installed DLL SHA256 remains
+01D03C6ABCF74DCAD496BABBBA91192B0EEC391FED09536E2000AF78940DEF40.
+Duplicate mode takes precedence over HealOnReuse: using an active Ash requests a
+new full group through the existing paid native summon path. Spirit Mend remains
+the targeted healing route. Dismissal-dialog repurposing is deferred as requested.
+
+Next user test: summon Wolves twice on level ground, restoring FP between casts;
+expect six Wolves with 55 FP spent per successful cast and the first group retained.
+Check no dismissal prompt, no reuse healing, working lock-on and normal FPS. The
+four-row HUD does not show all six actors. Third group reaches the configured cap;
+fourth should reject without spending FP. Same-Ash duplication, costs, lifecycle
+and performance in this Seamless solo profile remain pending user validation.
+
+## 2026-10-30: solo.5 HUD naming accepted
+
+**Gameplay-validated (user-operated):** Wolves and Lhutel simultaneously summoned;
+normal names displayed. PID 32412 log confirms goods 232000 and 258000 resolved=true,
+with all four rows shown as Lone Wolf Ashes #1/#2/#3 and Lhutel the Headless #1.
+The latest session remains offline_allowed=true, with no Disabled/PANIC/FAULT
+entries in the inspected session. Friendly candidates are admitted; a fresh
+user-observed cycling/FPS result was not supplied for this build. No new healing,
+cost, death/resummon, or connected-session acceptance is inferred.
+
+## 2026-10-30: solo.4 gameplay evidence and solo.5 name correction
+
+User confirms Wolves and Lhutel simultaneously active, normal FPS, and lock-on
+cycling among Spirits. The wolf HUD displays fallback names, confirmed in logs.
+Solo.5 adds a bounded loaded-FMG reader without changing gameplay hooks or assets.
+Compilation succeeded; tests compiled only, not executed. Name rendering and
+first-label timing need user validation. See [evidence and acceptance](docs/SEAMLESS-SOLO-HUD-NAMES.md).
+
+## 2026-10-30: 0.6.1-solo.4 session correction
+
+Solo.3 startup hooks and HUD movie patch succeeded in the user-operated run.
+Gameplay stayed disabled because protocol became 6 in the solo session. Solo.4
+adds a pinned-profile exception with fresh local-only membership/host validation
+and explicit offline_allowed diagnostics. Compilation and Clippy completed;
+regression tests compiled only, not executed. Live membership, activation and
+combat behavior remain pending. See [session evidence and ordered acceptance](docs/SEAMLESS-SOLO-SESSION.md).
+
+## 2026-10-30: 0.6.1-solo.3 staged registry correction
+
+Confirmed solo.2 accepts both redirect guards but rejects the changed registry
+constructor, leaving gameplay inactive. Solo.3 preserves the exact pinned
+1000-entry constructor; compiled and prepared for user testing. Read-only audit:
+57/58 checked spans match; optional HUD name lookup uses its safe fallback.
+Automated tests compiled only, not executed. See the ordered acceptance procedure
+in [SEAMLESS-SOLO-REGISTRY.md](docs/SEAMLESS-SOLO-REGISTRY.md). Not installed into
+the running game; no gameplay acceptance claimed.
+
+# 0.6.1-solo.2 - confirmed startup conflict, staged correction
+
+- User reports native summon-dismissal prompt and no friendly lock-on. Log confirms no hooks installed: signature mismatch at RVA4b73d0.
+- Read-only capture: 2 of 31 sampled entry/call sites differ; both resolve through inspected Seamless redirects. Handler and callback code fingerprints match the pinned binary. No game memory writes or controls performed.
+- Original GameMan online-mode flag observed as0, connection capability1; this does not establish all session-gate values.
+- Windows release build and `cargo fmt --all --check`: succeeded.
+- Regression cases prepared; `cargo test --lib --locked --no-run --target x86_64-pc-windows-msvc`: compiled without executing tests.
+- Normal Clippy completed with the same eight existing style warnings; none in the new redirect module.
+- Corrected startup, solo gameplay and connected compatibility: not tested. Installed DLL unchanged while game is open. [Details](docs/SEAMLESS-SOLO-REDIRECTS.md).
+
+# 0.6.1-solo.1 - static/build evidence
+
+- Rust release build (`cargo build --lib --locked --release --target x86_64-pc-windows-msvc`) and formatting check succeeded.
+- C# SpiritMendMerge build succeeded with zero warnings/errors.
+- Initial additive merge correctly rejected occupied shop ID 100521. Resolved with free shop 100599 and a separate native Kalé menu; no existing shop item replaced.
+- Final encrypted merge readback preserved 42,760 existing rows across six affected tables and 188 untouched regulation members; imported seven rows.
+- Each of three English message bundles preserved 12,829 existing entries in changed FMGs; nine total new entries. Unrelated message members preserved.
+- 164 unrelated NPC script members unchanged; removing the three added Kalé menu/state changes reproduced the original script serialization exactly.
+- Automated tests, game launch, solo runtime, shop usability and connected replication: **not executed**. No testing requested from the user in this pass.
+- [Solo scope and installed acquisition](docs/SEAMLESS-SOLO.md).
+
+# Seamless probe 1 - compilation only (2026-10-30)
+
+- Release build with `--features seamless-probe --locked`: succeeded.
+- Default gameplay release build with `--locked`: succeeded; not installed into the active Seamless profile.
+- Probe `cargo clippy --lib --locked --features seamless-probe --target x86_64-pc-windows-msvc -- -D warnings`: succeeded after correcting one new style warning.
+- `cargo fmt --all --check`: succeeded. PowerShell installer AST parsed without errors.
+- Initial probe compilation found four type/import errors, all corrected before the successful build.
+- Automated tests and gameplay tests: **not executed**, reserved for the user.
+- No connected-session or replication acceptance claimed. [Next user procedure](docs/SEAMLESS-COMPATIBILITY.md#user-operated-diagnostic-procedure).
+
+# Duplicate prototype acceptance
+
+0.6.0-dev.1 user procedure and known conservative failure modes: [docs/DUPLICATE-GROUPS.md](docs/DUPLICATE-GROUPS.md). Validate stabilization with duplicates disabled before enabling this separate feature. Prepared tests were compiled without execution.
+
+# Development acceptance (not executed)
+
+See [the current audit](docs/STABILIZATION.md). All test execution remains reserved for the user. Run prepared tests with `cargo test --lib --locked --target x86_64-pc-windows-msvc`; `--no-run` only compiles them.
+
+With duplicate mode disabled and matching 0.5.1 assets, record staff/equipment, target, projectile, HP/FP before/after and FPS:
+
+1. No-target cast: zero FP and no shard; animation may play.
+2. Enemy-target cast: zero FP and no shard. Unrelated NPCs stay excluded.
+3. Full-health owned Spirit: zero FP and no shard.
+4. Injured owned Spirit: one charge, 25% max HP capped, only that target.
+5. Ordinary staff: base5 FP; Lusat: previously observed8 FP. Record actual modifiers.
+6. Unlock AFTER visible release: original target heals if hit.
+7. Switch Spirit AFTER release: no redirection. Try successive shots at different targets.
+8. Valid shot misses/hits terrain: normal charge, no refund or unrelated heal.
+9. Target dies/unloads in flight: no revival or redirected heal; test opportunistically.
+10. Ordinary offensive sorcery: normal damage, projectile and cost.
+
+Wait ten seconds before collecting logs. `release rejected` alone does not prove zero FP. `native_spawn_accepted` is not proof of charging. `projectile evidence` compares original launch_target to selected_now. `impact` logs expected HP/native dispatch, not actual HP: compare later HUD samples and visible health/resource changes. Stop on wrong-target healing, duplicate charges, crashes or sustained FPS loss. Historical records below retain their version context.
+
+---
+
 # Publication compilation review
 
 The public source copy compiled successfully for Windows x64; the portable asset tool also compiled with zero warnings/errors against the existing pinned patched SoulsFormatsNEXT dependency. Current PowerShell setup tools parsed successfully. No automated or gameplay tests were executed. Runtime/vendor files match the installed 0.5.1 source byte-for-byte. See evidence/publication-build-review.json and publication build transcripts. The new dependency download script was not executed; its syntax was inspected.

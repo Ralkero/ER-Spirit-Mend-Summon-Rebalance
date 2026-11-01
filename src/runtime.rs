@@ -71,6 +71,9 @@ struct GateStatus {
     player_loaded: Option<bool>,
     online_flags: Option<(bool, bool)>,
     session_states: Option<(u32, u32)>,
+    seamless_solo: bool,
+    solo_members: Option<crate::session_policy::SoloMembers>,
+    offline_allowed: bool,
     conflicting_dll: bool,
     buddy_param_ready: Option<bool>,
     resummon_config: bool,
@@ -114,17 +117,19 @@ unsafe extern "system" {
 fn loaded(name: PCWSTR) -> bool {
     !unsafe { module_handle_raw(name) }.0.is_null()
 }
+include!("seamless_solo.rs");
+
 fn conflicts() -> bool {
     let _timer = timing::CONFLICT.start(config().debug);
     [
         windows::core::w!("MultipleSpiritAshes.dll"),
         windows::core::w!("NativeTweaks.dll"),
-        windows::core::w!("ersc.dll"),
         windows::core::w!("EasyAntiCheat_x64.dll"),
         windows::core::w!("EasyAntiCheat_EOS.dll"),
     ]
     .into_iter()
     .any(loaded)
+        || seamless_conflict()
 }
 pub fn start(module: usize) {
     let mut buf = [0u16; 32768];
@@ -181,6 +186,10 @@ pub fn start(module: usize) {
         log("Disabled: unsupported executable; only WW 2.7.2.0 is enabled");
         return;
     }
+    if let Err(error) = initialize_seamless_solo() {
+        log(format!("Disabled: {error}"));
+        return;
+    }
     if conflicts() {
         log("Disabled: conflicting DLL or protected environment detected");
         return;
@@ -196,7 +205,7 @@ pub fn start(module: usize) {
         if config().multiple { 11 } else { 8 },
         config().multiple,
         if config().multiple {
-            crate::capacity::ENTRIES
+            crate::capacity::expected_entries()
         } else {
             80
         }
@@ -273,25 +282,46 @@ fn wait_for_scheduler(timeout: Duration) -> Option<&'static CSTaskImp> {
 }
 
 fn offline() -> bool {
-    policy::offline_allowed(
-        unsafe { GameMan::instance() }
-            .ok()
-            .map(|g| g.is_in_online_mode),
-        session_states(),
-        CONFLICTING_DLL.load(Ordering::Acquire),
+    let pinned = accepted_seamless_solo_module() != 0;
+    let online = unsafe { GameMan::instance() }
+        .ok()
+        .map(|g| g.is_in_online_mode);
+    let conflict = CONFLICTING_DLL.load(Ordering::Acquire);
+    if conflict || online != Some(false) {
+        return false;
+    }
+    let session = unsafe { CSSessionManager::instance() }.ok();
+    let states = session.map(raw_session_states);
+    if !pinned {
+        return policy::offline_allowed(online, states, conflict);
+    }
+    // Preserve the old short circuit: do not walk membership during transitions.
+    if !matches!(states, Some((0, 0 | 6))) {
+        return false;
+    }
+    crate::session_policy::allowed(
+        online,
+        states,
+        conflict,
+        pinned,
+        session.and_then(seamless_solo_members),
     )
 }
-fn session_states() -> Option<(u32, u32)> {
-    let session = unsafe { CSSessionManager::instance() }.ok()?;
-    // Read raw values so unexpected enum discriminants reject instead of being interpreted.
-    Some(unsafe {
+fn raw_session_states(session: &CSSessionManager) -> (u32, u32) {
+    // Never materialize unknown native enum discriminants.
+    unsafe {
         (
             std::ptr::addr_of!(session.lobby_state).cast::<u32>().read(),
             std::ptr::addr_of!(session.protocol_state)
                 .cast::<u32>()
                 .read(),
         )
-    })
+    }
+}
+fn session_states() -> Option<(u32, u32)> {
+    unsafe { CSSessionManager::instance() }
+        .ok()
+        .map(raw_session_states)
 }
 fn tick(_: &FD4TaskData) {
     let _timer = timing::TASK.start(config().debug);
@@ -318,16 +348,18 @@ fn tick_inner() {
     }
     CONFLICTING_DLL.store(conflicts(), Ordering::Release);
     refresh_pending_spawn();
+    refresh_mend_session();
+    refresh_duplicate_groups(false);
     if config().multiple {
         if let Ok(world) = unsafe { WorldChrMan::instance() } {
             if world.main_player.is_some()
-                && world.summon_buddy_chr_set.capacity != crate::capacity::ENTRIES
+                && world.summon_buddy_chr_set.capacity != crate::capacity::expected_entries()
             {
                 FAULT.store(true, Ordering::Release);
                 log(format!(
                     "Disabled: summon registry has {} entries, expected {}; constructor was too early or another mod changed it. Restart required",
                     world.summon_buddy_chr_set.capacity,
-                    crate::capacity::ENTRIES
+                    crate::capacity::expected_entries()
                 ));
                 return;
             }
@@ -472,6 +504,15 @@ fn report_gate_status() {
             .ok()
             .map(|g| (g.is_in_online_mode, g.server_connection_enabled)),
         session_states: session_states(),
+        seamless_solo: accepted_seamless_solo_module() != 0,
+        solo_members: if accepted_seamless_solo_module() != 0 {
+            unsafe { CSSessionManager::instance() }
+                .ok()
+                .and_then(seamless_solo_members)
+        } else {
+            None
+        },
+        offline_allowed: offline(),
         conflicting_dll: CONFLICTING_DLL.load(Ordering::Acquire),
         buddy_param_ready: unsafe { SoloParamRepository::instance() }
             .ok()
@@ -496,7 +537,7 @@ fn report_gate_status() {
         });
     if changed || (config().debug && due) {
         log(format!(
-            "Activation gates tick={count}: {status:?}; online_flags=(online_mode, connection_capability); require online_mode=false and session_states=(lobby=0, protocol=0); connection_capability is diagnostic only"
+            "Activation gates tick={count}: {status:?}; online_flags=(online_mode, connection_capability); require online_mode=false; standalone session=(0,0); pinned Seamless solo session=(0,0|6) plus known local-only membership/host; connection_capability is diagnostic only"
         ));
         *last = Some((status, Instant::now(), count));
     } else if let Some((_, _, previous_count)) = last.as_mut() {
@@ -1376,3 +1417,5 @@ include!("hud_snapshot.rs");
 include!("targeting_diagnostic.rs");
 include!("friendly_lockon.rs");
 include!("spirit_mend.rs");
+
+include!("duplicate_groups.rs");

@@ -1,0 +1,24 @@
+{
+  "baseline": "0506238b90577b123a289a6e625c5ac1d5d0e7b2",
+  "branch": "dev/0.5.1-stabilization-duplicate-groups",
+  "version": "0.6.0-dev.1",
+  "date": "2026-10-30",
+  "release_command": "cargo build --lib --locked --release --target x86_64-pc-windows-msvc --target-dir ../../work/stabilization-build",
+  "release_result": "success, final compile 3.82s",
+  "tests_command": "cargo test --lib --locked --no-run --target x86_64-pc-windows-msvc --target-dir ../../work/stabilization-build",
+  "tests_result": "test executable compiled in 2.07s; NOT EXECUTED",
+  "clippy_command": "cargo clippy --lib --tests --locked --target x86_64-pc-windows-msvc --target-dir ../../work/stabilization-build",
+  "clippy_result": "succeeded with 8 pre-existing style warnings; earlier -D warnings run failed (8 baseline plus 2 new lints subsequently corrected). Final tiny lifetime/idle changes compiled afterward.",
+  "test_functions_in_src": 51,
+  "automated_tests_executed": false,
+  "gameplay_executed": false,
+  "installed": false,
+  "pushed": false,
+  "development_dll_sha256": "bb26cc73db6460ad0d0b311e5d61e95825933353ac220d66b783ea1c11b87668",
+  "installed_dll_sha256": "5007a881d42eccbcd105e48d29e74ccfee64f8c6a299c1c312a51120ed755d0c",
+  "corrected_intermediate_compile_errors": [
+    "OwnedPtr.as_ref returns a reference, not Option",
+    "extra delimiter during pure-policy extraction"
+  ],
+  "proprietary_assets_changed": false
+}

@@ -24,3 +24,12 @@ regulation.bin
 *.pfx
 # Archived sanitized evidence is intentionally tracked; new runtime logs stay local.
 /SpiritAshResummon.log
+
+# Personal modded saves and repair outputs must never be published.
+*.co2
+*.co2.*
+*.me2pack
+*.me2pack.*
+*.moddedco2
+*.moddedco2.*
+/private*/

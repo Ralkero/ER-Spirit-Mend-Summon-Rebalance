@@ -1,15 +1,21 @@
 #![allow(non_snake_case)]
-#[cfg(windows)]
+#[cfg(all(windows, not(feature = "seamless-probe")))]
 mod capacity;
 pub mod config;
-#[cfg(windows)]
+pub mod groups;
+#[cfg(all(windows, not(feature = "seamless-probe")))]
 mod hooks;
+pub mod hud_names;
+pub mod mend_policy;
 pub mod policy;
-#[cfg(windows)]
+#[cfg(all(windows, not(feature = "seamless-probe")))]
 mod runtime;
-#[cfg(windows)]
+#[cfg(all(windows, not(feature = "seamless-probe")))]
+mod seamless_hooks;
+pub mod session_policy;
+#[cfg(all(windows, not(feature = "seamless-probe")))]
 mod threads;
-#[cfg(windows)]
+#[cfg(all(windows, not(feature = "seamless-probe")))]
 mod timing;
 
 #[cfg(windows)]
@@ -24,12 +30,20 @@ pub unsafe extern "system" fn DllMain(
     if reason == 1 {
         let module = module.0 as usize;
         // No file I/O, game API calls, hook installation or joins under loader lock.
-        std::thread::spawn(move || runtime::start(module));
+        std::thread::spawn(move || {
+            #[cfg(not(feature = "seamless-probe"))]
+            runtime::start(module);
+            #[cfg(feature = "seamless-probe")]
+            seamless_probe::start(module);
+        });
     }
     1
 }
 
-#[cfg(windows)]
+#[cfg(all(windows, not(feature = "seamless-probe")))]
 mod hud;
-#[cfg(windows)]
+#[cfg(all(windows, not(feature = "seamless-probe")))]
 mod hud_movie;
+
+#[cfg(all(windows, feature = "seamless-probe"))]
+mod seamless_probe;

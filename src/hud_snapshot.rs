@@ -110,6 +110,7 @@ fn collect_hud() {
             if !key.handle.is_empty() && seen.insert(key) {
                 members.push(crate::hud::Member {
                     key,
+                    instance: duplicate_member_label(actor.field_ins_handle),
                     hp: hp as u32,
                     max: max as u32,
                 });

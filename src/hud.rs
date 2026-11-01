@@ -14,6 +14,7 @@ pub static INSTALLED: AtomicBool = AtomicBool::new(false);
 pub static MOVIE_READY: AtomicBool = AtomicBool::new(false);
 static ORIGINAL: AtomicUsize = AtomicUsize::new(0);
 static LOOKUP: AtomicUsize = AtomicUsize::new(0);
+static TABLE_NAMES: AtomicBool = AtomicBool::new(false);
 static COPY_COUNT: AtomicUsize = AtomicUsize::new(0);
 static BUSY_COUNT: AtomicUsize = AtomicUsize::new(0);
 static FAULT: AtomicBool = AtomicBool::new(false);
@@ -26,6 +27,7 @@ pub struct MemberKey {
 #[derive(Clone, Debug)]
 pub struct Member {
     pub key: MemberKey,
+    pub instance: Option<(u64, usize)>,
     pub hp: u32,
     pub max: u32,
 }
@@ -95,7 +97,10 @@ pub fn publish(identity: (usize, u32), members: Vec<Member>, mut name: impl FnMu
         }
         let label = s.names.entry(key.base).or_insert_with(|| name(key.base));
         s.rows.push(Row {
-            name: format!("{} #{}", label, ordinal),
+            name: match m.instance {
+                Some((group, member)) => format!("{label} G{group} #{member}"),
+                None => format!("{} #{}", label, ordinal),
+            },
             hp: m.hp,
             max: m.max,
         });
@@ -121,10 +126,23 @@ pub fn publish(identity: (usize, u32), members: Vec<Member>, mut name: impl FnMu
 }
 pub fn goods_name(id: i32) -> Option<String> {
     let address = LOOKUP.load(Ordering::Acquire);
-    if address == 0 || id <= 0 {
+    if id <= 0 {
         return None;
     }
     let repo = unsafe { MsgRepositoryImp::instance_mut().ok()? } as *mut _ as *mut c_void;
+    if address == 0 {
+        let name = TABLE_NAMES
+            .load(Ordering::Acquire)
+            .then(|| crate::hud_names::native_lookup(repo as usize, id))
+            .flatten();
+        if crate::runtime::config().debug {
+            crate::runtime::log(format!(
+                "HUD loaded-table name: goods={id} resolved={}",
+                name.is_some()
+            ));
+        }
+        return name;
+    }
     let call: unsafe extern "system" fn(*mut c_void, u32, u32, i32) -> *const u16 =
         unsafe { std::mem::transmute(address) };
     for category in [111, 10, 319, 419] {
@@ -263,6 +281,15 @@ pub unsafe fn install() -> Result<(), String> {
     let code = unsafe { std::slice::from_raw_parts(lookup as *const u8, 10) };
     if code[..4] == [0x3b, 0x51, 0x10, 0x73] && code[5..10] == [0x44, 0x3b, 0x41, 0x14, 0x73] {
         LOOKUP.store(lookup, Ordering::Release);
+    } else if crate::runtime::accepted_seamless_solo_module() != 0 {
+        let wrapper = unsafe { std::slice::from_raw_parts(lookup as *const u8, 49) };
+        let leaf = unsafe { std::slice::from_raw_parts(va(0x2671c40)? as *const u8, 120) };
+        if crate::hud_names::layout_matches(wrapper, leaf) {
+            TABLE_NAMES.store(true, Ordering::Release);
+            crate::runtime::log(
+                "HUD names: verified loaded-table reader enabled; redirected name function is not called",
+            );
+        }
     }
     let movie = crate::hud_movie::prepare()?;
     let page = unsafe { crate::hooks::near(site) }.ok_or("HUD copy relay allocation")?;

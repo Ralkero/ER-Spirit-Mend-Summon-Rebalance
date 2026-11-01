@@ -5,6 +5,7 @@ struct PendingSpawn {
     world: usize,
     manager: usize,
     owner: i32,
+    owner_handle: u64,
     goods: i32,
     effect: i32,
 }
@@ -48,6 +49,7 @@ fn pending_spawn_cost(manager: *mut SummonBuddyManager, goods: i32) -> bool {
     pending.is_some_and(|token| {
         token.world == world as *const _ as usize
             && token.manager == manager as usize
+            && token.owner_handle == handle_key(player.chr_ins.field_ins_handle)
             && token.owner == player.chr_ins.event_entity_id as i32
             && token.goods == goods
             && token.goods == m.requested_summon_goods_id
@@ -91,7 +93,8 @@ fn refresh_pending_spawn() {
                 return false;
             }
             let m = unsafe { &*manager };
-            player.chr_ins.event_entity_id as i32 == token.owner
+            token.owner_handle == handle_key(player.chr_ins.field_ins_handle)
+                && player.chr_ins.event_entity_id as i32 == token.owner
                 && !player.chr_ins.chr_flags1c5.death_flag()
                 && m.request_summon_speffect_id == token.effect
                 && m.requested_summon_goods_id == token.goods
@@ -133,7 +136,7 @@ unsafe fn snapshot_multi(
     if expected != manager as usize {
         return None;
     }
-    if world.summon_buddy_chr_set.capacity != crate::capacity::ENTRIES {
+    if world.summon_buddy_chr_set.capacity != crate::capacity::expected_entries() {
         return None;
     }
     let pc = &world.main_player.as_ref()?.chr_ins;
@@ -145,7 +148,17 @@ unsafe fn snapshot_multi(
         .groups
         .iter()
         .any(|entry| entry.first == pc.event_entity_id as i32 && !entry.second.is_empty());
-    if native != 2 && !m.player_has_alive_summon && !local_exists {
+    // Preserve native first-use query/cost handling before the queued item is
+    // populated. The COMMIT still takes the tracked AddGroup path in duplicate
+    // mode. Never use this shortcut while a reservation is pending/unresolved.
+    if native != 2
+        && !m.player_has_alive_summon
+        && !local_exists
+        && (!config().duplicates
+            || (matches!(inspection, Inspection::Query)
+                && m.request_summon_speffect_id == -1
+                && duplicate_idle_native()))
+    {
         let _idle = timing::SNAPSHOT_IDLE.start(config().debug);
         return Some(Snapshot {
             action: Action::Vanilla,
@@ -184,12 +197,15 @@ unsafe fn snapshot_multi(
         .iter()
         .map(|(a, b)| (*a, *b))
         .collect();
-    let (_, family) = policy::unique_family(&mapping, item.ref_id_default())?;
+    let (base, family) = policy::unique_family(&mapping, item.ref_id_default())?;
+    if config().duplicates {
+        refresh_duplicate_groups(matches!(inspection, Inspection::Commit));
+    }
     let mut targets = Vec::new();
     let mut seen = HashSet::new();
     let mut retired = 0;
     let mut unresolved_death = false;
-    for entry in m.groups.iter() {
+    for entry in m.groups.iter().filter(|_| !config().duplicates) {
         if entry.first != pc.event_entity_id as i32 {
             continue;
         }
@@ -252,13 +268,17 @@ unsafe fn snapshot_multi(
     let wounded = targets
         .iter()
         .any(|(_, h)| policy::healed(*h, config().percent).is_some_and(|new| new > h.hp));
-    let mut action = policy::multi_action(
-        active_state,
-        !targets.is_empty(),
-        eligible,
-        wounded,
-        config().heal,
-    );
+    let mut action = if config().duplicates {
+        policy::duplicate_action(active_state, eligible, duplicate_can_add(base))
+    } else {
+        policy::multi_action(
+            active_state,
+            !targets.is_empty(),
+            eligible,
+            wounded,
+            config().heal,
+        )
+    };
     if action == Action::AddGroup {
         if unresolved_death {
             return None;
@@ -287,7 +307,13 @@ unsafe fn snapshot_multi(
                     .is_none()
             })
             .count();
-        if required == 0 || free < required {
+        // A larger physical Seamless pool must not exceed our bounded local
+        // ownership snapshots. Count retiring members too, until native removal.
+        let owned = m.groups.iter()
+            .filter(|entry| entry.first == pc.event_entity_id as i32)
+            .try_fold(0usize, |count, entry| count.checked_add(entry.second.len()))?;
+        let remaining = crate::capacity::MAX_GROUP_MEMBERS.saturating_sub(owned);
+        if !policy::group_capacity(required, free.min(remaining)) {
             action = Action::Reject;
         }
     }
@@ -333,6 +359,7 @@ unsafe fn add_group(
         world: world as *const _ as usize,
         manager: manager as usize,
         owner: player.chr_ins.event_entity_id as i32,
+        owner_handle: handle_key(player.chr_ins.field_ins_handle),
         goods,
         effect,
     };
@@ -348,6 +375,14 @@ unsafe fn add_group(
     if pending.is_some() {
         return false;
     }
+    let instance = if config().duplicates {
+        let Some(id) = duplicate_reserve(effect) else {
+            return false;
+        };
+        Some(id)
+    } else {
+        None
+    };
     *pending = Some(token);
     drop(pending);
     ADD_COMMIT_MANAGER.with(|v| v.set(manager as usize));
@@ -356,6 +391,9 @@ unsafe fn add_group(
     let result = unsafe { original(manager, effect) };
     drop(scope);
     if !result {
+        if let Some(id) = instance {
+            duplicate_cancel(id);
+        }
         if let Ok(mut p) = PENDING_SPAWN.lock() {
             *p = None;
         }
@@ -421,6 +459,7 @@ pub unsafe extern "system" fn clear_for_spawn(manager: *mut SummonBuddyManager, 
         };
         let valid = token.world == world as *const _ as usize
             && token.manager == manager as usize
+            && token.owner_handle == handle_key(pc.field_ins_handle)
             && token.owner == owner
             && token.goods == m.requested_summon_goods_id
             && token.effect == m.request_summon_speffect_id;

@@ -1,83 +1,111 @@
 # ER Spirit Mend & Summon Rebalance
 
-Current source snapshot: **0.5.1**, a Windows x64 runtime DLL plus an offline asset builder for Elden Ring. Start with [ANALYSIS.md](ANALYSIS.md) for a code-reading map, or [SPIRIT-MEND.md](SPIRIT-MEND.md) for the manual gameplay procedure.
+**Current main version: 0.6.1-solo.5.** The primary target is the reviewed
+**Mod Engine 2 mod stack with Seamless Co-op loaded for solo play**, including the
+Clever + Terra parameter merge. Compatibility is part of the supported setup,
+not an optional future add-on. This replaces the earlier 0.5.1 source snapshot.
 
-The current project has evolved beyond the original restricted-zone, one-Ash design. It supports reusable summons, multiple different Ash groups, optional unrestricted summon zones, four individual Spirit health bars, friendly Spirit lock-on/cycling, and the **Spirit Mend** Intelligence sorcery. Duplicate groups from the same Ash are still deferred: reusing that Ash heals its existing group.
+**Connected co-op is not supported.** Exact executable/module hashes, redirected
+hook signatures and local-only session checks remain enforced. Do not join or host
+with this build: session rejection does not unload its constructor/HUD patches.
+See [current compatibility and setup](docs/CURRENT-COMPATIBILITY.md).
 
-## Current behavior and evidence
+## Features and validation
 
-| Feature | Implementation / validation status |
+| Feature | Current state |
 | --- | --- |
-| Resummon after the group dies | Implemented; earlier single-group resummon tests succeeded. Mixed-group correction 0.2.2 was left for gameplay follow-up. |
-| Reuse an Ash to heal its survivors | 25% of each survivor's maximum HP, capped; normal Ash FP/HP cost once. Earlier user tests covered costs, partial groups, full health and insufficient FP. |
-| Multiple Ash types | User observed Wolves and Militiamen together, independent group healing and stable 60 FPS. One group per unique Ash remains. |
-| Summon outside vanilla zones | Optional; user observed wolves at Church of Elleh and persistence across the Gatefront boundary at 60 FPS. |
-| Compact Spirit HUD | Up to four individual entity rows; user accepted combat/healing behavior. Overflow summons remain active. |
-| Friendly Spirit lock-on | Owned living Spirits join native target selection and enemy cycling; user accepted DualSense cycling and rest/resummon cleanup. |
-| Spirit Mend impact heal | 0.5.0 user observed individual 25%-max-HP heals, capping, normal animation, and stable FPS. Lusat's staff cost 8 FP for the base-5-FP spell. |
-| Invalid-cast cost prevention and flight target retention | Implemented and compiled in 0.5.1; **gameplay acceptance pending**. |
+| Multiple different Ash types | Implemented; user confirmed Wolves and Lhutel together with normal FPS in the compatible solo profile. |
+| Friendly lock-on/cycling | Implemented; user confirmed cycling between those summons. |
+| Four compact individual HP bars | Implemented; names corrected in solo.5 and user-confirmed for Wolves and Lhutel. More than four actors can remain active. |
+| Same-Ash duplicates | Implemented, enabled in the recommended preset, three groups per Ash; current-profile gameplay acceptance pending. Ash reuse requests another full group. |
+| Heal on Ash reuse | Retained when duplicate mode is disabled; 25% max HP and normal Ash cost. |
+| Resummoning after death; summon-anywhere mode | Implemented; earlier standalone user evidence exists. Full lifecycle acceptance in the current compatibility profile remains pending. |
+| Spirit Mend | Implemented: 25% max HP on projectile impact, 12 INT, base 5 FP, native staff cost modifiers. Earlier standalone impact-heal evidence exists; current-profile healing acceptance pending. |
+| Invalid-cast cost prevention; target retention in flight | Implemented/compiled; targeted gameplay acceptance pending. |
+| Academy bridge merchant migration | Asset tool compiled/readback-verified; staged locally, not installed or gameplay-accepted. |
 
-Spirit Mend uses Swift Glintstone Shard's casting animation, visuals, projectile travel and temporary icon. It requires 12 INT, one slot and base 5 FP; native staff/equipment cost modifiers apply. It is sold by Kalé for 300 runes. A successful impact heals only the selected owned Spirit by 25% of its own maximum HP.
-
-In 0.5.1, selection is captured at **projectile release**, not button press. A missing/enemy/full-health target rejects projectile creation and the following native resource commitment. The animation may still play. After a valid release, changing lock-on must not transfer the heal to another target. Valid misses, obstructions or target loss after release still spend normal FP.
+The recommended [CompatibleSolo.ini](config/CompatibleSolo.ini) reflects the active
+profile: duplicate groups, multiple Ash types, unrestricted locations, four HUD
+rows, friendly lock-on, Spirit Mend and pinned Seamless solo compatibility.
+`HealOnReuse=true` remains configured for the fallback mode; duplicates take
+precedence while `AllowDuplicateAshGroups=true`. All successful summons retain
+native FP/HP costs. Additional groups at the per-Ash cap are rejected.
 
 ## Requirements
 
-- Windows x64; runtime allowlist currently targets the inspected worldwide executable file version **2.7.2.0 / App 1.17.2**. This is the inspected version, not a claim that it is the latest game version.
-- Offline single-player with Easy Anti-Cheat disabled through the user's existing supported offline mod setup. No anti-cheat bypass or protected online support is provided.
-- Rust version pinned in [rust-toolchain.toml](rust-toolchain.toml), Microsoft C++ build tools, Windows SDK, and Git.
-- For spell assets: .NET 9 SDK, pinned SoulsFormatsNEXT/Paramdex dependencies, the user's own `regulation.bin`/Oodle DLL, and extracted English message bundles.
-- A compatible Mod Engine 2 installation. Its executable and game files are not included.
+- Windows x64; inspected worldwide executable **2.7.2.0 / App 1.17.2**, exact hash
+  allowlist. This is not a claim about the latest game release.
+- Reviewed Seamless 2.0.2 binary and compatible Mod Engine 2 stack. Matching hashes
+  are authoritative; see [compatibility guide](docs/CURRENT-COMPATIBILITY.md).
+- Offline solo setup with Easy Anti-Cheat disabled through the existing supported
+  mod launcher. No protected online or anti-cheat bypass support.
+- Rust pinned by rust-toolchain.toml, MSVC C++ build tools, Windows SDK and Git.
+- Spell assets: .NET 9, pinned SoulsFormatsNEXT/Paramdex, the user's game/Oodle and
+  English message/talk assets. Game-derived files are not distributed here.
 
-## Build and local setup
+## Build
 
-From a PowerShell terminal in the repository root:
+Use PowerShell with the MSVC build environment available:
 
 ```powershell
-./tools/Build.ps1 -OutputDirectory ./package-0.5.1
+./tools/Build.ps1 -OutputDirectory ./package-0.6.1-solo.5
 ```
 
-This compiles/packages the DLL. It does **not** run tests unless `-RunTests` is supplied. Automated and gameplay tests remain user-operated. The published runtime and vendored Rust files match the installed 0.5.1 source; [PUBLICATION.md](PUBLICATION.md) explains the portable tooling changes and excluded generated files.
+This compiles the runtime and packages the **compatible solo preset** as
+SpiritAshResummon.ini. It does not run tests unless `-RunTests` is explicitly
+supplied. `-ConfigurationPreset Standalone` selects the older conservative INI
+for a separate standalone setup; that is not the primary compatibility profile.
+Do not overwrite an existing installed INI with defaults during updates.
 
-To prepare the separately licensed asset tool:
+Build the asset tools separately:
 
 ```powershell
 ./tools/Prepare-AssetDependencies.ps1
 dotnet build ./tools/SpiritMendAssets -c Release
-dotnet ./tools/SpiritMendAssets/bin/Release/net9.0/SpiritMendAssets.dll `
-  'C:/path/to/ELDEN RING/Game' `
-  ./external/Paramdex/ER `
-  ./generated-assets-0.5.1 `
-  'E:/path/to/extracted/msg/engus'
+dotnet build ./tools/SpiritMendMerge -c Release
+dotnet build ./tools/SpiritMendShopMove -c Release
 ```
 
-The output directory must be new. See [the asset tool guide](tools/SpiritMendAssets/README.md) for exact dependencies, schema handling and extraction requirements. The builder creates an isolated `mod` directory; it does not overwrite the game's regulation or edit saves. The corrected changes are documented in [assets/patch-manifest-0.5.1.json](assets/patch-manifest-0.5.1.json).
+[SpiritMendAssets](tools/SpiritMendAssets/README.md) generates the base spell donor;
+[SpiritMendMerge](tools/SpiritMendMerge/README.md) builds the reviewed Clever + Terra
++ Spirit Mend overlay while preserving unrelated fields/text/dialogue.
+[SpiritMendShopMove](tools/SpiritMendShopMove/README.md) optionally migrates its
+listing to the Isolated Merchant. All tools require user-owned inputs and new
+output directories. Changed/unreviewed inputs reject; this is not a universal
+mod merger. The generated regulation must replace neither your game-root file
+nor another mod's base regulation.
 
-For the launcher layout, create a new local `dist` folder, copy the package contents into it, and copy the generated `mod` directory into `dist/mod`. Choose either the conservative [default INI](config/SpiritAshResummon.ini) or the [current prototype INI](config/SpiritMend-Prototype.ini); save the selected configuration as `dist/SpiritAshResummon.ini`. The prototype enables Spirit Mend, friendly lock-on, HUD, unrestricted zones and diagnostics. Settings are read at startup.
+## Installation and acquisition
 
-```powershell
-./tools/Launch-Test.ps1 `
-  -Loader 'C:/path/to/modengine2_launcher.exe' `
-  -GameExe 'C:/path/to/ELDEN RING/Game/eldenring.exe'
-```
+Follow the [compatible Mod Engine 2 setup](docs/CURRENT-COMPATIBILITY.md). Keep
+Seamless, existing overlays and the isolated save extension. Add the DLL and
+reviewed merged assets to that profile; do not use the standalone test launcher
+as a replacement for it. Close the game before changing loaded files and keep
+backups. Publication itself does not install or change any local files.
 
-The launcher uses only this repository's local `dist` DLL/assets and writes a local Mod Engine 2 profile. It does not redirect saves. Use a test character and your existing offline setup. Buying/memorizing a custom spell is saved by the game normally; the mod does not directly modify save files.
+In the currently installed compatible overlay, buy Spirit Mend from **Kale ->
+Study sorcery** for **300 runes**. After applying the separate shop migration,
+buy it under **Purchase** from the **Isolated Merchant on the wooded bridge
+outside Raya Lucaria's Main Academy Gate**, also 300 runes. Already-owned spells
+remain usable without repurchase. The migration remains pending gameplay review.
 
-## Compatibility and removal
+## Documentation
 
-Exact native call/signature checks reject incompatible hook sites. Other DLLs hooking those sites may conflict; this project does not assume arbitrary hook chaining is safe. Spell assets contain a full derived regulation, so other parameter mods need a deliberate merge. English message bundles are the only prepared language. A disabled Spirit Mend hook leaves its custom projectile marker inert and does not guarantee prevention of native cast costs.
+- [CURRENT-COMPATIBILITY.md](docs/CURRENT-COMPATIBILITY.md): current setup, supported stack and limits.
+- [ANALYSIS.md](ANALYSIS.md) and [IMPLEMENTATION.md](IMPLEMENTATION.md): architecture and source-reading map.
+- [VALIDATION.md](VALIDATION.md): actual build/user evidence and pending checks.
+- [SPIRIT-MEND.md](SPIRIT-MEND.md): spell mechanics and acceptance procedure.
+- [Duplicate groups](docs/DUPLICATE-GROUPS.md): limits, identity and lifecycle.
+- [CHANGELOG.md](CHANGELOG.md), [publication scope](PUBLICATION.md), [release checklist](docs/RELEASE-CHECKLIST.md).
+- [Prior README through solo.5](docs/HISTORY-README-THROUGH-SOLO5.md): historical development banners, superseded by this page.
 
-Close the game before changing DLLs. To revert a local update, restore the saved previous package/profile. To remove the spell asset profile entirely, unequip/unmemorize the custom spell first, then stop loading this DLL and its `mod` directory. Keep save backups; there is no automatic save cleanup. No original game files need replacement.
+This is the current development baseline, not a claim of complete gameplay
+validation. No tests or gameplay were executed for publication. Remaining
+acceptance includes duplicate groups/caps/HP costs, Spirit Mend invalid targets
+and flight tracking, lifecycle transitions, and the migrated merchant.
 
-## Documentation and licensing
-
-- [ANALYSIS.md](ANALYSIS.md): architecture, reading order, native hook map and open questions.
-- [IMPLEMENTATION.md](IMPLEMENTATION.md): detailed architecture and development history.
-- [VALIDATION.md](VALIDATION.md): observed results, compilation records and unexecuted scenarios.
-- [SPIRIT-MEND.md](SPIRIT-MEND.md): current spell behavior and user tests.
-- [CHANGELOG.md](CHANGELOG.md): incremental changes through 0.5.1.
-- [HUD investigation](HUD-INVESTIGATION.md) and [targeted healing investigation](TARGETED-HEALING-INVESTIGATION.md).
-- [UPSTREAM.md](UPSTREAM.md) and [THIRD-PARTY-NOTICES.txt](THIRD-PARTY-NOTICES.txt): provenance and retained notices.
-- [PUBLICATION.md](PUBLICATION.md): snapshot scope, sanitization and reproducibility limits.
-
-The Rust runtime is MIT OR Apache-2.0, with ArialSenki's MultipleSpiritAshes and Vincent Swarte/contributors' bindings credited. The separate SoulsFormatsNEXT-based C# asset builder is **GPL-3.0-or-later**; see its [LICENSE](tools/SpiritMendAssets/LICENSE). Game executables, generated regulation/message bundles, extracted HUD art, Oodle, saves, private paths and debug binaries are not distributed here.
+Rust runtime: MIT OR Apache-2.0. The separate SoulsFormatsNEXT-based C# asset tools
+are GPL-3.0-or-later. See [UPSTREAM.md](UPSTREAM.md) and
+[THIRD-PARTY-NOTICES.txt](THIRD-PARTY-NOTICES.txt). Saves, extracted game files,
+mod-loader/Oodle/other-mod binaries and generated regulation/message bundles are
+excluded. Personal save repairs are not part of this mod.

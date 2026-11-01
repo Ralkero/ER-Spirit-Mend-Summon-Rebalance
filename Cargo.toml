@@ -1,6 +1,6 @@
 [package]
 name = "spirit-ash-resummon"
-version = "0.5.1"
+version = "0.6.1-solo.5"
 edition = "2024"
 license = "MIT OR Apache-2.0"
 publish = false
@@ -10,6 +10,7 @@ name = "SpiritAshResummon"
 crate-type = ["cdylib", "rlib"]
 
 [dependencies]
+sha2 = "=0.10.9"
 eldenring = { path = "vendor/fromsoftware-rs/crates/eldenring" }
 fromsoftware-shared = { path = "vendor/fromsoftware-rs/crates/shared" }
 pelite = "0.10"
@@ -18,4 +19,8 @@ windows = { version = "0.61", features = ["Win32_Foundation", "Win32_System_Kern
 [profile.release]
 debug = 2
 strip = "none"
+
+[features]
+# A separate diagnostic DLL: excludes all gameplay/HUD hooks at compile time.
+seamless-probe = []
 

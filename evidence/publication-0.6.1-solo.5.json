@@ -1,0 +1,49 @@
+{
+  "date": "2026-11-01",
+  "version": "0.6.1-solo.5",
+  "publication_baseline": "0506238b90577b123a289a6e625c5ac1d5d0e7b2",
+  "runtime_vendor_and_cargo_match_local_development": true,
+  "compatible_preset_matches_active_profile": true,
+  "rust_build": {
+    "command": "./tools/Build.ps1 -TargetDirectory <existing-build-cache> -OutputDirectory ./package-0.6.1-solo.5-publication",
+    "result": "success",
+    "cargo_seconds": 14.81,
+    "dll_sha256": "f4bb461f4fed47ce9465455a73aab96bc8c8272bf2b4d1762b904137a685553f"
+  },
+  "asset_tool_builds": {
+    "SpiritMendAssets": {
+      "result": "success",
+      "warnings": 0,
+      "errors": 0
+    },
+    "SpiritMendMerge": {
+      "result": "success",
+      "warnings": 0,
+      "errors": 0
+    },
+    "SpiritMendShopMove": {
+      "result": "success",
+      "warnings": 0,
+      "errors": 0
+    }
+  },
+  "asset_build_command": "dotnet build tools/<tool> -c Release --nologo -v quiet -p:SoulsFormatsProject=<pinned-checkout>/SoulsFormats/SoulsFormats.csproj",
+  "soulsformats_commit": "9e1c36f54962f80c143e3c1fe8a709204aefacf9",
+  "paramdex_commit": "ff7245e524329bc3eab00036723d2bd53384cedf",
+  "previous_installed_dll_sha256": "01d03c6abcf74dcad496babbba91192b0eec391fed09536e2000af78940def40",
+  "fresh_build_installed": false,
+  "automated_tests_executed": false,
+  "gameplay_executed": false,
+  "asset_generation_executed": false,
+  "user_observations": [
+    "solo.4: Wolves and Lhutel coexist, friendly lock-on cycling, normal FPS",
+    "solo.5: Wolves and Lhutel HUD names correct"
+  ],
+  "pending": [
+    "same-Ash duplicates, group cap and costs",
+    "current-profile Spirit Mend healing, invalid-cast prevention and projectile target retention",
+    "shop migration installation and gameplay"
+  ],
+  "connected_coop_supported": false,
+  "binary_release_created": false
+}

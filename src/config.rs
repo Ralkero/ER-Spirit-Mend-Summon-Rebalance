@@ -1,11 +1,14 @@
 #[derive(Debug, Clone, PartialEq)]
 pub struct Config {
+    pub seamless_solo: bool,
     pub hud: bool,
     pub hud_x: f64,
     pub hud_y: f64,
     pub hud_spacing: f64,
     pub hud_scale: f64,
     pub multiple: bool,
+    pub duplicates: bool,
+    pub max_groups_per_ash: usize,
     pub anywhere: bool,
     pub resummon: bool,
     pub heal: bool,
@@ -18,12 +21,15 @@ pub struct Config {
 impl Default for Config {
     fn default() -> Self {
         Self {
+            seamless_solo: false,
             hud: false,
             hud_x: -91.0,
             hud_y: -350.0,
             hud_spacing: 45.0,
             hud_scale: 0.82,
             multiple: true,
+            duplicates: false,
+            max_groups_per_ash: 3,
             anywhere: false,
             resummon: true,
             heal: true,
@@ -64,6 +70,14 @@ impl Config {
                 _ => Err(format!("Invalid boolean: {key}")),
             };
             match (section.as_str(), key.as_str()) {
+                ("compatibility", "allowseamlesssolo") => c.seamless_solo = boolean()?,
+                ("spiritash", "allowduplicateashgroups") => c.duplicates = boolean()?,
+                ("spiritash", "maxgroupsperash") => {
+                    c.max_groups_per_ash = value.parse().map_err(|_| "Invalid MaxGroupsPerAsh")?;
+                    if !(1..=8).contains(&c.max_groups_per_ash) {
+                        return Err("MaxGroupsPerAsh must be an integer in 1..=8".into());
+                    }
+                }
                 ("spiritash", "allowmultipleashtypes") => c.multiple = boolean()?,
                 ("spiritash", "allowresummoning") => c.resummon = boolean()?,
                 ("spiritash", "healonreuse") => c.heal = boolean()?,
@@ -104,6 +118,9 @@ impl Config {
                 _ => return Err(format!("Unknown configuration setting: [{section}] {key}")),
             }
         }
+        if c.duplicates && !c.multiple {
+            return Err("AllowDuplicateAshGroups requires AllowMultipleAshTypes=true".into());
+        }
         Ok(c)
     }
 }
@@ -140,5 +157,33 @@ mod tests {
     #[test]
     fn malformed_config_fails_closed() {
         assert!(Config::parse("[Debug]\nEnableLogging=maybe").is_err());
+    }
+}
+
+#[cfg(test)]
+mod duplicate_tests {
+    use super::*;
+    #[test]
+    fn duplicate_mode_is_opt_in_and_limits_are_bounded() {
+        assert!(!Config::default().duplicates);
+        assert_eq!(Config::default().max_groups_per_ash, 3);
+        for value in ["0", "9", "-1", "3.5", "NaN", "999999999999999999999999"] {
+            assert!(Config::parse(&format!("[SpiritAsh]\nMaxGroupsPerAsh={value}")).is_err());
+        }
+        assert!(
+            Config::parse("[SpiritAsh]\nAllowDuplicateAshGroups=true\nAllowMultipleAshTypes=false")
+                .is_err()
+        );
+        assert!(
+            Config::parse("[SpiritAsh]\nAllowDuplicateAshGroups=true")
+                .unwrap()
+                .duplicates
+        );
+        assert!(Config::parse(include_str!("../config/SpiritMend-Prototype.ini")).is_ok());
+        assert!(
+            Config::parse(include_str!("../config/DuplicateGroups-Experimental.ini"))
+                .unwrap()
+                .duplicates
+        );
     }
 }

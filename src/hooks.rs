@@ -127,6 +127,7 @@ pub unsafe fn install(multiple: bool) -> Result<(), String> {
     };
     let state = va(STATE_RVA)?;
     let summon = va(SUMMON_RVA)?;
+    let mut seamless_guards = Vec::new();
     for (rva, expected) in [
         // Pinned WW 2.7.2.0 registry state evidence; checked, never patched.
         (0x3f2d42, &[0x80, 0x78, 0x08, 0x04, 0x75, 0x3a][..]),
@@ -158,9 +159,21 @@ pub unsafe fn install(multiple: bool) -> Result<(), String> {
     ] {
         if unsafe { std::slice::from_raw_parts(va(rva)? as *const u8, expected.len()) } != expected
         {
-            return Err(format!(
-                "Function signature mismatch at {rva:x}; no hooks installed"
-            ));
+            if matches!(rva, STATE_RVA | SUMMON_RVA) {
+                seamless_guards.extend(
+                    crate::seamless_hooks::validate_entry(rva, va(rva)?, expected).map_err(
+                        |e| {
+                            format!(
+                                "Function signature mismatch at {rva:x}: {e}; no hooks installed"
+                            )
+                        },
+                    )?,
+                );
+            } else {
+                return Err(format!(
+                    "Function signature mismatch at {rva:x}; no hooks installed"
+                ));
+            }
         }
     }
     let mut specs = Vec::new();
@@ -266,7 +279,7 @@ pub unsafe fn install(multiple: bool) -> Result<(), String> {
     unsafe { FlushInstructionCache(GetCurrentProcess(), Some(page as _), 0x1000) }
         .map_err(|e| format!("Stub cache: {e}"))?;
     if multiple {
-        patches.extend(crate::capacity::prepare(&p)?);
+        patches.extend(crate::capacity::prepare(&p, &mut seamless_guards)?);
         CLEAR.store(va(CLEAR_RVA)?, Ordering::Release);
     }
     // Validate the entire variable-length transaction before freezing threads.
@@ -283,13 +296,18 @@ pub unsafe fn install(multiple: bool) -> Result<(), String> {
         .collect();
     STATE.store(state, Ordering::Release);
     SUMMON.store(summon, Ordering::Release);
+    if seamless_guards.iter_mut().any(|guard| !guard.matches()) {
+        return Err(
+            "Native compatibility guard changed during preparation; no patches applied".into(),
+        );
+    }
     let mut threads = crate::threads::Threads::prepare()?;
     if let Err(reason) = threads.freeze(&ranges) {
         threads.thaw();
         return Err(reason.into());
     }
     // Recheck while peer threads are stopped, before committing the prepared batch.
-    if patches
+    if seamless_guards.iter_mut().any(|guard| !guard.matches()) || patches
         .iter()
         .any(|(site, old, _)| unsafe { std::slice::from_raw_parts(*site as *const u8, old.len()) } != old)
     {
@@ -340,5 +358,31 @@ mod tests {
         sites.sort();
         sites.dedup();
         assert_eq!(n, sites.len());
+    }
+}
+
+#[cfg(test)]
+mod fixture_tests {
+    use super::call_bytes;
+    #[test]
+    fn mend_calls_match_supplied_executable_fixture() {
+        for line in include_str!("../tests/fixtures/mend-calls.tsv")
+            .lines()
+            .filter(|s| !s.starts_with('#'))
+        {
+            let fields: Vec<_> = line.split_whitespace().collect();
+            let hex = |s: &str| usize::from_str_radix(s.trim_start_matches("0x"), 16).unwrap();
+            let site = hex(fields[0]);
+            let target = hex(fields[1]);
+            let bytes: Vec<_> = fields[2]
+                .as_bytes()
+                .as_chunks::<2>()
+                .0
+                .iter()
+                .map(|b| hex(std::str::from_utf8(b).unwrap()) as u8)
+                .collect();
+            assert_eq!(call_bytes(site, target).unwrap().as_slice(), bytes);
+            assert_ne!(call_bytes(site, target + 1).unwrap().as_slice(), bytes);
+        }
     }
 }

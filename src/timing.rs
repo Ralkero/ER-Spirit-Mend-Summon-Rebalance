@@ -65,6 +65,7 @@ pub static SNAPSHOT_RESOLVED: Metric = Metric::new("snapshot_resolved");
 pub static CONFLICT: Metric = Metric::new("conflict_check");
 pub static STONES: Metric = Metric::new("stones");
 pub static HUD_SAMPLE: Metric = Metric::new("hud_sample");
+pub static DUPLICATE_SAMPLE: Metric = Metric::new("duplicate_sample");
 pub static CLEANUP: Metric = Metric::new("inactive_cleanup");
 static LAST: Mutex<Option<Instant>> = Mutex::new(None);
 
@@ -159,6 +160,7 @@ pub fn report() {
         &TARGET_SAMPLE,
         &FRIENDLY_RELATION,
         &CLEANUP,
+        &DUPLICATE_SAMPLE,
     ] {
         let calls = metric.calls.swap(0, Ordering::Relaxed);
         let nanos = metric.nanos.swap(0, Ordering::Relaxed);

@@ -277,3 +277,37 @@ mod multi_tests {
         }
     }
 }
+
+/// Duplicate mode bypasses only same-family heal selection, never native gates.
+pub fn duplicate_action(native: i32, eligible: bool, room: bool) -> Action {
+    if matches!(native, 0..=2) && eligible && room {
+        Action::AddGroup
+    } else {
+        Action::Reject
+    }
+}
+pub fn group_capacity(required: usize, free: usize) -> bool {
+    required > 0 && free >= required
+}
+#[cfg(test)]
+mod duplicate_policy_tests {
+    use super::*;
+    #[test]
+    fn native_rejection_and_pending_or_limit_rejection_cannot_commit() {
+        for n in [-1, 3, i32::MAX] {
+            assert_eq!(duplicate_action(n, true, true), Action::Reject);
+        }
+        for n in 0..=2 {
+            assert_eq!(duplicate_action(n, false, true), Action::Reject);
+            assert_eq!(duplicate_action(n, true, false), Action::Reject);
+            assert_eq!(duplicate_action(n, true, true), Action::AddGroup);
+        }
+    }
+    #[test]
+    fn entire_group_including_mounts_must_fit() {
+        assert!(!group_capacity(0, 500));
+        assert!(!group_capacity(3, 2));
+        assert!(group_capacity(3, 3));
+        assert!(!group_capacity(2, 1));
+    }
+}

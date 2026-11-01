@@ -1,3 +1,11 @@
+# Current source-reading entry point
+
+Start with README.md and docs/CURRENT-COMPATIBILITY.md for the solo.5 compatible main baseline. The existing runtime flow below remains relevant; also read seamless_solo.rs, seamless_hooks.rs, session_policy.rs, hud_names.rs, and the duplicate-group modules. Older baseline statements are historical.
+
+# Development reading update
+
+Read docs/STABILIZATION.md and docs/DUPLICATE-GROUPS.md first. New pure modules: mend_policy.rs and groups.rs; duplicate_groups.rs adapts native observations. Published0.5.1 remains the historical baseline below.
+
 # Project reading guide
 
 Read README.md and the top of VALIDATION.md first. The numbered development entries in the longer documents are historical; an old “not implemented” statement is not the current status. Source is authoritative for implemented behavior, while user observations are authoritative only for the versions and scenarios actually exercised.

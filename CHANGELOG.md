@@ -1,3 +1,81 @@
+## 0.6.1-solo.5 main source publication - 2026-11-01
+
+- Promote the reviewed Mod Engine 2 / pinned Seamless solo compatibility work to main.
+- Include redirect/registry/session fixes and user-accepted HUD name correction.
+- Make the compatible solo preset the build-package default, including duplicate groups (three per Ash).
+- Preserve runtime code, spell balance, standalone options and all guards.
+- Include the staged Academy merchant migration tools; no local installation implied.
+- Consolidate current setup/status; retain historical documentation and explicit pending tests.
+
+## Shop migration - prepared 2026-10-31 (DLL unchanged)
+
+- Move Spirit Mend from Kale to the Isolated Merchant on the Raya Lucaria bridge.
+- Use the merchant's normal Purchase inventory, preserving the 300-rune price.
+- Relocate shop row 100599 to free row 100699 and restore Kale's vanilla dialogue.
+- Add a hash-guarded asset builder and preview-first installer with backup/rollback.
+- Preserve existing owned spells, all combat parameters and active configuration.
+- Compilation and structural asset readback verified; installation/gameplay pending.
+
+## 0.6.1-solo.5 - staged HUD name compatibility fix
+
+- Read loaded FMG item names when the pinned solo profile redirects the public name wrapper.
+- Verify layout fingerprints and bound all reads; preserve generic fallback on failure.
+- Retain per-family name caching, four compact rows, and all gameplay behavior.
+- Record user acceptance of solo.4 Wolves/Lhutel coexistence and friendly lock-on.
+
+## 0.6.1-solo.4 - experimental solo session correction
+
+- Accept observed protocol 6 only in the hash-pinned Seamless solo profile, with no lobby, offline game flag and verified local-only membership/host.
+- Retain standalone offline rules and reject remote, unknown, or transitional session state.
+- Validate player-vector bounds before reading entries; add scalar gate diagnostics and five pure regression tests (compiled, not executed).
+- Preserve existing settings, assets, costs, healing formula, and native hooks.
+
+## 0.6.1-solo.3 - staged, gameplay unvalidated
+
+- Preserve the exact expanded registry constructor in the pinned Seamless solo profile.
+- Require profile-specific runtime capacity; retain bounded local tracking and native free-slot checks.
+- Revalidate constructor bytes within the startup transaction; retain strict standalone signatures.
+- Prepare DLL-only update/rollback from solo.2, preserving active INI and assets.
+- Document the remaining optional HUD name-lookup fallback and manual acceptance.
+
+# 0.6.1-solo.2 - reviewed Seamless redirect compatibility
+
+- Correct demonstrated startup rejection of the pinned Seamless summon-state and summon-request redirects.
+- Preserve existing function entry chains; verify relay/closure shape, context identity, native prologue tails, handler/callback hashes and transaction-time stability.
+- Retain every other signature check and all solo-session, ownership, resource and executable protections. No per-frame scanning or asset changes.
+- Add prepared regression coverage and a guarded DLL-only updater. Compilation/static evidence only; installation deferred while the game is running.
+
+# 0.6.1-solo.1 - opt-in Seamless solo profile
+
+- Added AllowSeamlessSolo=false by default; exact binary hash exception when enabled, retaining idle/offline and remote-entry rejection and native hook signatures.
+- Added reviewed additive asset merge preserving Clever/Terra rows, text and unrelated NPC scripts.
+- Avoided Clever's shop collision with a separate Study sorcery menu at Kalé and shop row100599; spell IDs, 300-rune acquisition and all combat values retained.
+- Added a guarded solo profile installer/rollback and separate configuration; diagnostic loader entry replaced without altering existing mods or saves.
+- No gameplay or automated tests executed. Connected compatibility remains pending.
+
+# Seamless probe 1 - local investigation (2026-10-30)
+
+- Added a compile-time diagnostic entry point that excludes all gameplay and HUD hooks.
+- Exact executable/Seamless hash guards, bounded session/owner metadata, and change-only prospective hook-site fingerprints.
+- Separate ME2 diagnostic installer with configuration backup, package hashes, preservation checks and guarded rollback.
+- Documented connected ownership/replication gaps, co-op party HUD conflict, and required Clever/Terra asset merge.
+- Existing gameplay compatibility guards and healing formula unchanged; no live tests executed.
+
+# 0.6.0-dev.1 - local experimental prototype
+
+- Optional duplicate same-Ash groups (defaultoff), validated1..8 group cap (default3).
+- Serialized reservations, full-handle/slot membership, partial-death retention and native costs/cleanup.
+- Stable G-id/member labels in the existing four-row HUD;10Hz bookkeeping and bounded timing diagnostics.
+- Existing heal-on-reuse retained when disabled; no installed INI or game files changed.
+- Tests prepared/compiled, not run; gameplay acceptance pending.
+
+# Unreleased stabilization
+
+- Replace five-second impact-key expiry with complete-registry lifetime pruning.
+- Add pure target/impact and supplied native-call fixture regression coverage.
+- Add current audit and ordered user acceptance; historical records preserved.
+- No new hooks, spell balance, asset or installed-file changes.
+
 # 0.5.1 - 2026-10-30
 
 - Added Spirit Mend target/health/ownership preflight before native projectile creation and resource commitment; no refunds or manual deductions.

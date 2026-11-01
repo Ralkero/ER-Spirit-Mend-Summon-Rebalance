@@ -1,7 +1,7 @@
 {
-  "version": "0.5.1",
-  "scope": "All staged files before this self-excluded manifest; SHA256 of checkout bytes",
-  "runtime_vendor_exact_files": 226,
+  "version": "0.6.1-solo.5",
+  "scope": "All tracked publication files except SOURCE-MANIFEST.json itself; SHA256 of checkout bytes",
+  "runtime_vendor_exact_files": 235,
   "files": [
     {
       "path": ".gitattributes",
@@ -10,28 +10,28 @@
     },
     {
       "path": ".gitignore",
-      "bytes": 329,
-      "sha256": "e2ca9a669971ba3f979b9e55de8b8f3a7943317ad6d29be8fb37b17eda1e6e49"
+      "bytes": 506,
+      "sha256": "bbb7eaabce2d1108367603e0aa324e78ea4f93452da85b63161979971d34c72b"
     },
     {
       "path": "ANALYSIS.md",
-      "bytes": 5374,
-      "sha256": "eca2a226d01bb3e9e9f21e8354a5bb610a666a1c43a4dff70a4a4e0abf3ff641"
+      "bytes": 5958,
+      "sha256": "97d15e6d6de564dd5b4f2eb177a87d24a4fd2119e86b49905dd3e6fef2df186c"
     },
     {
       "path": "CHANGELOG.md",
-      "bytes": 27501,
-      "sha256": "5601fdbef3127b15a91764bef85f512f3a43a38bca471dca350fe5ac53449c44"
+      "bytes": 32856,
+      "sha256": "2acf5807fe3a29cea7f7a53e71c8bf47c602dad57a09c1036c19cb7d0f678543"
     },
     {
       "path": "Cargo.lock",
-      "bytes": 15396,
-      "sha256": "6564f2d3c4e750947c4c4a24d3b85e3f5fadbdc51dee452aef5de08747c765a7"
+      "bytes": 17313,
+      "sha256": "96c67c1dd73c338f67acc2dd17f12763fa4989049adf3ca273bd5376eea59ca8"
     },
     {
       "path": "Cargo.toml",
-      "bytes": 658,
-      "sha256": "49e7fd5386435e2db66d429f7389995d9ab616c18818f8bc36271da5467ff2d9"
+      "bytes": 797,
+      "sha256": "1a06c37c1766e89c03e6209b9f3ca491afd6ac766c81d2dad96c7fb3f943679c"
     },
     {
       "path": "HUD-INVESTIGATION.md",
@@ -40,8 +40,8 @@
     },
     {
       "path": "IMPLEMENTATION.md",
-      "bytes": 50534,
-      "sha256": "603f711e3a47866d326ff4d867a21fb96427b8e883d398581eaf4b6b5d5beb28"
+      "bytes": 50860,
+      "sha256": "c16d58f2f6ad3a1d8675833f73970c051a2633c5f84eee2bec79dbcd3f6c1ff0"
     },
     {
       "path": "LICENSE-APACHE",
@@ -55,18 +55,18 @@
     },
     {
       "path": "PUBLICATION.md",
-      "bytes": 3584,
-      "sha256": "c53b12a45361e758785d0cb0bd2a91c07b9e302fc549d507644ee23cbf25c07a"
+      "bytes": 2305,
+      "sha256": "f60f352922bbd609a34d0589c9bdf93ea89f629cdd8e79c94813a98b5ec1de28"
     },
     {
       "path": "README.md",
-      "bytes": 7625,
-      "sha256": "c24c0aa09f7af3198aa68d566060d10408bf12f0905dec5f64a5edd0e9f8418f"
+      "bytes": 6905,
+      "sha256": "a85d523d5586379543a85935c5d0ab16252b4cbd2497fa2af3079ceb81bf24be"
     },
     {
       "path": "SPIRIT-MEND.md",
-      "bytes": 5685,
-      "sha256": "58a86cadc7c089a6c551006cc580d2d61e1311edb2df0b25cc83e7627469eb3c"
+      "bytes": 7076,
+      "sha256": "8ccbe7b73fc2a586e05fb56453424b96fd2f90c546a2945798f81ab667f9585b"
     },
     {
       "path": "START-HERE.txt",
@@ -90,8 +90,8 @@
     },
     {
       "path": "VALIDATION.md",
-      "bytes": 116891,
-      "sha256": "4efd24051f685c741ae6cfd06ed428bc5487b423405a62eacad08c72c7cb906d"
+      "bytes": 127436,
+      "sha256": "dfee0ec2cdbed31003ead7da1233bf69e81898bc3dfd17478126381a3b956f98"
     },
     {
       "path": "assets/patch-manifest-0.5.1.json",
@@ -99,9 +99,24 @@
       "sha256": "22a0cb305b68fb9e2e284255642ab4ab2a0259ed50d403788849dbf85d5eaf38"
     },
     {
+      "path": "config/CompatibleSolo.ini",
+      "bytes": 679,
+      "sha256": "4664014d831961c8d9d98caa7499715ae31ea2eaf3baec2b820e3dd40ee7fa5f"
+    },
+    {
+      "path": "config/DuplicateGroups-Experimental.ini",
+      "bytes": 492,
+      "sha256": "0706a8a27655eea80495a7d329ed3e00a66f7d6b3209b38a23fc4851e2048451"
+    },
+    {
+      "path": "config/SeamlessSolo-Experimental.ini",
+      "bytes": 485,
+      "sha256": "6cd8ded4169be1109f863a115c7d25052ff294a12200d65f810b0a207be8c1b5"
+    },
+    {
       "path": "config/SpiritAshResummon.ini",
-      "bytes": 443,
-      "sha256": "e69d13a9c52331d28ef95f8f9ecb6d0136dd517b3964b8a7933287a212caa7ff"
+      "bytes": 575,
+      "sha256": "279f3e3de92d88b1c05fcce373631469dc72fd795c2fe3f13f086a10e7131efe"
     },
     {
       "path": "config/SpiritMend-Prototype.ini",
@@ -114,9 +129,79 @@
       "sha256": "7b6b85f7a058579fff390c981667025cbfd1d31a9b7d1702049e6b54157696c5"
     },
     {
+      "path": "docs/CURRENT-COMPATIBILITY.md",
+      "bytes": 5715,
+      "sha256": "53045e26c8915ca1b648c9c0be579a4fe16892410c22ae981437edac9357679b"
+    },
+    {
+      "path": "docs/DEVELOPMENT-PASS.md",
+      "bytes": 4638,
+      "sha256": "690c2dac7c493acaff59343db6169f40b7c9487c584d110c253cf3fe8b5e0ad7"
+    },
+    {
+      "path": "docs/DUPLICATE-GROUPS.md",
+      "bytes": 8155,
+      "sha256": "48851e3be8c3a328a1bff9a9e18c36e646fb82de819369200c9832e2e2ff2c17"
+    },
+    {
+      "path": "docs/HISTORY-PUBLICATION-0.5.1.md",
+      "bytes": 3822,
+      "sha256": "02c234c04c7fb91a7fd9728cb02d9615729e7779575993c212e7f16473068964"
+    },
+    {
+      "path": "docs/HISTORY-README-THROUGH-SOLO5.md",
+      "bytes": 11136,
+      "sha256": "abf6cc43347acec90843429fb57d3f230699267926a47914ed142b842b612284"
+    },
+    {
       "path": "docs/HISTORY-README.md",
       "bytes": 15159,
       "sha256": "72192e4c5d1891f33f94103256fee0d93989922f5709b74e77407e1f6ca032d1"
+    },
+    {
+      "path": "docs/RELEASE-CHECKLIST.md",
+      "bytes": 2963,
+      "sha256": "750c1b33e30cd1610b3983a6af16f753bb9a45a207af488d2090e9e1f36d305c"
+    },
+    {
+      "path": "docs/SEAMLESS-COMPATIBILITY.md",
+      "bytes": 9547,
+      "sha256": "2450488a687493fc67bebc65f18ccd8e8188189f78a9c780ba77752edbae4055"
+    },
+    {
+      "path": "docs/SEAMLESS-SOLO-HUD-NAMES.md",
+      "bytes": 5284,
+      "sha256": "165951eca08670b65842ff782af071cfd41ad9c40c1021230816b08bf17cc939"
+    },
+    {
+      "path": "docs/SEAMLESS-SOLO-REDIRECTS.md",
+      "bytes": 5098,
+      "sha256": "7f475cc55ed5f17a03d8ebf31946a3e4bf2d611016869176765a4283e1beb0fa"
+    },
+    {
+      "path": "docs/SEAMLESS-SOLO-REGISTRY.md",
+      "bytes": 4864,
+      "sha256": "e074dbdceefd23df1d37be0c9878d25164fcc9749cd47d24383401f9d7dbb3f1"
+    },
+    {
+      "path": "docs/SEAMLESS-SOLO-SESSION.md",
+      "bytes": 6238,
+      "sha256": "f2536e40ff9ab5f2ca4f6049c1a6a03881c89d72e4c93829c94d719fd71e6aa7"
+    },
+    {
+      "path": "docs/SEAMLESS-SOLO.md",
+      "bytes": 3763,
+      "sha256": "32e03cb2cf830ac556f9aad4535620978aa558162bd3c3387cd895d05a160ce0"
+    },
+    {
+      "path": "docs/SOURCE-MANIFEST-0.5.1.json",
+      "bytes": 84230,
+      "sha256": "2ab16db8483418bcf7b1078607b4431e45666368788d9a3602a2e1fe6c1b0294"
+    },
+    {
+      "path": "docs/STABILIZATION.md",
+      "bytes": 5817,
+      "sha256": "b9193bb7872303c998d8f30717dd8aeedda3243a462146e10d4a4a4bdb81f12d"
     },
     {
       "path": "evidence/0.1.10-heal-20261029-184942.log",
@@ -509,6 +594,11 @@
       "sha256": "7cc297a755f387951e8d11cfe23cb909074c9b8a8f9db2a3d15611c9983c1bdb"
     },
     {
+      "path": "evidence/development-0.6.0-dev.1-build.json",
+      "bytes": 1450,
+      "sha256": "b8ff40b9de16aa444f7901eb8ba2685ea88d2bcc6460eea02d121b0eb601e72b"
+    },
+    {
       "path": "evidence/game-preflight.json",
       "bytes": 1765,
       "sha256": "202883089dbbb60c97613cdb33e96cbc3e8e25028bae251cd6fde22a886bfb60"
@@ -632,6 +722,11 @@
       "path": "evidence/offline-gate-blocker-0.1.2.log",
       "bytes": 6733,
       "sha256": "6214b353505023a7986967abdd7b92c1ad7a5e15f7603675c83564068b3f5126"
+    },
+    {
+      "path": "evidence/publication-0.6.1-solo.5.json",
+      "bytes": 1882,
+      "sha256": "03888a1806d7be8143bf2bf733877b592cc23abd3a54c8ec76858f0dd8868ab9"
     },
     {
       "path": "evidence/publication-assets-build.txt",
@@ -1110,18 +1205,23 @@
     },
     {
       "path": "src/capacity.rs",
-      "bytes": 8312,
-      "sha256": "ba2f7280368961ac185579ce09936c9e3a6427f6b7bb63c4af8035eb47f356c3"
+      "bytes": 10201,
+      "sha256": "63cfc6fc72eee522a6120de1e5216cad5259f6509400870e304d1363d1e9ee7e"
     },
     {
       "path": "src/cleanup.rs",
-      "bytes": 7493,
-      "sha256": "0d2731f62b165e35b97044e678bf93bdc3001cf377ee7457af887f34a08a8854"
+      "bytes": 7504,
+      "sha256": "dc82a7ad0126254c6ca169cf8f7653dcf5f74f3701b25c3249e10543e0cde0e1"
     },
     {
       "path": "src/config.rs",
-      "bytes": 5338,
-      "sha256": "0576289a8ef1ee2548e318a4930e699db5dfaa57c7760576a6a7c26fa52d5bd9"
+      "bytes": 7192,
+      "sha256": "5d025484e5822f6246a0ecf912195878ffd97105a95586bb41193f611dccdf48"
+    },
+    {
+      "path": "src/duplicate_groups.rs",
+      "bytes": 6823,
+      "sha256": "085318fae211c73a72aea53045684a0ddc6697fb4d84658cd19886d7ea99c2ff"
     },
     {
       "path": "src/friendly_lockon.rs",
@@ -1129,14 +1229,19 @@
       "sha256": "1abefe978e6f30ca889c5fb1741e183c0fd39d516b27e69a03be68f4239a13f2"
     },
     {
+      "path": "src/groups.rs",
+      "bytes": 8579,
+      "sha256": "2283163d63cd2d37da5121a57ba3f4d4c2d2f490717cb14724b4075fe1cdeea8"
+    },
+    {
       "path": "src/hooks.rs",
-      "bytes": 12659,
-      "sha256": "34fa569b6c456d0f8abd01ef09dc52171a36e169ecf70c16d134c744f350f22a"
+      "bytes": 14419,
+      "sha256": "205b17808e094cb62df134bd751b9d22f0ce99b52a0159ba77d5c76cb61eca14"
     },
     {
       "path": "src/hud.rs",
-      "bytes": 10091,
-      "sha256": "0eebb9f2e49b557c3184db6bd082084ae315b53974b6f98598029d563a1127c9"
+      "bytes": 11260,
+      "sha256": "01f1f5c4dad1a5736cd7c426dbe8e7bb0c7693ba0fdd17bec26f2b297cd0899b"
     },
     {
       "path": "src/hud_movie.rs",
@@ -1144,39 +1249,74 @@
       "sha256": "2eaa659de52cfa5eb9bae8e3c3730c0801ea9ecf641c60b42c4b9e063b7c0458"
     },
     {
+      "path": "src/hud_names.rs",
+      "bytes": 8165,
+      "sha256": "f22aff5d9897781962b05205e2dd02bb62ad123f13a8cec9affd96e8890e052e"
+    },
+    {
       "path": "src/hud_snapshot.rs",
-      "bytes": 4509,
-      "sha256": "9b79233f31882cbb4492b7926833b07490ca1c4a0920aae10fde5fbd9fd95603"
+      "bytes": 4587,
+      "sha256": "edd5530efb2b15741d1b19290df6b08e91a30a7907f29e6114e06bd6e655525b"
     },
     {
       "path": "src/lib.rs",
-      "bytes": 759,
-      "sha256": "0de9519979beded8c9308791a24df367405c8fc511bf65ad018ee3bbebb2d12e"
+      "bytes": 1416,
+      "sha256": "3ae15faeb44ca1eaab37014cf08163b769da8b18286cc2fae59c01f9e3ad0ec4"
     },
     {
       "path": "src/mend_cast.rs",
-      "bytes": 11297,
-      "sha256": "49ce85a769c3e7024b6531e9034e26b9d7da01350912b8c725f491044075582a"
+      "bytes": 12857,
+      "sha256": "eac0886d4a425634b3a97a32256910bf937ece267ffb1d65ce214066e6f1ae04"
+    },
+    {
+      "path": "src/mend_policy.rs",
+      "bytes": 4261,
+      "sha256": "f053cea34079e9d05cec6e7e471b4dd1b72547d42e99a2ddc40d6f7588d9658f"
     },
     {
       "path": "src/multi.rs",
-      "bytes": 14805,
-      "sha256": "e3256073bf56457ee761af701c2cb4d6c319cd8dcee285c4f0fb574fa343fe4e"
+      "bytes": 16616,
+      "sha256": "af89782b28bd909a18854eabec0b06b57df31201ebd95d1827dae056948eee0d"
     },
     {
       "path": "src/policy.rs",
-      "bytes": 8380,
-      "sha256": "b0a87d9cb2d93530f64f012c0f2fda3df470cecbfe0c1557bec7377057af85bd"
+      "bytes": 9522,
+      "sha256": "bc56c06b6a87507c13452f321ba16a51a1e31bca0aa58e9b8d7a6abb06f18517"
     },
     {
       "path": "src/runtime.rs",
-      "bytes": 50976,
-      "sha256": "ee241d719629829bdbea00d3dcbaf66fb4181f4655dd3d4815804484bb969895"
+      "bytes": 52400,
+      "sha256": "f09f05af95dddde3d0c1e8530c6549419bab38a316ede450237905a57822e472"
+    },
+    {
+      "path": "src/seamless_hooks.rs",
+      "bytes": 8961,
+      "sha256": "b9867ff131208e1233befcba7a61c90df0e6805d75f6026d8ca6c4417e58d02b"
+    },
+    {
+      "path": "src/seamless_probe.rs",
+      "bytes": 11845,
+      "sha256": "ab8d039cd443e55c17bcbc7a9d2111868eb3dff88e656cc443fa892d7f896fb0"
+    },
+    {
+      "path": "src/seamless_probe_sites.rs",
+      "bytes": 3326,
+      "sha256": "9b9dace3997338ea1441a5da8e7c485bb35700053917aa1027d7430bf9e5756f"
+    },
+    {
+      "path": "src/seamless_solo.rs",
+      "bytes": 4577,
+      "sha256": "e39705a6b50cb1dc6661c5203458631903e69ad605230ad93c6aabdcf8e34e97"
+    },
+    {
+      "path": "src/session_policy.rs",
+      "bytes": 5001,
+      "sha256": "32f5b9cc19fb8f8f02be69e6d6094f97475a30bcec0f1ebf215db9b87e45ff40"
     },
     {
       "path": "src/spirit_mend.rs",
-      "bytes": 8736,
-      "sha256": "d9ab875ef735233a5db70ee58734e4032bdafcef75680199f14e316729d2bf47"
+      "bytes": 8788,
+      "sha256": "b84bd3f15a1db8a23ff6d98942e3aa13c6ff968867969475319c9c6563a4dc5e"
     },
     {
       "path": "src/targeting_diagnostic.rs",
@@ -1190,13 +1330,28 @@
     },
     {
       "path": "src/timing.rs",
-      "bytes": 6286,
-      "sha256": "867e69d806e9e0ec96a9a2e83e888b989a871294ebc4062eeb29273f3757b362"
+      "bytes": 6384,
+      "sha256": "c41c0f7c7f6fcbf443768d12fd0ab13f7c5c99b3856464f9c7fab10ccf4f4f3e"
+    },
+    {
+      "path": "tests/fixtures/mend-calls.tsv",
+      "bytes": 239,
+      "sha256": "3c506fb44646e95832448cec029a5ed8ee889f459a1e2d0064715a07fad3e3eb"
     },
     {
       "path": "tools/Build.ps1",
-      "bytes": 1784,
-      "sha256": "8c25a47d124c9a77912176591a8e4f5bdcdd3019370f94b3b4549221c4c24d6a"
+      "bytes": 2546,
+      "sha256": "0a8d3b9432466c453609ee367b3c204c3ed7c853e904e5aae3e8cd2786cedb14"
+    },
+    {
+      "path": "tools/Install-SeamlessProbe.ps1",
+      "bytes": 6410,
+      "sha256": "01d9197490de652482c87fa0089f4a0383a88aa95b61d2f15624814a9d8971e0"
+    },
+    {
+      "path": "tools/Install-SeamlessSolo.ps1",
+      "bytes": 7050,
+      "sha256": "89a7edad9d523ea6b762786ab199324f5983eda47433dc075a1a93c538310b9d"
     },
     {
       "path": "tools/Launch-SpiritMend.ps1",
@@ -1242,6 +1397,56 @@
       "path": "tools/SpiritMendAssets/oodle-legacy-printf.patch",
       "bytes": 1370,
       "sha256": "37ac5183f6ebe760a47be4c329f037e6b2acb6f2321deeaaeed50cd42944df96"
+    },
+    {
+      "path": "tools/SpiritMendMerge/LICENSE",
+      "bytes": 35801,
+      "sha256": "2e8578f16b6ea265412166e8b4b1da045fcc11f28db03d664908410124a2f01e"
+    },
+    {
+      "path": "tools/SpiritMendMerge/Program.cs",
+      "bytes": 13059,
+      "sha256": "e077f7cf0b41ffea8005d127fdfda37fe3516fc149c6493370bf3a4ff13f3ac7"
+    },
+    {
+      "path": "tools/SpiritMendMerge/README.md",
+      "bytes": 2867,
+      "sha256": "2a501d5f565ae23cf49b1da14ad0a2ef01f75def2189b73751eaf3f2d50ecfd8"
+    },
+    {
+      "path": "tools/SpiritMendMerge/SpiritMendMerge.csproj",
+      "bytes": 482,
+      "sha256": "074ecff71cceae850b127ae58597392e6dbde4e4c2e5e9c368c92cccb358b711"
+    },
+    {
+      "path": "tools/SpiritMendShopMove/LICENSE",
+      "bytes": 35801,
+      "sha256": "2e8578f16b6ea265412166e8b4b1da045fcc11f28db03d664908410124a2f01e"
+    },
+    {
+      "path": "tools/SpiritMendShopMove/Program.cs",
+      "bytes": 9177,
+      "sha256": "7c5182a710cd18454e409332ed13da4c374d42b85dfbe125f223dfb92ff3dada"
+    },
+    {
+      "path": "tools/SpiritMendShopMove/README.md",
+      "bytes": 4385,
+      "sha256": "8bcd891f7ba032a238c8e28a36bcfe275866551fdbe28dca26a860cc629cd0fd"
+    },
+    {
+      "path": "tools/SpiritMendShopMove/SpiritMendShopMove.csproj",
+      "bytes": 482,
+      "sha256": "074ecff71cceae850b127ae58597392e6dbde4e4c2e5e9c368c92cccb358b711"
+    },
+    {
+      "path": "tools/Update-SeamlessSoloDll.ps1",
+      "bytes": 4194,
+      "sha256": "6078d8dfe9f29d760c7830bd9df19524e82045c832ee3ff1c785bd09605550c0"
+    },
+    {
+      "path": "tools/Update-SpiritMendShop.ps1",
+      "bytes": 4654,
+      "sha256": "2419a34e9114176c2575f69976202895ef3a02b9b14e80a9842a76eca3d2b8f0"
     },
     {
       "path": "vendor/fromsoftware-rs/Cargo.toml",

@@ -161,7 +161,7 @@ fn mend_target(
     }
     let data = unsafe { health_ptr(actor, Inspection::Query, &mut PageChecks::new()) }?;
     let (hp, max) = unsafe { ((*data).hp, (*data).max_hp) };
-    if hp >= max {
+    if !crate::mend_policy::eligible(true, Some(Health { hp, max })) {
         return None;
     }
     Some((actor.field_ins_handle, hp, max))

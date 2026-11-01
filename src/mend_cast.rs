@@ -260,30 +260,78 @@ unsafe extern "system" fn mend_hit(
     unsafe { call(module, source, hit, flag, flag5) }
 }
 
-// Only scalar generation-bearing handles and timestamps survive a callback.
-// Bounds and expiry prevent stale/duplicate delivery, without retaining actors.
-static MEND_CONSUMED: Mutex<Vec<(FieldInsHandle, FieldInsHandle, Instant)>> =
-    Mutex::new(Vec::new());
+// Scalar handles only. Prune only when a COMPLETE current native bullet list
+// proves absence; elapsed time is not evidence that a projectile was destroyed.
+static MEND_CONSUMED: Mutex<crate::mend_policy::ImpactLedger> =
+    Mutex::new(crate::mend_policy::ImpactLedger::new());
+fn handle_key(handle: FieldInsHandle) -> u64 {
+    (u64::from(handle.block_id.0 as u32) << 32) | u64::from(handle.selector.0)
+}
+fn mend_live_handles() -> Option<Vec<u64>> {
+    let manager = unsafe { CSBulletManager::instance() }.ok()?;
+    let mut current = manager.bullets.head;
+    let mut live = Vec::new();
+    for _ in 0..256 {
+        let Some(node) = current else {
+            return Some(live);
+        };
+        if !pointer_shape(node.as_ptr()) {
+            return None;
+        }
+        let bullet = unsafe { node.as_ref() };
+        let key = handle_key(bullet.field_ins_handle);
+        if live.contains(&key) {
+            return None;
+        }
+        live.push(key);
+        current = bullet.next_bullet;
+    }
+    current.is_none().then_some(live)
+}
+// Constant-time session observation, no bullet traversal or page probes per frame.
+fn refresh_mend_session() {
+    if !config().spirit_mend {
+        return;
+    }
+    let context = if enabled() {
+        unsafe { WorldChrMan::instance() }.ok().and_then(|world| {
+            let pc = &world.main_player.as_ref()?.chr_ins;
+            (!pc.chr_flags1c5.death_flag())
+                .then_some((world as *const _ as usize, handle_key(pc.field_ins_handle)))
+        })
+    } else {
+        None
+    };
+    if let Ok(mut ledger) = MEND_CONSUMED.try_lock() {
+        ledger.enter_context(context);
+    }
+}
 fn mend_claim_impact(receiver: *const ChrIns, source: *const ChrIns) -> Option<MendFlight> {
     let flight = MEND_FLIGHT.with(Cell::get)?;
     let world = unsafe { WorldChrMan::instance() }.ok()?;
     let player = world.main_player.as_ref()?;
     let actor = registered_spirit(world, receiver)?;
-    if !std::ptr::eq(&player.chr_ins, source)
-        || flight.release.owner != player.chr_ins.field_ins_handle
-        || flight.release.target != actor.field_ins_handle
-    {
+    if !std::ptr::eq(&player.chr_ins, source) {
         return None;
     }
+    let live = mend_live_handles();
     let mut consumed = MEND_CONSUMED.try_lock().ok()?;
-    consumed.retain(|(_, _, time)| time.elapsed() < Duration::from_secs(5));
-    if consumed
-        .iter()
-        .any(|(b, o, _)| *b == flight.bullet && *o == flight.release.owner)
-        || consumed.len() >= 64
-    {
-        return None;
+    consumed.enter_context(Some((
+        world as *const _ as usize,
+        handle_key(player.chr_ins.field_ins_handle),
+    )));
+    if let Some(live) = live {
+        consumed.retain_live(&live);
     }
-    consumed.push((flight.bullet, flight.release.owner, Instant::now()));
-    Some(flight)
+    consumed
+        .claim(
+            crate::mend_policy::FlightKey {
+                bullet: handle_key(flight.bullet),
+                owner: handle_key(flight.release.owner),
+                target: handle_key(flight.release.target),
+            },
+            handle_key(player.chr_ins.field_ins_handle),
+            handle_key(actor.field_ins_handle),
+        )
+        .then_some(flight)
 }

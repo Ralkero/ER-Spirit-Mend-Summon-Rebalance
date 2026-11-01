@@ -1,0 +1,2282 @@
+{
+  "version": "0.5.1",
+  "scope": "All staged files before this self-excluded manifest; SHA256 of checkout bytes",
+  "runtime_vendor_exact_files": 226,
+  "files": [
+    {
+      "path": ".gitattributes",
+      "bytes": 78,
+      "sha256": "c66f8741b5ed00ce6e32101ef6f5a86970f7a67d0087408f83d001c7eadc4388"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 329,
+      "sha256": "e2ca9a669971ba3f979b9e55de8b8f3a7943317ad6d29be8fb37b17eda1e6e49"
+    },
+    {
+      "path": "ANALYSIS.md",
+      "bytes": 5374,
+      "sha256": "eca2a226d01bb3e9e9f21e8354a5bb610a666a1c43a4dff70a4a4e0abf3ff641"
+    },
+    {
+      "path": "CHANGELOG.md",
+      "bytes": 27501,
+      "sha256": "5601fdbef3127b15a91764bef85f512f3a43a38bca471dca350fe5ac53449c44"
+    },
+    {
+      "path": "Cargo.lock",
+      "bytes": 15396,
+      "sha256": "6564f2d3c4e750947c4c4a24d3b85e3f5fadbdc51dee452aef5de08747c765a7"
+    },
+    {
+      "path": "Cargo.toml",
+      "bytes": 658,
+      "sha256": "49e7fd5386435e2db66d429f7389995d9ab616c18818f8bc36271da5467ff2d9"
+    },
+    {
+      "path": "HUD-INVESTIGATION.md",
+      "bytes": 11878,
+      "sha256": "b3bd26e52bcdb550d742bea340b198fe6b0b2a65463f8b70043c19818c8257a7"
+    },
+    {
+      "path": "IMPLEMENTATION.md",
+      "bytes": 50534,
+      "sha256": "603f711e3a47866d326ff4d867a21fb96427b8e883d398581eaf4b6b5d5beb28"
+    },
+    {
+      "path": "LICENSE-APACHE",
+      "bytes": 11541,
+      "sha256": "19dfc44cf86b3b3c419e22eb331c287d208e1b17d5ba407bec99dcb292dac5d4"
+    },
+    {
+      "path": "LICENSE-MIT",
+      "bytes": 1088,
+      "sha256": "3690a286d00707b013a29b518f3361d17e97eab01e3bb7d2d30deb5c8bba0216"
+    },
+    {
+      "path": "PUBLICATION.md",
+      "bytes": 3584,
+      "sha256": "c53b12a45361e758785d0cb0bd2a91c07b9e302fc549d507644ee23cbf25c07a"
+    },
+    {
+      "path": "README.md",
+      "bytes": 7625,
+      "sha256": "c24c0aa09f7af3198aa68d566060d10408bf12f0905dec5f64a5edd0e9f8418f"
+    },
+    {
+      "path": "SPIRIT-MEND.md",
+      "bytes": 5685,
+      "sha256": "58a86cadc7c089a6c551006cc580d2d61e1311edb2df0b25cc83e7627469eb3c"
+    },
+    {
+      "path": "START-HERE.txt",
+      "bytes": 4158,
+      "sha256": "63aea3b158e6ab29521ad97353b828d06ff01150c43ca61651faf768248e6f59"
+    },
+    {
+      "path": "TARGETED-HEALING-INVESTIGATION.md",
+      "bytes": 21273,
+      "sha256": "0fc19264e1d5dfc6da6f4aca7b8c57d9742e6ce289e5d8a20b08d5e08ad5828b"
+    },
+    {
+      "path": "THIRD-PARTY-NOTICES.txt",
+      "bytes": 59940,
+      "sha256": "bdfe6b3b0611c40846641f0ba60853788e7439d19ad2bacc332cb8a9aff27496"
+    },
+    {
+      "path": "UPSTREAM.md",
+      "bytes": 4818,
+      "sha256": "1208831a749a5717271472c5e40f467acbc1218a8f2963056ec6f0cb8b659c30"
+    },
+    {
+      "path": "VALIDATION.md",
+      "bytes": 116891,
+      "sha256": "4efd24051f685c741ae6cfd06ed428bc5487b423405a62eacad08c72c7cb906d"
+    },
+    {
+      "path": "assets/patch-manifest-0.5.1.json",
+      "bytes": 3240,
+      "sha256": "22a0cb305b68fb9e2e284255642ab4ab2a0259ed50d403788849dbf85d5eaf38"
+    },
+    {
+      "path": "config/SpiritAshResummon.ini",
+      "bytes": 443,
+      "sha256": "e69d13a9c52331d28ef95f8f9ecb6d0136dd517b3964b8a7933287a212caa7ff"
+    },
+    {
+      "path": "config/SpiritMend-Prototype.ini",
+      "bytes": 439,
+      "sha256": "2b16430e29af29f3c2f43ab189d8e884a5e45e80da25d0e94748c8e1e56d4b67"
+    },
+    {
+      "path": "docs/ASSET-TOOL-HISTORY.md",
+      "bytes": 2809,
+      "sha256": "7b6b85f7a058579fff390c981667025cbfd1d31a9b7d1702049e6b54157696c5"
+    },
+    {
+      "path": "docs/HISTORY-README.md",
+      "bytes": 15159,
+      "sha256": "72192e4c5d1891f33f94103256fee0d93989922f5709b74e77407e1f6ca032d1"
+    },
+    {
+      "path": "evidence/0.1.10-heal-20261029-184942.log",
+      "bytes": 414051,
+      "sha256": "ccd23df3c3f061d9ba77469e53b03049d02c9224af5e8517e9a91966e5a8f3e5"
+    },
+    {
+      "path": "evidence/0.1.10-resummon-delay-20261029-185311.log",
+      "bytes": 447312,
+      "sha256": "2b265567a6fe52fb427616ed713f2af9095a7f8a4efc97e824720fa86cffcada"
+    },
+    {
+      "path": "evidence/0.1.11-resummon-20261029-191755.log",
+      "bytes": 702780,
+      "sha256": "ce302f5253d599eed29712830009971e1835a9d0ceae3a0f51030afbb6f460b0"
+    },
+    {
+      "path": "evidence/0.1.12-area-transition-20261029-195844.log",
+      "bytes": 398137,
+      "sha256": "86dd811f0cea2809da004b25ef249677d4457dbba6f8eb9285850f0dd3d8dfb1"
+    },
+    {
+      "path": "evidence/0.1.12-boss-20261029-200709.log",
+      "bytes": 508406,
+      "sha256": "ae5e5daf10048ae14fe94cc695e1a60e965b476fb376ebc2767ab82cce493a71"
+    },
+    {
+      "path": "evidence/0.1.12-boss-resummon-20261029-201823.log",
+      "bytes": 616708,
+      "sha256": "62a428c418c627ef3446a56f2de7eb432730f92a22c47ed04308ec84f70c016a"
+    },
+    {
+      "path": "evidence/0.1.12-different-ash-20261029-194930.log",
+      "bytes": 293384,
+      "sha256": "390b8f171e56af155031f5b593f56a63e1529e2c8f1dfd05c2103f3c2d03c6c9"
+    },
+    {
+      "path": "evidence/0.1.12-full-health-20261029-195041.log",
+      "bytes": 310387,
+      "sha256": "58dbda63f735d964e4f4a49c5457101f043477929c332b8cf12a7e3ab8ae2a6b"
+    },
+    {
+      "path": "evidence/0.1.12-insufficient-fp-20261029-194752.log",
+      "bytes": 270492,
+      "sha256": "8934281f5f5388ef987f7a2f7fc5036bd8fe37e9921eb3d326c7aef63c45cd90"
+    },
+    {
+      "path": "evidence/0.1.12-partial-group-20261029-193045.log",
+      "bytes": 82380,
+      "sha256": "8e066dd2e4ffb133a6116903825e976d667bf6e78fe848d3da065aaf198c2072"
+    },
+    {
+      "path": "evidence/0.1.12-player-death-20261029-200330.log",
+      "bytes": 457719,
+      "sha256": "c1fec437b08342f517176b629791b23ef6b4ba8404f91fd8968937bb1bf09245"
+    },
+    {
+      "path": "evidence/0.1.12-resummon-20261029-192744.log",
+      "bytes": 44141,
+      "sha256": "d4bcbcd7648c5a28396168aded7e63c923192f73cb5c4911baefcdd4521a6335"
+    },
+    {
+      "path": "evidence/0.1.12-title-reload-20261029-200115.log",
+      "bytes": 432007,
+      "sha256": "aece3db893a2459015a22647d8c3eb821150b290d7880872d52720e598303038"
+    },
+    {
+      "path": "evidence/0.1.12-wolf-heal-20261029-194602.log",
+      "bytes": 251737,
+      "sha256": "ed2965663a01fc5e3563185c32a5bc414934417bc53e9cd375182759cc6d87b1"
+    },
+    {
+      "path": "evidence/0.1.3-low-fps-20261029-172054.log",
+      "bytes": 20271,
+      "sha256": "f08fd04f9f576b7704aa9d1ba5bbc9a156445cada4eddb1edca14263262704c4"
+    },
+    {
+      "path": "evidence/0.1.4-low-fps-20261029-172633.log",
+      "bytes": 13529,
+      "sha256": "c872c5f738df8adc642f74cb10f14eafab6461dcafe37fd1c0f5d8d1770eb0e8"
+    },
+    {
+      "path": "evidence/0.1.5-active-10fps-20261029-173836.log",
+      "bytes": 43270,
+      "sha256": "ee33b8feb1ce1618d75f8035ca9729b03aaa38287c51b59576b77852a6b97d91"
+    },
+    {
+      "path": "evidence/0.1.5-greyed-ash-20261029-173520.log",
+      "bytes": 21752,
+      "sha256": "0be512de35feee47fd63ca0a6fe0fcc2c15ef773e878da594802f207d6530d26"
+    },
+    {
+      "path": "evidence/0.1.5-idle-60fps-20261029-173313.log",
+      "bytes": 9066,
+      "sha256": "d832ea43471c00161889147d7b41b8a591a7d98fb0b6df84c61c8a520799dc1d"
+    },
+    {
+      "path": "evidence/0.1.6-active-20261029-181436.log",
+      "bytes": 207419,
+      "sha256": "1d44113daa81f09e804a96cb3e1621dc20d1fbe3a1b21a9711f96737d6186525"
+    },
+    {
+      "path": "evidence/0.1.7-startup-disabled-20261029-181942.log",
+      "bytes": 216196,
+      "sha256": "746c2bb6767c100c3c0099a9258a86ecb2c7c717d9043e82f986d3d8bb76918f"
+    },
+    {
+      "path": "evidence/0.1.8-active-20261029-182351.log",
+      "bytes": 234719,
+      "sha256": "d867f6451bb609d5d826589df70ccccc647eded5e1b7218d11ce009f1ff0f6d3"
+    },
+    {
+      "path": "evidence/0.1.8-idle-20261029-182245.log",
+      "bytes": 225838,
+      "sha256": "b53639d67ee3019e1081203fc630b84bfba333395d079ffe1161c82b7541cf56"
+    },
+    {
+      "path": "evidence/0.1.9-active-20261029-183144.log",
+      "bytes": 263730,
+      "sha256": "da11afc54d02d9219ad15958452cab15ef012fcb0d2084162c6372d69ec30182"
+    },
+    {
+      "path": "evidence/0.1.9-heal-20261029-183449.log",
+      "bytes": 292605,
+      "sha256": "7f57bf9d20cdc456a7bbfd7d747ca889adf60e88234b7f0db0a6888c43e652c2"
+    },
+    {
+      "path": "evidence/0.2.0-idle-20261029-204111.log",
+      "bytes": 15079,
+      "sha256": "1bd405ee2759d979e6d2ae999633a528c615eeafb36141327b8dd6e4e5cf3cba"
+    },
+    {
+      "path": "evidence/0.2.0-second-ash-blocked-20261029-204428.log",
+      "bytes": 51484,
+      "sha256": "3256528cbbd7bb3631202e861eaa4688b0cbf809d232bf443cdf4a9e5b45bb9b"
+    },
+    {
+      "path": "evidence/0.2.1-militiaman-heal-multiple-20261029-210130.log",
+      "bytes": 191717,
+      "sha256": "9404132f2f63d704d7897a25a00e8c0ee448c7c5753802b10e1334ea1363cec4"
+    },
+    {
+      "path": "evidence/0.2.1-resummon-blocked-20261029-211535.log",
+      "bytes": 393347,
+      "sha256": "a644c34c8bc06f535b7eabfcfb5a58b212c51ccd48b28b23f078a854a18b06a0"
+    },
+    {
+      "path": "evidence/0.2.1-second-ash-20261029-204950.log",
+      "bytes": 22962,
+      "sha256": "feeee050205307017f2e307ff972a02a52015a966c908e949088b9e1c4619055"
+    },
+    {
+      "path": "evidence/0.2.1-wolf-heal-multiple-20261029-205629.log",
+      "bytes": 136338,
+      "sha256": "5c9f4c402c1babe6a67555d57a67cb90d0b77b2d42d11b96cdd8a17a3c096d70"
+    },
+    {
+      "path": "evidence/0.2.1-wolf-resummon-with-militiaman-20261029-210536.log",
+      "bytes": 249428,
+      "sha256": "fc5816703ea6ed6fccc1afebfdb214f8adf8feebdfe29cdcf1602bb23a5728f5"
+    },
+    {
+      "path": "evidence/0.3.0-hud-healing-20261029-221612.log",
+      "bytes": 2035903,
+      "sha256": "9c672186e0541d6e1ad1b1b55831a58ca05247fb66fd78cafabfde9c1ce4793b"
+    },
+    {
+      "path": "evidence/0.3.0-two-bars-20261029-221202.log",
+      "bytes": 1972990,
+      "sha256": "ac8c722143a5060e5d6ce41959de8248e03e15e6923cd2455bfe99ab70839bde"
+    },
+    {
+      "path": "evidence/0.3.1-ui-user-accepted-20261029-230635.log",
+      "bytes": 2170298,
+      "sha256": "4907d2098a0fd1eb1a0a56b0d313faa693a6b58f8ae1b8a6fab94572aad11938"
+    },
+    {
+      "path": "evidence/0.4.0-elleh-boundary-20261029-231346.log",
+      "bytes": 2292090,
+      "sha256": "7765b8836e29410449ef60ba41c1be46a2b2fc1cf11987c97896a4690a918ce9"
+    },
+    {
+      "path": "evidence/0.4.0-elleh-boundary-review.json",
+      "bytes": 2370,
+      "sha256": "f980cce36a2d72c8f5339fc4fa786d908c319e8cbd93971096860b299eb45c74"
+    },
+    {
+      "path": "evidence/0.4.1-lockon-20261029-233642.log",
+      "bytes": 2374224,
+      "sha256": "fafb2c13935039683812a17ada721fbe0e48e3e45eecbd9c8754169aaa676650"
+    },
+    {
+      "path": "evidence/0.4.1-lockon-review.json",
+      "bytes": 1209,
+      "sha256": "b58c035f9aad90d5d9119d8d5f599d087eeb5ba3a4f939eff6c1f6110289476e"
+    },
+    {
+      "path": "evidence/0.4.2-friendly-lockon-20261029-234735.log",
+      "bytes": 56105,
+      "sha256": "d779a891d380b559b8e3be518b0393939bf77105025a2a33668045e259cc31c4"
+    },
+    {
+      "path": "evidence/0.4.2-friendly-lockon-review.json",
+      "bytes": 6306,
+      "sha256": "da85e2e57b3523a769b84a187eaa10ffd968ac9622c774e69ca36b7a48514d4f"
+    },
+    {
+      "path": "evidence/0.4.2-grace-lockon-20261029-235017.log",
+      "bytes": 108516,
+      "sha256": "abd3cc490d9c3efa0674ef4014fb74b67350d25704c688b604553b10fd5c2802"
+    },
+    {
+      "path": "evidence/0.4.2-grace-lockon-review.json",
+      "bytes": 8041,
+      "sha256": "9039ed02c21f26b258c0f9aab55b1c82cca8d36aee1c6349ca9cafd5be0f3757"
+    },
+    {
+      "path": "evidence/0.5.0-lusat-cost-param.json",
+      "bytes": 1247,
+      "sha256": "572d8479b5e9b40dbdbf67e394bff609051bc0aa959572e911ad0b70666f13e9"
+    },
+    {
+      "path": "evidence/0.5.0-missing-shop-20261030-002153.log",
+      "bytes": 38079,
+      "sha256": "ca26e62cc05367d09ac69aedfe1e8181e4e3407564d45315b2b202d7385ad8fe"
+    },
+    {
+      "path": "evidence/0.5.0-spirit-mend-success-20261030-002802.log",
+      "bytes": 78527,
+      "sha256": "b746bf7920fb297c36e0b408b64bf97f856cf248eabf277528aef3c40b0c0eb5"
+    },
+    {
+      "path": "evidence/0.5.0-spirit-mend-success-review.json",
+      "bytes": 6978,
+      "sha256": "40dca226f13ef286b1936e67f22d898ba09e72d05484b9299d216a60207988f9"
+    },
+    {
+      "path": "evidence/SPIRIT-MEND-before-0.5.1.md",
+      "bytes": 9310,
+      "sha256": "b8d499bba8b1a5a80ca434a228a5c0338f4325c4335329f2d6ce990ed089d05c"
+    },
+    {
+      "path": "evidence/build-0.1.1.txt",
+      "bytes": 156,
+      "sha256": "8c6159b5823dd850ec39728c7aff534077f6a89960d7e981df3eb51a5135477f"
+    },
+    {
+      "path": "evidence/build-0.1.10.txt",
+      "bytes": 157,
+      "sha256": "620c0588bb92fdefc71699c10f305ef782c7d8447d1f23b8a1386145c663105f"
+    },
+    {
+      "path": "evidence/build-0.1.11.txt",
+      "bytes": 157,
+      "sha256": "5c02046916fe3bb755430baaa9a64b5d259b53f6e2bfdaa414187a69065fdc27"
+    },
+    {
+      "path": "evidence/build-0.1.12.txt",
+      "bytes": 157,
+      "sha256": "82adaf8c5a9c48a3cc777f12347719c9509452a46ec12106c4bfa4f19bfc40f8"
+    },
+    {
+      "path": "evidence/build-0.1.2.txt",
+      "bytes": 156,
+      "sha256": "fc231ff380a0d0d73718021157e58f0adafcb59893861f18290ee34b3fcfe5c7"
+    },
+    {
+      "path": "evidence/build-0.1.3.txt",
+      "bytes": 156,
+      "sha256": "5a4058edf37e1f204191aeadda05280d0ef1bd53974da3fdfc9a83de34beaf32"
+    },
+    {
+      "path": "evidence/build-0.1.4.txt",
+      "bytes": 156,
+      "sha256": "68e97abbc1537b025c7bd30f1b2e53b0d78f8346b6ab8c6c1ccd00f0e0333dbf"
+    },
+    {
+      "path": "evidence/build-0.1.5.txt",
+      "bytes": 156,
+      "sha256": "e4bde477c4638889e0e98e382ae666612bff82a5b6a1ec88aa89e22d291dcc29"
+    },
+    {
+      "path": "evidence/build-0.1.6.txt",
+      "bytes": 156,
+      "sha256": "87af23491fed54391cce442e7ed533eee3bf34575588e28d34968a779d016792"
+    },
+    {
+      "path": "evidence/build-0.1.7.txt",
+      "bytes": 268,
+      "sha256": "5116f808b6515d9caf6d87bc1935df9bf24e226ac866a88b8c89d1556e4cc542"
+    },
+    {
+      "path": "evidence/build-0.1.8.txt",
+      "bytes": 156,
+      "sha256": "6f0406fd1d39cc5b98f76820f8e7e33fa2faf8e8b3a10c2dd81f0b17e0229e5b"
+    },
+    {
+      "path": "evidence/build-0.1.9.txt",
+      "bytes": 156,
+      "sha256": "db87076bb3e8d2e2c8768ac9f025146268c0e76898fc7b29059807c50b157a9c"
+    },
+    {
+      "path": "evidence/build-0.2.0.txt",
+      "bytes": 156,
+      "sha256": "7e2e9a1ca7363c143d932ef8f4a721892651c350d2d4837f60bc05aa08df516c"
+    },
+    {
+      "path": "evidence/build-0.2.1.txt",
+      "bytes": 156,
+      "sha256": "b0a528c7f43db36373a7c7a282023c32770085a9861f1ac7e26f61c3f25503da"
+    },
+    {
+      "path": "evidence/build-0.2.2.txt",
+      "bytes": 156,
+      "sha256": "51882b712c47cc568b06d383992fa81127e5f00b1bc030695cffcbe5f2f7175a"
+    },
+    {
+      "path": "evidence/build-0.3.0.txt",
+      "bytes": 156,
+      "sha256": "deab61faebe0a7b97d0c67f13fe0007bd3d6ff73b055d4a561eda15aa2a3d7f9"
+    },
+    {
+      "path": "evidence/build-0.3.1.txt",
+      "bytes": 156,
+      "sha256": "b4c2bfebb403f1336a5f2c9acd77f7a1c41d3d1f11abad783628313852e5ec78"
+    },
+    {
+      "path": "evidence/build-0.4.0.txt",
+      "bytes": 156,
+      "sha256": "d9bcc6ce8cd88df6683f47265a13506935c1d563a188643de6950737e7ede648"
+    },
+    {
+      "path": "evidence/build-0.4.1.txt",
+      "bytes": 156,
+      "sha256": "06b20bd83cd6aafccb41858e4b3416bdb159774cff5a195bd444ec2ad84b2ea5"
+    },
+    {
+      "path": "evidence/build-0.4.2.txt",
+      "bytes": 156,
+      "sha256": "ad83f98a22534790bcd53108357a52b6f94301d96e2c9d36e87147c44c9fecda"
+    },
+    {
+      "path": "evidence/build-0.5.0-assets.txt",
+      "bytes": 390,
+      "sha256": "0de647979b875955f74ed6a9007a14e5c3ff42e68130cf57bace653112b96d18"
+    },
+    {
+      "path": "evidence/build-0.5.0-shopfix.txt",
+      "bytes": 390,
+      "sha256": "f64e8aeed099f046a191c67e4e62a2474b7f847c9607d168fdbf608147ac73a5"
+    },
+    {
+      "path": "evidence/build-0.5.0.txt",
+      "bytes": 156,
+      "sha256": "5a019bce4a93fed2731eae6b05fadd53720021dcd8d573046cebfff56939a261"
+    },
+    {
+      "path": "evidence/build-0.5.1-initial.txt",
+      "bytes": 1204,
+      "sha256": "1ad865486e90a9182e873998ed90eb32f40371eea375090c321fe581bbab13bc"
+    },
+    {
+      "path": "evidence/build-0.5.1.txt",
+      "bytes": 156,
+      "sha256": "046017edd1004dba76864afb7d0c6a9e881dc2bf7ce6127be61234cd25f06f54"
+    },
+    {
+      "path": "evidence/build.txt",
+      "bytes": 156,
+      "sha256": "42f8bf64aa6113264b15b6858764f65af8007fd45251ef5fdbc9d914a4e4cc95"
+    },
+    {
+      "path": "evidence/cast-static/hook-review.json",
+      "bytes": 1766,
+      "sha256": "28afaffe62643fc891f254bdea4c23490dfec070d4e36d0ae6b6b9bb7ffcd3ea"
+    },
+    {
+      "path": "evidence/character-loaded-0.1.1.log",
+      "bytes": 512,
+      "sha256": "87712e7112ea878709a626a675c0b6ac9e95be91faf352f43080a0d29f2f8e62"
+    },
+    {
+      "path": "evidence/clippy.txt",
+      "bytes": 154,
+      "sha256": "21f6734a5f7300f1a925ec09b76945d6d2d040d0c46982001dffef89ebb54f3b"
+    },
+    {
+      "path": "evidence/dependency-inventory.json",
+      "bytes": 10979,
+      "sha256": "7cc297a755f387951e8d11cfe23cb909074c9b8a8f9db2a3d15611c9983c1bdb"
+    },
+    {
+      "path": "evidence/game-preflight.json",
+      "bytes": 1765,
+      "sha256": "202883089dbbb60c97613cdb33e96cbc3e8e25028bae251cd6fde22a886bfb60"
+    },
+    {
+      "path": "evidence/hud-layout-analysis.json",
+      "bytes": 6796,
+      "sha256": "ad9d9f85e73335080e8bb12fa395f2b5e989bbebc4bf29d5a43a7fbd39c5efa0"
+    },
+    {
+      "path": "evidence/hud-native-analysis.json",
+      "bytes": 2378,
+      "sha256": "05536a3b2cdb0e815d25fcf353abb783342208bfee7026a2f6f272d48d49b796"
+    },
+    {
+      "path": "evidence/install-0.1.10.json",
+      "bytes": 552,
+      "sha256": "9927f52d2feb02aaab87ea6f1389ecfd9a51633799123f090693ff6568289957"
+    },
+    {
+      "path": "evidence/install-0.1.11.json",
+      "bytes": 547,
+      "sha256": "271b7ddf259329830ddb9896428026154bc53d43637d7e2a831b0f9a78827b97"
+    },
+    {
+      "path": "evidence/install-0.1.12.json",
+      "bytes": 619,
+      "sha256": "92daea55334214a2c1f6887864247f5bd1318e37bdbea0b1fbaa7189b28842dd"
+    },
+    {
+      "path": "evidence/install-0.1.4.json",
+      "bytes": 598,
+      "sha256": "30db05a717094f1247f66b111a9504a6b4c605b8ec169c63f9dd3699623858b3"
+    },
+    {
+      "path": "evidence/install-0.1.5.json",
+      "bytes": 598,
+      "sha256": "19efbaf1fb3975f4297b100f9be8c7262e7412c8830298c3704018d66f97de48"
+    },
+    {
+      "path": "evidence/install-0.1.6.json",
+      "bytes": 362,
+      "sha256": "ab5ff2b30a4b6f060d0d8bb733023d2a708ed1cdc3cacb655a79b70da2a73bd1"
+    },
+    {
+      "path": "evidence/install-0.1.7.json",
+      "bytes": 480,
+      "sha256": "69b455775f9f2a662aebe215f689b95a06c3ce9c28baf0db59257157d1a216d4"
+    },
+    {
+      "path": "evidence/install-0.1.8.json",
+      "bytes": 480,
+      "sha256": "7e2a4dea4c6d67e6e05b34fb23e2fab5605273e77149031de1bdba7af6feb8a7"
+    },
+    {
+      "path": "evidence/install-0.1.9.json",
+      "bytes": 538,
+      "sha256": "910e5762d8e9f35251efd8fb7afadcddb92e8d61680d5425bcecdeeb1d0f2101"
+    },
+    {
+      "path": "evidence/install-0.2.0.json",
+      "bytes": 803,
+      "sha256": "3b1f7be650531d6710e42ceaef72eae933b5e60b2b724b5a597c0aa9079e84ec"
+    },
+    {
+      "path": "evidence/install-0.2.1.json",
+      "bytes": 624,
+      "sha256": "1753767925025c73344637d9377f956178e042088329141a936898958d21ac2b"
+    },
+    {
+      "path": "evidence/install-0.2.2.json",
+      "bytes": 624,
+      "sha256": "ecaaf1dd63fda52b7544a9e233effc47c1959d4badfba00bce494509181ddb2e"
+    },
+    {
+      "path": "evidence/install-0.3.0.json",
+      "bytes": 799,
+      "sha256": "8192189bf0f6dd6add0bdb3721006c14403c43e605119a0dc0560b8973a8eaea"
+    },
+    {
+      "path": "evidence/install-0.3.1.json",
+      "bytes": 624,
+      "sha256": "28c17acb667ef2f2eed1f591fb9f2fa5b82ba48d44393d620f483503139a0f4a"
+    },
+    {
+      "path": "evidence/install-0.4.0.json",
+      "bytes": 2579,
+      "sha256": "347f8e94a03a9f18cdec5ae159c4d9ae7daf8760d35646986ff1711ca443826d"
+    },
+    {
+      "path": "evidence/install-0.4.1.json",
+      "bytes": 2573,
+      "sha256": "b016b88b54a955f8b86a7c5b41bd15dea3d087e5e41707e035cbb3d42490da7d"
+    },
+    {
+      "path": "evidence/install-0.4.2.json",
+      "bytes": 2587,
+      "sha256": "28d2832222c055d221140743f576108d0eb13783c17f045fcd685c2815356bbd"
+    },
+    {
+      "path": "evidence/install-0.5.0-shopfix.json",
+      "bytes": 998,
+      "sha256": "981fbba0a86e33697a7d9826356abe842e009d84810f55910d533deba7219652"
+    },
+    {
+      "path": "evidence/install-0.5.0.json",
+      "bytes": 4281,
+      "sha256": "fda281779d5612bbee344fb21c6d433cf8f2b2e89c41e0d393ed8bb01173d080"
+    },
+    {
+      "path": "evidence/install-0.5.1.json",
+      "bytes": 5722,
+      "sha256": "30d5961cbab0e5952680bda7bca3d8f274538d93432d578b5f780564ace66e81"
+    },
+    {
+      "path": "evidence/item-eligibility-0.2.1.md",
+      "bytes": 935,
+      "sha256": "b06d674a29dbd93ea0c90e251dac56a5a889a7facb6f2dab30955d1f734a9096"
+    },
+    {
+      "path": "evidence/offline-gate-blocker-0.1.2.log",
+      "bytes": 6733,
+      "sha256": "6214b353505023a7986967abdd7b92c1ad7a5e15f7603675c83564068b3f5126"
+    },
+    {
+      "path": "evidence/publication-assets-build.txt",
+      "bytes": 545,
+      "sha256": "05f088a1dd1da57c8914873a75990cee08f8f34452867c563b35191a084ae2fd"
+    },
+    {
+      "path": "evidence/publication-build-review.json",
+      "bytes": 15088,
+      "sha256": "f6ff324983d7a4c37d6286e1087a7d519baa760d9f7989e747ce21a139b0de13"
+    },
+    {
+      "path": "evidence/publication-rust-build.txt",
+      "bytes": 2599,
+      "sha256": "5370893c77b741027fe0b32d6b71680e5cb36490712cec49d56cb0340fff85bf"
+    },
+    {
+      "path": "evidence/registry-state-0.1.9.md",
+      "bytes": 3742,
+      "sha256": "5a68dad4f006b7b160955041223e64d89c5d9db95bf1329c3232d46fdf3513dd"
+    },
+    {
+      "path": "evidence/release-dll-0.1.1.json",
+      "bytes": 167,
+      "sha256": "e0c9aab3e6695fc15407b8e1e50e0b6048d85ce8b470f50a948c1bb264713926"
+    },
+    {
+      "path": "evidence/release-dll.json",
+      "bytes": 167,
+      "sha256": "8f72496a8822c61e23af2ef2068f07efde9d31f5d6cdff55315e9af9841a1215"
+    },
+    {
+      "path": "evidence/spirit-mend-template-2/partial-rows.json",
+      "bytes": 36723,
+      "sha256": "83601410f353e82d8109de18700aa0a64ab269f611ac57900099e580cc5f70e5"
+    },
+    {
+      "path": "evidence/spirit-mend-template-3/partial-rows.json",
+      "bytes": 85647,
+      "sha256": "b701c4d9a5e56588e5cca337a6283f56d849d5a74ad10ec4ed48e8d70b71473e"
+    },
+    {
+      "path": "evidence/spirit-mend-template-3/source.json",
+      "bytes": 220,
+      "sha256": "6d5f2a20890eae0e4426adb65edbe6ed40c90e78f80cf840c1b40b45137ffff7"
+    },
+    {
+      "path": "evidence/spirit-mend-template-3/template-rows.json",
+      "bytes": 85647,
+      "sha256": "b701c4d9a5e56588e5cca337a6283f56d849d5a74ad10ec4ed48e8d70b71473e"
+    },
+    {
+      "path": "evidence/spirit-mend-template-4/partial-rows.json",
+      "bytes": 106128,
+      "sha256": "8c9adebe05e2c0d0e2a745490b0ade9005a8bbb7c251d624429a805b68d69f95"
+    },
+    {
+      "path": "evidence/spirit-mend-template-4/percent-healing-effects.json",
+      "bytes": 33627,
+      "sha256": "38afd16ce6ae4f8c1408d0a2d7826d1b606f4bc642ac25c46f75046096d66771"
+    },
+    {
+      "path": "evidence/spirit-mend-template-4/source.json",
+      "bytes": 220,
+      "sha256": "6d5f2a20890eae0e4426adb65edbe6ed40c90e78f80cf840c1b40b45137ffff7"
+    },
+    {
+      "path": "evidence/spirit-mend-template-4/template-rows.json",
+      "bytes": 106128,
+      "sha256": "8c9adebe05e2c0d0e2a745490b0ade9005a8bbb7c251d624429a805b68d69f95"
+    },
+    {
+      "path": "evidence/spirit-mend-template-5/partial-rows.json",
+      "bytes": 106128,
+      "sha256": "8c9adebe05e2c0d0e2a745490b0ade9005a8bbb7c251d624429a805b68d69f95"
+    },
+    {
+      "path": "evidence/spirit-mend-template-5/percent-healing-effects.json",
+      "bytes": 33627,
+      "sha256": "38afd16ce6ae4f8c1408d0a2d7826d1b606f4bc642ac25c46f75046096d66771"
+    },
+    {
+      "path": "evidence/spirit-mend-template-5/source.json",
+      "bytes": 220,
+      "sha256": "6d5f2a20890eae0e4426adb65edbe6ed40c90e78f80cf840c1b40b45137ffff7"
+    },
+    {
+      "path": "evidence/spirit-mend-template-5/template-rows.json",
+      "bytes": 106128,
+      "sha256": "8c9adebe05e2c0d0e2a745490b0ade9005a8bbb7c251d624429a805b68d69f95"
+    },
+    {
+      "path": "evidence/spirit-mend-template-6/partial-rows.json",
+      "bytes": 106128,
+      "sha256": "8c9adebe05e2c0d0e2a745490b0ade9005a8bbb7c251d624429a805b68d69f95"
+    },
+    {
+      "path": "evidence/spirit-mend-template-6/percent-healing-effects.json",
+      "bytes": 33627,
+      "sha256": "38afd16ce6ae4f8c1408d0a2d7826d1b606f4bc642ac25c46f75046096d66771"
+    },
+    {
+      "path": "evidence/spirit-mend-template-6/source.json",
+      "bytes": 220,
+      "sha256": "6d5f2a20890eae0e4426adb65edbe6ed40c90e78f80cf840c1b40b45137ffff7"
+    },
+    {
+      "path": "evidence/spirit-mend-template-6/template-rows.json",
+      "bytes": 106128,
+      "sha256": "8c9adebe05e2c0d0e2a745490b0ade9005a8bbb7c251d624429a805b68d69f95"
+    },
+    {
+      "path": "evidence/spirit-mend-template-6/template-text.json",
+      "bytes": 6214,
+      "sha256": "3ba2487929d00c9d20cf18f90ce04b4c3d3ffcc2badc3c2c807a6823722b92ad"
+    },
+    {
+      "path": "evidence/staged-0.1.10.json",
+      "bytes": 365,
+      "sha256": "b9135bc42b17ead1a8b2bbca2c75e57a4057e5937de9e5f4d4576270b744b7df"
+    },
+    {
+      "path": "evidence/staged-0.1.11.json",
+      "bytes": 361,
+      "sha256": "1f420242edcf5244afae740c8d7b2efede9cc713466c76858cd0112f60d4b5e6"
+    },
+    {
+      "path": "evidence/staged-0.2.1.json",
+      "bytes": 552,
+      "sha256": "d9f660f03a95045f76425e52194fdbd9061578220f4c9b20d83e5e3304ec430b"
+    },
+    {
+      "path": "evidence/staged-0.2.2.json",
+      "bytes": 647,
+      "sha256": "2e0cea36ae517200bd3692b0bd393c40f9846d765fa273d9f3f28d198865a866"
+    },
+    {
+      "path": "evidence/staged-0.3.0.json",
+      "bytes": 684,
+      "sha256": "23a5c0b7726f894d2f11599aeab75efa81a38d86aae84254170f7d2ef6e11f8c"
+    },
+    {
+      "path": "evidence/staged-0.3.1.json",
+      "bytes": 618,
+      "sha256": "a7978decefc9cdc7d4a8681d89289f4697011aa5dec9a43473922fac30948a4d"
+    },
+    {
+      "path": "evidence/staged-0.4.0.json",
+      "bytes": 2430,
+      "sha256": "c153cf00cdf9574cb96937e1e65e3ee7f2bdf52862687d5d5d6c15a98d012dd4"
+    },
+    {
+      "path": "evidence/staged-0.4.1.json",
+      "bytes": 2424,
+      "sha256": "dbf6174f678107e9f921c11c9181cb0fe63cfa0ffa2dbe77e7c99969d04a2ca6"
+    },
+    {
+      "path": "evidence/staged-0.4.2.json",
+      "bytes": 2438,
+      "sha256": "7b2bf7bfa899eff1b923be979e2596667ba95b751e3855fa46935b5084d2330c"
+    },
+    {
+      "path": "evidence/staged-0.5.0-shopfix.json",
+      "bytes": 865,
+      "sha256": "563fc4e9f888d8b54634255bbd60d10c20ef9c9d3c863a068ce977eca286141e"
+    },
+    {
+      "path": "evidence/staged-0.5.0.json",
+      "bytes": 2984,
+      "sha256": "0a48ecf4cbce9a276296aa7e61e1abbc4a4059d5a0de35a90b8ee0b2227e4ef9"
+    },
+    {
+      "path": "evidence/startup-0.1.0-original-20261029-162841.log",
+      "bytes": 333,
+      "sha256": "cdbeb02928b307bc79ace82069572f6ba7b1540e79469710e9e5415216940449"
+    },
+    {
+      "path": "evidence/targeted-healing-lockon-leads.json",
+      "bytes": 1164,
+      "sha256": "d1427cf4f383b4fb5332ba4ac7d54b2585e5cff0f5295e9e398d435550279cb8"
+    },
+    {
+      "path": "evidence/tests.txt",
+      "bytes": 2297,
+      "sha256": "2181a709cde9325e817fb6708176bcd6355eeab6a8d3256efc44c16fdc5b1f84"
+    },
+    {
+      "path": "evidence/upstream-build.log",
+      "bytes": 3919,
+      "sha256": "b3a7977c2e0bb1559487be130d042283de5761b1d2447f7de9c71fca17481d1f"
+    },
+    {
+      "path": "evidence/uxm-hud-extraction.json",
+      "bytes": 2658,
+      "sha256": "f07f62a8ae7a0f8eb7c9fe9dd37bc4e0c0e8a5271bab26cec1d4bd26bce1f11d"
+    },
+    {
+      "path": "publication-copy-map.json",
+      "bytes": 76222,
+      "sha256": "2b67369be484b4eda50ca699fbbcfda6aeeb6917a939eb1360d78e73c2fb9163"
+    },
+    {
+      "path": "research/history/cast_inspect.py",
+      "bytes": 1467,
+      "sha256": "49ae6e0464180d8be8856b1cef74a27a893d3c6777a920804302762ff9513ca1"
+    },
+    {
+      "path": "research/history/disasm_states.py",
+      "bytes": 419,
+      "sha256": "717cbd7d8eff6cc324a8801dec562c68f1df4ee2871366a01f6e504cc512a154"
+    },
+    {
+      "path": "research/history/docs_multi.py",
+      "bytes": 14716,
+      "sha256": "4a94cd7b2e678ff6cfb0bb1dd927de5e44e0858c0c2e7b5ceab6d6f02b3604cc"
+    },
+    {
+      "path": "research/history/document-0.4.1.py",
+      "bytes": 7363,
+      "sha256": "ea4d05aacd8e3d9aebc6c603e6c82b507fb703fc8bde58c4803380678ad7a1b5"
+    },
+    {
+      "path": "research/history/document-0.5.1.py",
+      "bytes": 15253,
+      "sha256": "2fd14140587279eacd7e2d6a170c02e95362239a58447bc9008d011fa3314a6b"
+    },
+    {
+      "path": "research/history/document_anywhere.py",
+      "bytes": 10833,
+      "sha256": "9e6cb0c7db95cc2eace3292d1ba9fcec964a3f956c646fb2d2c50c4788f14ca1"
+    },
+    {
+      "path": "research/history/edit_multi_hooks.py",
+      "bytes": 6885,
+      "sha256": "ffd6760e2a652d24f1ca6ea25b07d7efb4ec0d47361ac861b7e284d192cd1d0b"
+    },
+    {
+      "path": "research/history/edit_multi_runtime.py",
+      "bytes": 2586,
+      "sha256": "863fedabd8f3c138b014b418be655de862abf90aece6b478bbe0e06a669f4d72"
+    },
+    {
+      "path": "research/history/find_registry.py",
+      "bytes": 317,
+      "sha256": "2467b2d1b968e6c6117cfbdf630ad7aca2289a0978e33ffa9b6e3df10322f370"
+    },
+    {
+      "path": "research/history/finish_capacity.py",
+      "bytes": 2781,
+      "sha256": "bbe6e0b325ce73f69000019c00518ceca69715ded0f9c24bc8c7426ff0e6c919"
+    },
+    {
+      "path": "research/history/finish_multi_policy.py",
+      "bytes": 1605,
+      "sha256": "34f9d1c35aae9fe9fd27b133e625493d45e09034eb5b1ce6cb4b59a6660227f2"
+    },
+    {
+      "path": "research/history/implement_anywhere.py",
+      "bytes": 5437,
+      "sha256": "599edd5c140c4eafdf0522eae1d73b2fccd095fd33582da74017183c9c0f38c6"
+    },
+    {
+      "path": "research/history/inspect-0.4.0-log.py",
+      "bytes": 1003,
+      "sha256": "01d511c711790191db75b917314a7379467f264b726cc17534b14b61c51ab190"
+    },
+    {
+      "path": "research/history/inspect_eligibility.py",
+      "bytes": 322,
+      "sha256": "745d5988d8fc650038f26ec3361fb00988b2d19f513e7eb7fc5685d5ba549fc0"
+    },
+    {
+      "path": "research/history/inspect_game.py",
+      "bytes": 1031,
+      "sha256": "966c120d66cc84ac2d0c76b236aeeabcf8860fa33e3693e9d5f214dc7960e3d0"
+    },
+    {
+      "path": "research/history/inspect_item_gates.py",
+      "bytes": 359,
+      "sha256": "47395b11e9bde63d017da8bd6556c9e86e410e5fb4bf9eaed5fb702d8d3274f2"
+    },
+    {
+      "path": "research/history/inspect_lockon_leads.py",
+      "bytes": 1561,
+      "sha256": "6d2cdf0b3757104337b252edaa6b70954e60a919114f84bc1e93c239fa49937b"
+    },
+    {
+      "path": "research/history/inspect_multi.py",
+      "bytes": 1693,
+      "sha256": "cfb840a1799ee677fb903bb9f4c450fc6c26082f09e8f1b535ca9980c67d3a10"
+    },
+    {
+      "path": "research/history/inspect_multi_helpers.py",
+      "bytes": 371,
+      "sha256": "8b7b55d55b9346e73c46d7b29c96e7dd8302178829a3eb4a2e1b6febee92426b"
+    },
+    {
+      "path": "research/history/inspect_native_death.py",
+      "bytes": 346,
+      "sha256": "786cfaea345664a11769df4b4871e7115390d316229b89904f47c1eebb5f14d8"
+    },
+    {
+      "path": "research/history/install-0.4.0.ps1",
+      "bytes": 4136,
+      "sha256": "b6ae88662a64713d65de656a3cd96413f0c17ed2a64a717997268d6be748901f"
+    },
+    {
+      "path": "research/history/install-0.4.1.ps1",
+      "bytes": 4227,
+      "sha256": "f77970d3bcc6df6b23da4c78d0e860dee9a01ffd67dd3e41f27f5a8d953e76a1"
+    },
+    {
+      "path": "research/history/install-0.4.2.ps1",
+      "bytes": 4271,
+      "sha256": "3139dd372bbe834994c94e2f07d40df2678fd3a3925d465a29087a24f5b2032b"
+    },
+    {
+      "path": "research/history/install-0.5.0-shopfix.ps1",
+      "bytes": 2918,
+      "sha256": "d4ee62fb3f6f591a5729c3d6e05e6b13f940da6b56725c23e327f23f7d997f42"
+    },
+    {
+      "path": "research/history/install-0.5.0.ps1",
+      "bytes": 6143,
+      "sha256": "c5789441b19840436a0f21a300e5c575b8a79b2d6d30530952b705ab43dca962"
+    },
+    {
+      "path": "research/history/install-0.5.1.ps1",
+      "bytes": 5197,
+      "sha256": "0eea85b187cf0392bf55e20add74fa90e6fcda35304b30ff96b970dfe7fbfb3d"
+    },
+    {
+      "path": "research/history/lockon_admission.py",
+      "bytes": 408,
+      "sha256": "b1070021030f8853946984f965d16ccd275ff1cd4e0ebf326e3626a5e59fb650"
+    },
+    {
+      "path": "research/history/lockon_candidates.py",
+      "bytes": 480,
+      "sha256": "437e5a4b9a3a4b40ff59a8b6862bee81093294edf8e4443e2451a5d6d1a94759"
+    },
+    {
+      "path": "research/history/lockon_disasm.py",
+      "bytes": 684,
+      "sha256": "e21287fe66264d09f13a788a6fbd503861e84c368bcaa7fbea5d3f8083838ea9"
+    },
+    {
+      "path": "research/history/lockon_gather.py",
+      "bytes": 436,
+      "sha256": "7687d5b38b9bf39a442542320e7f2c0fb3ac48e5241981307dd79e9615878663"
+    },
+    {
+      "path": "research/history/prepare-install-0.4.1.py",
+      "bytes": 982,
+      "sha256": "69510774a26e65871aa852d1a5eb365b60afa1d08f6470545e6312092439d630"
+    },
+    {
+      "path": "research/history/prepare-target-diagnostic.py",
+      "bytes": 1749,
+      "sha256": "f851b74a0eb48527002870aaecf01b2ae219144736d6052899a570af13764b56"
+    },
+    {
+      "path": "research/history/prepare_021_docs.py",
+      "bytes": 6952,
+      "sha256": "29b936f362b2d88011df46e1d543c59e29d336a46837f33b09f31a4bc1c0e51f"
+    },
+    {
+      "path": "research/history/record-0.4.0-review.py",
+      "bytes": 3233,
+      "sha256": "c34af35ba40d3acd7f30ca6a179083b67eeb69c83f5b99ef9bc01672d760a3f0"
+    },
+    {
+      "path": "research/history/record-lockon-0.4.1-review.py",
+      "bytes": 3078,
+      "sha256": "d0b31fb7cf7518ecb300c451ea05af2feaa7827d71dfcb68d1ee83716ca4f67b"
+    },
+    {
+      "path": "research/history/record_020_idle.py",
+      "bytes": 2715,
+      "sha256": "b221d5de2d1fd61633c43f6675bd5bf7bfb39948221a06c686f43f85893bbe0d"
+    },
+    {
+      "path": "research/history/record_021_coexistence.py",
+      "bytes": 4039,
+      "sha256": "28040427ea0658fb279b9fa7c67fcf7acfae9269910bb5a0798c9b2c6f92819b"
+    },
+    {
+      "path": "research/history/refine_anywhere.py",
+      "bytes": 2053,
+      "sha256": "31dacfe6b5eb4f221df9cc28594fe62feeb67fd5c9f36e419893b7bd3c397fb6"
+    },
+    {
+      "path": "research/history/registry_cfg.py",
+      "bytes": 1398,
+      "sha256": "270b6496a979d40ca2320158b5ab02aa028280888e3f7cc9ce22103498c6228b"
+    },
+    {
+      "path": "research/history/registry_functions.py",
+      "bytes": 803,
+      "sha256": "3e7aebdb38849c007d6e9804bcfc31599a0ff2b375b8f923206d90ac7a15bd8f"
+    },
+    {
+      "path": "research/history/registry_vtable.py",
+      "bytes": 1035,
+      "sha256": "8a831ed4bdfd355efbd229bf5dfb822c9c34fdaba4f706b544d73db4ce77c25b"
+    },
+    {
+      "path": "research/history/retain_states.py",
+      "bytes": 859,
+      "sha256": "6eb7afecc37b8751f57e492d79f664d03719271aa6465d5546dc30888cb6ccac"
+    },
+    {
+      "path": "research/history/review-lockon-0.4.1.py",
+      "bytes": 895,
+      "sha256": "67deaf89b21b14cb7ff7a50ed601618339c4918059f09c5a33ea1567889e0fcb"
+    },
+    {
+      "path": "research/history/revise-targeted-healing-sorcery.py",
+      "bytes": 3827,
+      "sha256": "2cb47255c9dad929cc715ac5ed4ec395a337d4b116a4bb5bd3c9c1837c9b2bb1"
+    },
+    {
+      "path": "research/history/state_accesses.py",
+      "bytes": 479,
+      "sha256": "6497cd18dff3b0cc046fd5d355ad59c65f993993794cf0fbedac283e744a4ae9"
+    },
+    {
+      "path": "research/history/state_candidates.py",
+      "bytes": 424,
+      "sha256": "2fb969ea35b307da457bec5f0ff5c45306b2c67848c168c1e660b1928729465d"
+    },
+    {
+      "path": "research/history/state_immediates.py",
+      "bytes": 320,
+      "sha256": "6c29c5be67c988b15dbc0ee73305dc6f2ce4e758da78967228183a3b2805a8f2"
+    },
+    {
+      "path": "research/history/summarize-0.4.0-log.py",
+      "bytes": 958,
+      "sha256": "c705abec422cb5f48b92602c9a61137e66d9ea80fad11e3f62c8da8134951726"
+    },
+    {
+      "path": "research/history/tools_multi.py",
+      "bytes": 2457,
+      "sha256": "ef4d915b3ba20dea22808ab3712879f43e03017a3b5597f5cff778197c701f73"
+    },
+    {
+      "path": "research/history/uxm/Extract-Selected.ps1",
+      "bytes": 3334,
+      "sha256": "6e9667c8409df32fdaa3a262c916de120ca26cf10a74d722c5955381b18cb4b9"
+    },
+    {
+      "path": "research/history/uxm/inspect_hud.py",
+      "bytes": 2053,
+      "sha256": "9164252d4c3d54843fb7f5537f3ebe2d811915fd8f1bcbc688d760c5d7869cd8"
+    },
+    {
+      "path": "research/history/uxm/inspect_hud_native.py",
+      "bytes": 1698,
+      "sha256": "abc6d268f9eae927f94783b1736f59a70dadc8e46496e33c30dbfdec3af97cb0"
+    },
+    {
+      "path": "rust-toolchain.toml",
+      "bytes": 94,
+      "sha256": "e9d31ad605514bf6a8470b23845092ad730205284c29f3db28fbda8847ee1161"
+    },
+    {
+      "path": "src/anywhere.rs",
+      "bytes": 6479,
+      "sha256": "812bfd7d2055860b70eb915ac34eb8a71871b1a4866ce324189e103f07df618f"
+    },
+    {
+      "path": "src/bin/dll_probe.rs",
+      "bytes": 1020,
+      "sha256": "7009aa33bb82ccac8a138b0d6f5236945c126d36abe7cfcc3c2c5084e57ad9c1"
+    },
+    {
+      "path": "src/capacity.rs",
+      "bytes": 8312,
+      "sha256": "ba2f7280368961ac185579ce09936c9e3a6427f6b7bb63c4af8035eb47f356c3"
+    },
+    {
+      "path": "src/cleanup.rs",
+      "bytes": 7493,
+      "sha256": "0d2731f62b165e35b97044e678bf93bdc3001cf377ee7457af887f34a08a8854"
+    },
+    {
+      "path": "src/config.rs",
+      "bytes": 5338,
+      "sha256": "0576289a8ef1ee2548e318a4930e699db5dfaa57c7760576a6a7c26fa52d5bd9"
+    },
+    {
+      "path": "src/friendly_lockon.rs",
+      "bytes": 7957,
+      "sha256": "1abefe978e6f30ca889c5fb1741e183c0fd39d516b27e69a03be68f4239a13f2"
+    },
+    {
+      "path": "src/hooks.rs",
+      "bytes": 12659,
+      "sha256": "34fa569b6c456d0f8abd01ef09dc52171a36e169ecf70c16d134c744f350f22a"
+    },
+    {
+      "path": "src/hud.rs",
+      "bytes": 10091,
+      "sha256": "0eebb9f2e49b557c3184db6bd082084ae315b53974b6f98598029d563a1127c9"
+    },
+    {
+      "path": "src/hud_movie.rs",
+      "bytes": 40720,
+      "sha256": "2eaa659de52cfa5eb9bae8e3c3730c0801ea9ecf641c60b42c4b9e063b7c0458"
+    },
+    {
+      "path": "src/hud_snapshot.rs",
+      "bytes": 4509,
+      "sha256": "9b79233f31882cbb4492b7926833b07490ca1c4a0920aae10fde5fbd9fd95603"
+    },
+    {
+      "path": "src/lib.rs",
+      "bytes": 759,
+      "sha256": "0de9519979beded8c9308791a24df367405c8fc511bf65ad018ee3bbebb2d12e"
+    },
+    {
+      "path": "src/mend_cast.rs",
+      "bytes": 11297,
+      "sha256": "49ce85a769c3e7024b6531e9034e26b9d7da01350912b8c725f491044075582a"
+    },
+    {
+      "path": "src/multi.rs",
+      "bytes": 14805,
+      "sha256": "e3256073bf56457ee761af701c2cb4d6c319cd8dcee285c4f0fb574fa343fe4e"
+    },
+    {
+      "path": "src/policy.rs",
+      "bytes": 8380,
+      "sha256": "b0a87d9cb2d93530f64f012c0f2fda3df470cecbfe0c1557bec7377057af85bd"
+    },
+    {
+      "path": "src/runtime.rs",
+      "bytes": 50976,
+      "sha256": "ee241d719629829bdbea00d3dcbaf66fb4181f4655dd3d4815804484bb969895"
+    },
+    {
+      "path": "src/spirit_mend.rs",
+      "bytes": 8736,
+      "sha256": "d9ab875ef735233a5db70ee58734e4032bdafcef75680199f14e316729d2bf47"
+    },
+    {
+      "path": "src/targeting_diagnostic.rs",
+      "bytes": 8538,
+      "sha256": "48f512e22ff7738b379ef4660390a965a782ff9798924faaf8fe59f2a99e74ea"
+    },
+    {
+      "path": "src/threads.rs",
+      "bytes": 3720,
+      "sha256": "eaa3d6415d874310110ca35c0f4d47f80ea8d02866f6612a8349f14559492add"
+    },
+    {
+      "path": "src/timing.rs",
+      "bytes": 6286,
+      "sha256": "867e69d806e9e0ec96a9a2e83e888b989a871294ebc4062eeb29273f3757b362"
+    },
+    {
+      "path": "tools/Build.ps1",
+      "bytes": 1784,
+      "sha256": "8c25a47d124c9a77912176591a8e4f5bdcdd3019370f94b3b4549221c4c24d6a"
+    },
+    {
+      "path": "tools/Launch-SpiritMend.ps1",
+      "bytes": 90,
+      "sha256": "30d0278c4dd993a7481b865c41df72e2e809da3a4ed33f5e2bc3ac2f68ce9f61"
+    },
+    {
+      "path": "tools/Launch-Test.ps1",
+      "bytes": 1498,
+      "sha256": "6c94b9223d237e0b8e7101ab5c654c7b6cdc0cb719b503dccf215dba80b94196"
+    },
+    {
+      "path": "tools/Preflight.ps1",
+      "bytes": 3782,
+      "sha256": "93de76c22c072ce159d08939f6f7c2e0c66decb797a33e6717e2a67edcb852c5"
+    },
+    {
+      "path": "tools/Prepare-AssetDependencies.ps1",
+      "bytes": 1660,
+      "sha256": "af7d5c4f31dd8c6736b6ace3ea8f9443d8e2f2f2a55cd12b7b0ba28f0d95a7e4"
+    },
+    {
+      "path": "tools/SpiritMendAssets/LICENSE",
+      "bytes": 35801,
+      "sha256": "2e8578f16b6ea265412166e8b4b1da045fcc11f28db03d664908410124a2f01e"
+    },
+    {
+      "path": "tools/SpiritMendAssets/Program.cs",
+      "bytes": 8220,
+      "sha256": "8ba27494a0f55ff826236fb43ecd64b42da82f7642de0c82935f7c3d5b23ff98"
+    },
+    {
+      "path": "tools/SpiritMendAssets/README.md",
+      "bytes": 3265,
+      "sha256": "f55103290db5420576f678952cc9d149768c5993384da14ef7f7df4b02e24735"
+    },
+    {
+      "path": "tools/SpiritMendAssets/SpiritMendAssets.csproj",
+      "bytes": 482,
+      "sha256": "074ecff71cceae850b127ae58597392e6dbde4e4c2e5e9c368c92cccb358b711"
+    },
+    {
+      "path": "tools/SpiritMendAssets/oodle-legacy-printf.patch",
+      "bytes": 1370,
+      "sha256": "37ac5183f6ebe760a47be4c329f037e6b2acb6f2321deeaaeed50cd42944df96"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/Cargo.toml",
+      "bytes": 2136,
+      "sha256": "e66a80751a8057081cc3cc90f710608c723c3b1d135254a81e67aaf91b7bcbaf"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/LICENSE-ASL2",
+      "bytes": 11545,
+      "sha256": "882f06d63e2e0f9657a78d006145ed183616b5796aa5549e5c5a4dfb93c7cdf1"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/LICENSE-MIT",
+      "bytes": 1092,
+      "sha256": "f770a6842f3d7329228158454a470f0fc1830a97f52a1e1e2b9f1f4daf94fc35"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/README.md",
+      "bytes": 3221,
+      "sha256": "bf04a5b57484f898689f1ac9d9eafd3c640855e42f543ddfad092db3e16cdecd"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/eldenring/.cargo/config.toml",
+      "bytes": 44,
+      "sha256": "1f7fbefe3a9eaf0d0aa4b5a3e48fc03e655ac95b395178a3b9b4b4ec39a20544"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/eldenring/.gitignore",
+      "bytes": 9,
+      "sha256": "28f0ebc1ad43be69ca1a4f2c2c299cf276806c4480a907bd8d797b2573b51b66"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/eldenring/Cargo.toml",
+      "bytes": 737,
+      "sha256": "63db04d0a88efc84d06aa5f612ef769b158318cd2c65fae6650f2ca720cee952"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/eldenring/mapper-profile.toml",
+      "bytes": 10725,
+      "sha256": "ed7823d00df1561c7752015bf96cc72c68f6bd9048b9f394e6db1044decc7e9e"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/eldenring/src/asterids.rs",
+      "bytes": 41,
+      "sha256": "11cc0983a45af887cd46e25f3ad0df4a9792a024c894cf862d9c11637cc48c69"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/eldenring/src/asterids/allocator.rs",
+      "bytes": 459,
+      "sha256": "ae5b311c823017bace2195cca744444f0054c1eff1775980bb3ce376c01b06bc"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/eldenring/src/cs.rs",
+      "bytes": 2739,
+      "sha256": "642d6a11d5b0c5321ff53145cad41871324d4db1b2458c5fe422bc01cb61e658"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/eldenring/src/cs/action_button.rs",
+      "bytes": 1510,
+      "sha256": "dbe5a9d4ba9dbc7838ea94ad5fd75f3684d0ce2084c4074b1fc23687eeb48665"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/eldenring/src/cs/auto_invade_point.rs",
+      "bytes": 1806,
+      "sha256": "f325fb1bbb86489054f94a00cca93f8f3c603633736e0bb4de79c717547abbec"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/eldenring/src/cs/block_id.rs",
+      "bytes": 2453,
+      "sha256": "b4c8c183a296778041d86717a72bf93f328411639794dc8cf890285bdef67ce1"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/eldenring/src/cs/bullet_ins.rs",
+      "bytes": 4742,
+      "sha256": "1cf8778729d336a757f5126ec571943807d8996148fe565f55ac5e3023a74951"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/eldenring/src/cs/bullet_manager.rs",
+      "bytes": 6689,
+      "sha256": "f0eeda43354975ffdd938bfa41078d2b8897d8082355597b7ef4a30d38c76784"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/eldenring/src/cs/camera.rs",
+      "bytes": 3205,
+      "sha256": "c349db78fc903443da669cc35b3061ed8c8b900d12858db76901bb25ce367d46"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/eldenring/src/cs/character_debug_flags.rs",
+      "bytes": 2,
+      "sha256": "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/eldenring/src/cs/character_type_properties.rs",
+      "bytes": 2183,
+      "sha256": "74807ff7c14112a627c74761924d9a2a3947cdccc2018601f5837f2bb0fd495e"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/eldenring/src/cs/chr_ins.rs",
+      "bytes": 42130,
+      "sha256": "bb05d34eb5e948ea0f627f021477cbaac9a93ef105a3a6c28e216e7c39cbad7b"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/eldenring/src/cs/chr_ins/module.rs",
+      "bytes": 2412,
+      "sha256": "7979a52da087fb4676c0136584fb6f9d6ffd27d031c5bdb4c70cd86f1ac881fc"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/eldenring/src/cs/chr_ins/module/action_flag.rs",
+      "bytes": 13925,
+      "sha256": "41e5e2e2856372584104ff59714440308532481209bc68bca58cee5109210594"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/eldenring/src/cs/chr_ins/module/action_request.rs",
+      "bytes": 14135,
+      "sha256": "7623ce8ace785a09974d6fedb4aee916b7be0023c104fccc63362df40cc74df1"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/eldenring/src/cs/chr_ins/module/behavior.rs",
+      "bytes": 990,
+      "sha256": "2744eac2b56577a5d2888aac5978c6a105ed6e631b936c8bf49fe5538e7d35f2"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/eldenring/src/cs/chr_ins/module/behavior_data.rs",
+      "bytes": 1677,
+      "sha256": "2d07d61bebe6710fe2048d9a7f9475bb62a3a30b7e1ebf703c31f48297be2672"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/eldenring/src/cs/chr_ins/module/data.rs",
+      "bytes": 1350,
+      "sha256": "3eddcd6090141233f0c1777161cd59b033ee0f8cae13fdc5a1fb648db6151134"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/eldenring/src/cs/chr_ins/module/event.rs",
+      "bytes": 635,
+      "sha256": "89af195399c97e5ab9827fa8d613cf43ac098d9c6ebc4f060ac09380c4fc45c7"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/eldenring/src/cs/chr_ins/module/fall.rs",
+      "bytes": 332,
+      "sha256": "f51075ae3446db72e2385e5aa0480fe0bb05f648ea9be880826b082b6f389660"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/eldenring/src/cs/chr_ins/module/grass_hit.rs",
+      "bytes": 749,
+      "sha256": "41b10a6d076cf2e60818572820391ff3a3c12a4c5a8b009dbadac3e0707325c0"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/eldenring/src/cs/chr_ins/module/ladder.rs",
+      "bytes": 2643,
+      "sha256": "b27a778d4609268615842b507ae62d0c6eedd7056cafc8b08d881c50b985df01"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/eldenring/src/cs/chr_ins/module/material.rs",
+      "bytes": 381,
+      "sha256": "6e63600f1bad1112de0bc500580f6e097e489e377941c86687cb9ab3ac887277"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/eldenring/src/cs/chr_ins/module/model_param_modifier.rs",
+      "bytes": 1090,
+      "sha256": "a3534285d15c1166c5ca54f31f27810bfb1070a3d16d9f1d08fd2705ae741e42"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/eldenring/src/cs/chr_ins/module/physics.rs",
+      "bytes": 6397,
+      "sha256": "af5900d66b06e659e81ec587eb97b71ef81b7e1061aaaac8d2f68723fc6029d9"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/eldenring/src/cs/chr_ins/module/ride.rs",
+      "bytes": 3488,
+      "sha256": "4695240c277a2f39d18575aaa9e30fd58cb76e47441ad69b715c905902789ff5"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/eldenring/src/cs/chr_ins/module/super_armor.rs",
+      "bytes": 623,
+      "sha256": "899d7514737d1ddfc768729eb761df270843bbfe49b21f0a684072e65e3c60df"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/eldenring/src/cs/chr_ins/module/throw.rs",
+      "bytes": 1658,
+      "sha256": "64c364ca391934236d01b87aafcb7e90b3afab2c6c8347b1a89ec567a5874c92"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/eldenring/src/cs/chr_ins/module/time_act.rs",
+      "bytes": 713,
+      "sha256": "6d6c948d5d69c87d4862103f590736ed1d3e4e5fcee3e741ae77a01083cb8fc4"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/eldenring/src/cs/chr_ins/module/toughness.rs",
+      "bytes": 638,
+      "sha256": "5e93ad343081fd5cf4af561451c377eca64fc41c11ad40ba163902847bd509f1"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/eldenring/src/cs/chr_ins/module/wet.rs",
+      "bytes": 200,
+      "sha256": "86e84886402cb7f6fc09baa225656b97d8e9869ea450493e247c2028d513a6d9"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/eldenring/src/cs/chr_manipulator.rs",
+      "bytes": 1136,
+      "sha256": "e8bfefebc1019a547fc383557642062521c77dba5c077852807a4147d53d1cc5"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/eldenring/src/cs/chr_slot.rs",
+      "bytes": 297,
+      "sha256": "b24ba1802cdeaaf087051c85d18b9ea51624c8f0dc67ad65b1eb46346a706dfa"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/eldenring/src/cs/cs_rand.rs",
+      "bytes": 6335,
+      "sha256": "77eb0a785e3d56b29c17e94bc64b4a7dd73ef8ae7f4f0d68c517d8db32648d51"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/eldenring/src/cs/event_flag.rs",
+      "bytes": 3905,
+      "sha256": "7018ceed062927c89243f5f8b9a64a051e017f8c41ecf18d759b9ac9e0b76377"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/eldenring/src/cs/event_man.rs",
+      "bytes": 8213,
+      "sha256": "ccd7beebd42892b57042716eb4832feed2e9e112659c90b87ca6de9256515ce9"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/eldenring/src/cs/ez_select_bot.rs",
+      "bytes": 269,
+      "sha256": "1420db138cc48ef3b2037917b3f9353a397d12ffe7bfa0ce16a39cc15fa639c4"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/eldenring/src/cs/ez_state_talk.rs",
+      "bytes": 2633,
+      "sha256": "d2c85e4ed049782477e2754627e66ad1e984e86521a36d82a3435f6902389e9f"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/eldenring/src/cs/fade.rs",
+      "bytes": 2375,
+      "sha256": "a29d7f84acf244b743a210675272b6db80ecb6b50a1ce97f79dca9c0d82d1fec"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/eldenring/src/cs/fe_man.rs",
+      "bytes": 14805,
+      "sha256": "c6fb2432192d3bd5c33e11eb42e0061850cdb8339ae33a2c3596b5fd9d98811a"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/eldenring/src/cs/field_area.rs",
+      "bytes": 6926,
+      "sha256": "663247bdfd272440fce1273187ef7c983e68d98843809019fb0e50714f70561c"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/eldenring/src/cs/field_ins.rs",
+      "bytes": 4080,
+      "sha256": "ff61b6f6231812e12107a4edc41c3130df3a86bef294314e4a9272536c139f8e"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/eldenring/src/cs/file.rs",
+      "bytes": 2427,
+      "sha256": "10f6bfd9191de4c98508643823d4e9867db86540b912a0cdba3ff5728c3ee20b"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/eldenring/src/cs/flipper.rs",
+      "bytes": 2302,
+      "sha256": "311a097755c5fd4759ad823f70ce239844365edcc9de0656c034989dff3cd83f"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/eldenring/src/cs/gaitem.rs",
+      "bytes": 6271,
+      "sha256": "45b9ed5a717a4dcaf0eb55312cb7f54df4ce85b781d7f8880cc3bcee139e58ac"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/eldenring/src/cs/game_data_man.rs",
+      "bytes": 14952,
+      "sha256": "c126f2a864600f190816e96b2409e3ef4f0dadd19daeca69b36ebe6b66c4ba78"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/eldenring/src/cs/game_man.rs",
+      "bytes": 8096,
+      "sha256": "4b36b5b1c1855e2929db5f6ec19a8a79c1125b7b25a9f99c653049495d05a64d"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/eldenring/src/cs/havok_man.rs",
+      "bytes": 1468,
+      "sha256": "13727182a02ea4db7bfc0c19fbddb73ae365d0aa47cffd47505fb3c3399a9f5c"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/eldenring/src/cs/item.rs",
+      "bytes": 90,
+      "sha256": "8539e7cb4c32c81389c6326946070197b5cde37cb33968d8206655d1029e8472"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/eldenring/src/cs/item_id.rs",
+      "bytes": 8385,
+      "sha256": "d9e09485bfb99fee5e99a7966809cd4d7d849aac8dd6a58e46b6d8b248fd88d4"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/eldenring/src/cs/item_lot.rs",
+      "bytes": 202,
+      "sha256": "87f4cd4456463d1c5612f5139137e46c90b9d630fdcd06324b6c227d4afb4629"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/eldenring/src/cs/job.rs",
+      "bytes": 719,
+      "sha256": "0764132129888f15a210323834909feacb7ef92fc61a7ccedb1d9680b41a879b"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/eldenring/src/cs/key_assign.rs",
+      "bytes": 1102,
+      "sha256": "092180709ec8ef2d399ab94250c1329007465515a9eadd740bf2add601da9740"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/eldenring/src/cs/location.rs",
+      "bytes": 1099,
+      "sha256": "a4cfdc98ed31994f5280c126040dfd5517155f9433a84227ab6c2bc32dc1d4cb"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/eldenring/src/cs/lua_event_man.rs",
+      "bytes": 17509,
+      "sha256": "dd36457d3bd7231ae6da98b27c233cdb4dbde4bf46475aa4195c1b1b3a06a76c"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/eldenring/src/cs/menu_man.rs",
+      "bytes": 11844,
+      "sha256": "ee01fa268c62e312a943795815758c6c313417ebb797772701ee9375af531d89"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/eldenring/src/cs/menu_type.rs",
+      "bytes": 933,
+      "sha256": "196a692131f7a40a9cb1691bb25db8af4c73221160eaae1ab75e70af4785bb34"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/eldenring/src/cs/mouse_man.rs",
+      "bytes": 2844,
+      "sha256": "fbeab86c661493c9b7d5925a7efdcf4f994bd9d1d3a81ad2718839ebdcc589f0"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/eldenring/src/cs/msb.rs",
+      "bytes": 500,
+      "sha256": "09deda64ca10fec4fe18f62b8d72e4427aab617df588335b167af241adadcf23"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/eldenring/src/cs/msg_repository.rs",
+      "bytes": 81,
+      "sha256": "7e7d9c6e72ca025a98eb656374fdd237fca9948e4ee5c3df86bed404609ee44b"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/eldenring/src/cs/multiplay_type.rs",
+      "bytes": 9472,
+      "sha256": "887893d1e738420b67bef9f09fc17bb8f742ee9f52d4cad925b8a1e66d62c1a4"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/eldenring/src/cs/net_chr_sync.rs",
+      "bytes": 3532,
+      "sha256": "2a67f6c1b91f512bfe8eec7e1b5037253fc3c16b0264a8d6705aca3501414b88"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/eldenring/src/cs/net_man.rs",
+      "bytes": 11030,
+      "sha256": "5333951b2bc75cd1aa7eb66026b5b008cbc0aac9381e9d2601199e68c2b1c98e"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/eldenring/src/cs/network_session.rs",
+      "bytes": 2574,
+      "sha256": "dc3743a8fe290c801aee058642523fb885c7233e695103abbf85905e19a13c46"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/eldenring/src/cs/now_loading.rs",
+      "bytes": 1324,
+      "sha256": "1aed396b4f769d60f7ceb047d660efb9371d25f29db3e0b53809cadca343d409"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/eldenring/src/cs/pad.rs",
+      "bytes": 9973,
+      "sha256": "ac37b60491b3722a2e4e08227d7cc6cb08e9c3496b57ba3f9bfe195dee2ddd67"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/eldenring/src/cs/pair_anim.rs",
+      "bytes": 3885,
+      "sha256": "3263fc009f5b45064382a332f324f6dadd0ab8795371994473233ac859a2cb1a"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/eldenring/src/cs/party_member_info.rs",
+      "bytes": 4366,
+      "sha256": "511739b9a125555221ba12d4759c22612e052a840da0c9f97b455724ee1d9571"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/eldenring/src/cs/player_game_data.rs",
+      "bytes": 44489,
+      "sha256": "6b28b3d4d80ece709998aa3a1ecfa216690089ef4ebe05165516c1949fa021fc"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/eldenring/src/cs/rend_man.rs",
+      "bytes": 11408,
+      "sha256": "7d89753a10b3c2a4791450024c1525d2e394dbc2902c30a5d6b1f036d826297d"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/eldenring/src/cs/server_interface.rs",
+      "bytes": 771,
+      "sha256": "a1f38dd49c303390d4802649a468bd5a870f56ca0001d66479b3670dbf92f029"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/eldenring/src/cs/session_manager.rs",
+      "bytes": 10007,
+      "sha256": "5b1020734647a8d6422240f23977849669d978eb7e068b955fd5f5391f800573"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/eldenring/src/cs/sfx.rs",
+      "bytes": 1340,
+      "sha256": "438fe2bb179ed7e6194901160218ce687dd4918e61c1c9d0548b5b5dcbdeb110"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/eldenring/src/cs/solo_param_repository.rs",
+      "bytes": 34569,
+      "sha256": "a5d2310c85a9a3fc6ab2f21ba3ad68ea350cee53915331be38bce51310fd6758"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/eldenring/src/cs/sos_sign_man.rs",
+      "bytes": 9062,
+      "sha256": "20e64737af9d14dc55cfb882809cfc9c4a0f1a03b9cb05754f1bedf2742f216a"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/eldenring/src/cs/sp_effect.rs",
+      "bytes": 2341,
+      "sha256": "dcb43798f8483d66bf9cb57c12c142ca61b72560bcef6080cf972965b664027e"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/eldenring/src/cs/talk_script.rs",
+      "bytes": 8102,
+      "sha256": "f87c2771c4e86014af06933427dd4bb8646c9360871f1579b42bc36e99b57652"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/eldenring/src/cs/targeting.rs",
+      "bytes": 5636,
+      "sha256": "5314a9ee8000ab516131cd85a650e5b7618aab81afd4cdaf0eace3b8c50c973c"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/eldenring/src/cs/task.rs",
+      "bytes": 12109,
+      "sha256": "50ea63015aed6a8d46e11f6fe2d2501497be0b353b2c5053d57d8eafbdee83d8"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/eldenring/src/cs/team_relation.rs",
+      "bytes": 3019,
+      "sha256": "756650c3e6b7088cc161c08efec23713622b8b4315d452cd9e494ff0be881652"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/eldenring/src/cs/trophy.rs",
+      "bytes": 7307,
+      "sha256": "23484f5fcc38ebc156a26542ff804b93551fff5e8995d5347e2d5870bb5747f5"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/eldenring/src/cs/window.rs",
+      "bytes": 3075,
+      "sha256": "dfbb8ddf1a485b76aa58ae3c92adcc2b4b94897585c2b638049464c832e40873"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/eldenring/src/cs/world_area_time.rs",
+      "bytes": 810,
+      "sha256": "a5f178f266fff5185bdd79f877562eb7d7f054786b07d4e33eb6e2473d313627"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/eldenring/src/cs/world_chr_man.rs",
+      "bytes": 22965,
+      "sha256": "bc6dab08b75bc7880387dc92aebe8ccb11cc0904d97cc49b3c6d5175f98861c4"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/eldenring/src/cs/world_chr_man_dbg.rs",
+      "bytes": 8511,
+      "sha256": "984c263e65644a2e3817adb46860d33311d10309e94a5b4f9d6f531113057dac"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/eldenring/src/cs/world_geom_man.rs",
+      "bytes": 10295,
+      "sha256": "3a32dff9f4fb16cc0f12fa56fdecc4a37f4d72ffe1f4fe54da50c8d7857fa76e"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/eldenring/src/cs/world_scene_draw_param_manager.rs",
+      "bytes": 1577,
+      "sha256": "0b9156c9146bec9ca9632cf13dc12588239dbcbd586cf7eca8a1d7dc349f4b84"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/eldenring/src/cs/world_sfx_man.rs",
+      "bytes": 1649,
+      "sha256": "40bd02838c8c3772fc1f6fc4cd8953ba0e78ecc749da567e8d32d22a45c4b43e"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/eldenring/src/dlcr.rs",
+      "bytes": 8858,
+      "sha256": "355e3af4b5ece5b86fcab34a298ac80e45352a77aeb747c6f95d96a2a185ccf4"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/eldenring/src/dlio.rs",
+      "bytes": 111,
+      "sha256": "fd7e25c6aea6daab0273cfc55e7f11c7d6dd425214b7e861f49248a2ad91a970"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/eldenring/src/dlio/common.rs",
+      "bytes": 2125,
+      "sha256": "666fcec1a32c26cc0cda2734c395c7c4baab255a98873b63f920293693ce5dc8"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/eldenring/src/dlio/file_device.rs",
+      "bytes": 18117,
+      "sha256": "461c695e15c880f194397567d1810db38e58acfd42e653c3d29e385a954c3c3d"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/eldenring/src/dlio/stream.rs",
+      "bytes": 12762,
+      "sha256": "eb90d56da6e958e2edb9b2eb598182acfb98a53fddc03f789be145bd36e56366"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/eldenring/src/dlkr.rs",
+      "bytes": 142,
+      "sha256": "c96d2039439cfc0c71e63a2872a6efeeeae54289dfc17c5ab40c70039970be80"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/eldenring/src/dlkr/allocator.rs",
+      "bytes": 2346,
+      "sha256": "b61a2adcc27b37aebe1573449b91567484a04f2c4a8fbb6a57174489437acf5a"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/eldenring/src/dlkr/mutex.rs",
+      "bytes": 18471,
+      "sha256": "88f399195f03feb32671aeec28369220c88d4b7ddb6b5b0b3752f21c02db73a8"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/eldenring/src/dlkr/runnable.rs",
+      "bytes": 137,
+      "sha256": "8b05afb730f9944456fb6741056bd756e9b8edc4d66136ba2c9773f69e55b533"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/eldenring/src/dlkr/signal.rs",
+      "bytes": 99,
+      "sha256": "10ab060c29bc269a6122c72f2bb27c180284d326466b6e7cbc98c24d76874ce4"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/eldenring/src/dlkrd.rs",
+      "bytes": 2,
+      "sha256": "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/eldenring/src/dlrf.rs",
+      "bytes": 532,
+      "sha256": "123eb7cd23b5e57e77815d552d860a07ada369c4eeb5617f72fee22edc765160"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/eldenring/src/dltx.rs",
+      "bytes": 23511,
+      "sha256": "c1fd80705865d1a5a81fafea27eb08e7f1729296eb6c64d9ee4c1f323bef9743"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/eldenring/src/dluid.rs",
+      "bytes": 171,
+      "sha256": "7410372571c5aac5c7e2a34974028ff9b3e9fdc9c95356f7e2e4d24bf2acee08"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/eldenring/src/dluid/user_input_device.rs",
+      "bytes": 11575,
+      "sha256": "63b79c79ab1b674614ceb1033c6824ad84dcf6dfb16975c2fd64d5bee392669c"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/eldenring/src/dluid/user_input_manager.rs",
+      "bytes": 6027,
+      "sha256": "57a298f8ef27a61bf61670eb6c8d373977fb377fcdfbc060df28137e4d1fb06a"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/eldenring/src/dluid/virtual_input_data.rs",
+      "bytes": 2907,
+      "sha256": "f23e053d871cb2578ba553bc83ad62c118ae96ad6c52d3bdb2249e0814738310"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/eldenring/src/dlut.rs",
+      "bytes": 141,
+      "sha256": "c84a9dc40d209d768c96cf24a969c677db314eae43adea512aaca29eecf04a0e"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/eldenring/src/dlut/date_time.rs",
+      "bytes": 3552,
+      "sha256": "f3843c8e96de82670f1f486187301ef94d54ddb796a8434607e7393ba37a336b"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/eldenring/src/dlut/fixed_vector.rs",
+      "bytes": 3906,
+      "sha256": "a4de5be88f783b4d98b5498b8dff67e76bdbde558f749fa1163bf3a946823edb"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/eldenring/src/dlut/reference_pointer.rs",
+      "bytes": 2498,
+      "sha256": "384408d228139f7c08118651512aafc60a2d0cb76abb624783c1bf61c1a899dc"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/eldenring/src/ez_state.rs",
+      "bytes": 212,
+      "sha256": "8b7f95aecaf480dec699a7a6d5164aa80c1944523a13ff5f7f19ab3ff4c1da5c"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/eldenring/src/ez_state/environment_query.rs",
+      "bytes": 2521,
+      "sha256": "e8f30cefafd1ff2f3fb1802da9795b47aacb482097f8000b882c7df5c126979c"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/eldenring/src/ez_state/event.rs",
+      "bytes": 2053,
+      "sha256": "4153ff54f3ccff49eaf6ead180452f44ed3d827f146f731e5b597362d90b9842"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/eldenring/src/ez_state/shared_string.rs",
+      "bytes": 1834,
+      "sha256": "2fa5e29a6ea7470ec217b2a541bb9d47b5394dbd0c5067ad4a336123270b2a08"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/eldenring/src/ez_state/value.rs",
+      "bytes": 3731,
+      "sha256": "e05828712d8aa6d46ae6ec94d2d0286bd42422e479e18e9ca87bebba21a172a1"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/eldenring/src/fd4.rs",
+      "bytes": 400,
+      "sha256": "a6912ac039d1ca0c747c43604e4aa237e8e70034e83db877553b89f7a6e53cc1"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/eldenring/src/fd4/base_key_assign.rs",
+      "bytes": 1014,
+      "sha256": "6562213f9652d5d757cbb72a8f1ea72c2879e0b3951bdb838b91416ea65bb652"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/eldenring/src/fd4/base_pad.rs",
+      "bytes": 3321,
+      "sha256": "e036c51d583e78722ca7d30283b6bf0b4412720e79d59a891aa996683d0dfd04"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/eldenring/src/fd4/basic_hash_string.rs",
+      "bytes": 1359,
+      "sha256": "c038e578a443d9d9549377d1ff48fb4b6d783f719fb36362998ecc9e3ee9a0a1"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/eldenring/src/fd4/pad_manager.rs",
+      "bytes": 6554,
+      "sha256": "af6709948dd82ce98868f827fefd5e5e031adad54497d5bd05eb621ce28ee39f"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/eldenring/src/fd4/param_repository.rs",
+      "bytes": 18447,
+      "sha256": "4eba18173b7539488248c974f697a641f8781a18ba287ef25e4192ce0c486758"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/eldenring/src/fd4/resource.rs",
+      "bytes": 9336,
+      "sha256": "76fe0a30313eb298d626821b624b888ca6038a0d1f6787f5e2ecb2fd65144469"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/eldenring/src/fd4/slot.rs",
+      "bytes": 823,
+      "sha256": "850072abe54ea8011e1f0a4fc7a27dfcc9ac4908f739734c2f573dd4fd021161"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/eldenring/src/fd4/stepper.rs",
+      "bytes": 1971,
+      "sha256": "83e1097f20ed339e8ee87ea542a3648f4903434fbd733f1c5587e97617856e4e"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/eldenring/src/fd4/task.rs",
+      "bytes": 1269,
+      "sha256": "dc0472fa536fd0e8a1964a4ee4275cc76ee15f72e6772e3a9be22f25d9af6414"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/eldenring/src/fd4/time.rs",
+      "bytes": 113,
+      "sha256": "a5036bfd804525f6e99e9d7fb7dc8256dbdb562cf59bb9683e7bc5f9b7a9c41b"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/eldenring/src/ffx.rs",
+      "bytes": 488,
+      "sha256": "24bda2f084a3d7cf467cceae49f1227dd5fe22b796835ccab7230012e373224d"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/eldenring/src/from_net.rs",
+      "bytes": 68,
+      "sha256": "7f5e58b73522c85b7dd7212b958635918ebe8ab5449b55a1825f0aaa1306a717"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/eldenring/src/from_net/allocator.rs",
+      "bytes": 1526,
+      "sha256": "0d2921182d72becf59051ecd075dec9b09be49cd99b846fde48302d9228ce722"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/eldenring/src/from_net/stl.rs",
+      "bytes": 356,
+      "sha256": "32f8821b867b7a8c93c8ec254c80d54023e3d398f145fec29715c0b4f42dde78"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/eldenring/src/gxffx.rs",
+      "bytes": 1435,
+      "sha256": "291545f3e53df66777283c705a01aaee11f18b06286257a69f6ac485928760d5"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/eldenring/src/lib.rs",
+      "bytes": 404,
+      "sha256": "594925db3e90eb33fe61e935f19ccd13c248b4b9d61979c75f17882c46508630"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/eldenring/src/param.rs",
+      "bytes": 5654,
+      "sha256": "f8055b199fbde896c768e2568d77f236d3121b49238a7ff8fc359f83362cb532"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/eldenring/src/param/generated.rs",
+      "bytes": 1610131,
+      "sha256": "5be806d32a0862108e66f69605b9d7dfa8da6c70f23c65816fad7bc39ec152be"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/eldenring/src/position.rs",
+      "bytes": 5983,
+      "sha256": "88f72fd9ae8ddcc870a244c9aadd234a37624004a7dfb1c35d717e775703ef2d"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/eldenring/src/rotation.rs",
+      "bytes": 1073,
+      "sha256": "5b7f6f36ad01dcb827012df26d48c015cf67875085cbf68777c375806b53b270"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/eldenring/src/rva.rs",
+      "bytes": 4044,
+      "sha256": "81d27464087ca37e0097d894683a517c1f238918347f1ad8cc8c0cd815732092"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/eldenring/src/rva/bundle.rs",
+      "bytes": 4432,
+      "sha256": "14bda994a7420dd3b1c1ad4e1ac02ec4ac297f4330cc308c9a4d8ad1249243e7"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/eldenring/src/rva/rva_jp.rs",
+      "bytes": 4435,
+      "sha256": "3a5cee77ac6d6ee484d8c9a74664040e8269d3ffdc71533e5a646dc5627bceb4"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/eldenring/src/rva/rva_jp2721.rs",
+      "bytes": 4335,
+      "sha256": "7bcb4cbce2b008d4349b40c9dc8260472a574625139ef657ada541840142550f"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/eldenring/src/rva/rva_ww.rs",
+      "bytes": 4435,
+      "sha256": "41208b05045e853db99e47151267f4f5a2b6219e06e72a93b792fb6d1a776a58"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/eldenring/src/rva/rva_ww2720.rs",
+      "bytes": 4382,
+      "sha256": "bc2aea6f6773731fe03871ab3eee0f429f1b4262b3bba8073c0d042f5a33f959"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/eldenring/src/stl.rs",
+      "bytes": 7862,
+      "sha256": "b1bd91775d31c002f44a2821042424534cea5ac77038cce44f0edaa75932c4ed"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/eldenring/src/util.rs",
+      "bytes": 736,
+      "sha256": "220c39e58b4b743f364dbae06f7b116279155ca156f840b93f31cb73534a5275"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/eldenring/src/util/input.rs",
+      "bytes": 982,
+      "sha256": "fcf0f93738e05d6e3f6f20524d1d30d8ec95812d4ddb14f9e9bb12aeb27960c1"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/eldenring/src/util/system.rs",
+      "bytes": 1398,
+      "sha256": "62cdb1a38bfe83938a1fc260a991ef7e31a63a65d374c988a6253d109d193f68"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/shared/Cargo.toml",
+      "bytes": 619,
+      "sha256": "0a89be099acb10f356e4fc90ad1dd4949834f8fee1a56350d280381dae6471bb"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/shared/macros/Cargo.toml",
+      "bytes": 486,
+      "sha256": "5e52bf6c2423961f5a73d7cedf54709705739db0c6c6fca5ee98f101002bb8eb"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/shared/macros/src/for_all_subclasses.rs",
+      "bytes": 6054,
+      "sha256": "61cbe6f2a1691a95506e8074d0c254fcbc173dd49b1ea6e026fd6746381a09c3"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/shared/macros/src/lib.rs",
+      "bytes": 12708,
+      "sha256": "368cb74da7f03b45ed0f383b791039d2c52a3fb7c2d6a4a525ffcb712cc66dbe"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/shared/macros/src/multi_param.rs",
+      "bytes": 11101,
+      "sha256": "c27f9a6e4a931c83df21e19249aeceb830013c0cf673ef4b2f7ca4fa1b2ff2bf"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/shared/macros/src/researching.rs",
+      "bytes": 1480,
+      "sha256": "f3017849f70b1d6b24674bf90d1e0f722de2cc920f09c5c8b39843c9768fc3c2"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/shared/macros/src/singleton.rs",
+      "bytes": 1158,
+      "sha256": "6309495bfe16a0929bdd5766e37429fe86958242110a91933c75be695b34c7bd"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/shared/macros/src/stepper.rs",
+      "bytes": 4161,
+      "sha256": "4947bef5e52cda1ad14eb559bbbd3a300f4b8e63ede0644208b57abac7df04f9"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/shared/macros/src/subclass.rs",
+      "bytes": 4784,
+      "sha256": "b7e9afce91e27e6963c1954af4b942691005dbef0d8c2636885bdc49500c64ee"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/shared/macros/src/superclass.rs",
+      "bytes": 10484,
+      "sha256": "18fd72f779543e9ec526bc96f8c6df45e1762919e603673b9899b53f7e0245e4"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/shared/macros/src/utils.rs",
+      "bytes": 1548,
+      "sha256": "73ebee7d875ef4e2a1bd4c4475b9600ee6668d0b37698b21f3c10952b4cba030"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/shared/src/arxan.rs",
+      "bytes": 2495,
+      "sha256": "9739b00d6f84d5d3c93d7e1bfc740f9f33d83e114346842c7a60cd2295a91337"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/shared/src/dl_math.rs",
+      "bytes": 136,
+      "sha256": "e16ff3b27489d8402ae669d6540770cadcc2650e18829a8f386c8b3bf1fde299"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/shared/src/dl_math/linear.rs",
+      "bytes": 3158,
+      "sha256": "3fdf55cadffa1e03434c0a02450ba3423f4799599a538348aae443ac3f41fb66"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/shared/src/dl_math/matrix.rs",
+      "bytes": 3781,
+      "sha256": "bd487311e60f3561aed6062fbfb267c105eb6b558fdd164b09ac58d45e14ea0a"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/shared/src/dl_math/special.rs",
+      "bytes": 5452,
+      "sha256": "1158b4440a2896295a11ba059ca6689140ba2d03bef0935c37901aa40b8e4db3"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/shared/src/dl_math/vector.rs",
+      "bytes": 2314,
+      "sha256": "127bbf94797176e711a5fe7fc9381af7a0efab321cce9337a8145b9ae6929858"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/shared/src/empty.rs",
+      "bytes": 6250,
+      "sha256": "8b787add9a58ea1eb0cfb4e41fbc013721e2d71376bb1fa445410d2eb10881dc"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/shared/src/ext.rs",
+      "bytes": 62,
+      "sha256": "a7df039f1984899f02c25d309b2b1e2815aadbac21d13abde2ec801016da944f"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/shared/src/ext/read.rs",
+      "bytes": 3935,
+      "sha256": "417bf51912fa2884785388cab293763e23c0317fc03637bd32ad70625875fe75"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/shared/src/ext/write.rs",
+      "bytes": 1473,
+      "sha256": "25aa8eb4cc488716018caa2c43d3c7df802e61f46155902f41360cc54f037750"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/shared/src/game_allocator.rs",
+      "bytes": 5348,
+      "sha256": "63ecee78a5da97639f4cfc1174a6ff6dbf48b45678609f8d09e8f5f1316b24f0"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/shared/src/game_version.rs",
+      "bytes": 2673,
+      "sha256": "a09f3292185e00d6a63c5b425c934d0de9909af9c84156deb9cd1b21f016a1c6"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/shared/src/lib.rs",
+      "bytes": 736,
+      "sha256": "fd557543a68ddbd23f80eeded321bf85165a2234ad05602ac0b57d1f240b0f66"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/shared/src/owned_pointer.rs",
+      "bytes": 5388,
+      "sha256": "68594eb77d6941471d841534f5d2bc04b936753c271044ea99fb186a9bb9896a"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/shared/src/program.rs",
+      "bytes": 1088,
+      "sha256": "74cdfc65eb875b5a7e24b286ab954dbc922c6b00360cdae98dff402818177c80"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/shared/src/researching.rs",
+      "bytes": 618,
+      "sha256": "ce7ee91058d554102ca23451ce51bbd325256a8b70aaca96ef8c71dc313aa620"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/shared/src/rtti.rs",
+      "bytes": 5545,
+      "sha256": "280b2901c1d1714da2330b426cfc40ba4587c88a993e1ebe11c88c2425f304ea"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/shared/src/static.rs",
+      "bytes": 5555,
+      "sha256": "1825d0461772151b343c9302d6e7df936065add45ad1870d0c34a859823cdfd2"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/shared/src/steam.rs",
+      "bytes": 1142,
+      "sha256": "e3eb783cdc3d261858217c85c50a4665bdc4742c370dd6240395e9af949a5c3a"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/shared/src/stepper.rs",
+      "bytes": 410,
+      "sha256": "6f44e5ee0d9086fba7c64377ec70e1d2681eb2c8eaa081d94b9983d552be36c0"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/shared/src/subclass.rs",
+      "bytes": 5220,
+      "sha256": "6bc67bfd43add8c984b6377cdf249d0a6bd0e82a18e0e88c154d57febd8339d0"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/shared/src/task.rs",
+      "bytes": 4436,
+      "sha256": "80ad8802d18d40c7e5f83da016d0c8fece5f4ab32a3796e3b8384c98bd8a5030"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/shared/src/unknown_pointer.rs",
+      "bytes": 2357,
+      "sha256": "c0ec86daa3442f3118eb1d32df2a115356bee8094dbb1caf8e9dc2bb3a56c221"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/shared/src/util.rs",
+      "bytes": 116,
+      "sha256": "c9eb8cd6b263c38f9e12cc593ff7fdf14b5424461c5d777928be3a9984b184e1"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/shared/src/util/incomplete_array_field.rs",
+      "bytes": 1712,
+      "sha256": "d6a90d916ea0bbd663102b677e62d341b73a01262d1c79c74936b309b7b31555"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/shared/src/util/unknown_struct.rs",
+      "bytes": 575,
+      "sha256": "d061477ee0a4598e39811b73a2ceabe29f5aedf2f88ceca5048a0494756eaebe"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/shared/stl/Cargo.toml",
+      "bytes": 267,
+      "sha256": "bef96f8ce7f0a3d59c00f031230a6c9272d93d5ce4db99502b51c5bfb549b122"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/shared/stl/src/allocator.rs",
+      "bytes": 1590,
+      "sha256": "91d9ee4754350eeee20b895cdf2f842af55110ccc557c0df1d414f7387ec9249"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/shared/stl/src/deque.rs",
+      "bytes": 14087,
+      "sha256": "2ce9c646b27512d093d0b384bd75b71c730eaf9468d6264a614e6ed763e4974a"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/shared/stl/src/lib.rs",
+      "bytes": 288,
+      "sha256": "8cd41b1717573e8c0878633c10ca15a26857ba9ba177f891598be91db00e9c4b"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/shared/stl/src/linked_list.rs",
+      "bytes": 6783,
+      "sha256": "377ef64bde3ddc07fabbcb59e508590937a150d7abb4dcac29a7faeeb06adf95"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/shared/stl/src/pair.rs",
+      "bytes": 1015,
+      "sha256": "4de49c51a35fadd420a76f26111404f1cc160574a1cf821d893fc18f0a669eb6"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/shared/stl/src/rb_tree.rs",
+      "bytes": 42741,
+      "sha256": "c7ff33208e38aea218c03f2d4f331291ba37494f515cef82585492a9fee9a715"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/shared/stl/src/string.rs",
+      "bytes": 21477,
+      "sha256": "efd74aa22fa81c5cb2d24cc6864c100f82bb39d3eff08538f6bb4c36ea2dbd75"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/shared/stl/src/vector.rs",
+      "bytes": 6211,
+      "sha256": "68223757dbfaa0bad32cc906ba3c2bc5711a6c31c65878611bb4611ab3507e87"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/shared/stl/src/vector_bool.rs",
+      "bytes": 7323,
+      "sha256": "d1434c8427071bafa4747ec900351f9c7e83401827fe3a5339189b9b6b80d17a"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/shared/stl/tests/common.rs",
+      "bytes": 3176,
+      "sha256": "449a20abbcf74f3dcbd3d595d46744e1140e415aad398392bf92ddbab1e12591"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/shared/stl/tests/deque.rs",
+      "bytes": 13127,
+      "sha256": "095ea1a92bc27a54b6eebacb31ffb8fe4d1098af43bf2c22e3a2e0b11a3bcf06"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/shared/stl/tests/linked_list.rs",
+      "bytes": 8148,
+      "sha256": "aa2f9ee14f58f6f3b561be2a8f0a1e86f94155fd0bea4081feb32ae68f37d461"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/shared/stl/tests/rb_tree.rs",
+      "bytes": 17049,
+      "sha256": "9080039b99c261648072ce850e8fa72774d2b07011796be288b11b38be3aac4c"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/shared/stl/tests/string.rs",
+      "bytes": 8614,
+      "sha256": "d48639621308318cb6fbb2ead20c039a74f3d3ebe1b24b96ba2725d8bc0449a4"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/shared/stl/tests/vector.rs",
+      "bytes": 9936,
+      "sha256": "a20d10471b595c5f8ac0af7f36dfecb1657c016e081dad4ea8fa6b0f7b8c9062"
+    },
+    {
+      "path": "vendor/fromsoftware-rs/crates/shared/stl/tests/vector_bool.rs",
+      "bytes": 7147,
+      "sha256": "30b99e5d75f375bbcd8c7c3dd0b0f0bacfa27b4ac9b93549cf3c64bd787d31d1"
+    }
+  ]
+}

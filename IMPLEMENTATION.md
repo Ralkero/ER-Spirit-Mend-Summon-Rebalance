@@ -1,3 +1,7 @@
+# Current development architecture
+
+See [stabilization audit](docs/STABILIZATION.md) and [duplicate-instance implementation](docs/DUPLICATE-GROUPS.md). These supersede the historical five-second impact ledger and single-group-per-family restriction when duplicate mode is explicitly enabled. No new hook addresses or assets.
+
 # 0.5.1 - native release gate and per-projectile target
 
 `src/mend_cast.rs` is included by `spirit_mend.rs`. All addresses below are RVAs in the inspected WW 2.7.2.0 executable (App 1.17.2), SHA256 F9118FEA2CFD8FA3901E8060BFADB1552CB2471771DED8A5B662C4E298FFB328. Static evidence is in `evidence/cast-static`; these are pefile/Capstone observations, not REA decompilation or runtime traces.
